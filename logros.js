@@ -165,13 +165,13 @@ const strategicPartners = [
     {
         name: 'CVC',
         fullName: 'Corporación Autónoma Regional del Valle del Cauca',
-        logo: 'Assets/Logros - subpage/CVC.png',
+        logo: 'https://res.cloudinary.com/dqpqgmn1k/image/upload/f_auto,q_auto,w_600/v1770054362/CVC_wbnngg.png',
         description: 'Autoridad ambiental regional con la que trabajamos en proyectos de gestión y conservación del recurso hídrico.',
     },
     {
         name: 'DAGMA',
         fullName: 'Departamento Administrativo de Gestión del Medio Ambiente',
-        logo: 'Assets/Logros - subpage/Dagma.png',
+        logo: 'https://res.cloudinary.com/dqpqgmn1k/image/upload/f_auto,q_auto,w_600/v1770054362/Dagma_utpglt.png',
         description: 'Entidad municipal que articula nuestras iniciativas de sostenibilidad y gestión ambiental en el territorio.',
     },
 ];
@@ -366,7 +366,7 @@ function renderStrategicPartners() {
         return `
             <div class="logros-aliado-estrategico-card">
                 <div class="logros-aliado-estrategico-logo">
-                    <img src="${partner.logo}" alt="${partner.name}" class="logros-aliado-estrategico-logo-img">
+                    <img src="${partner.logo}" alt="${partner.name}" class="logros-aliado-estrategico-logo-img" loading="lazy" decoding="async">
                 </div>
                 <div class="logros-aliado-estrategico-content">
                     <h4 class="logros-aliado-estrategico-name">${partner.name}</h4>
