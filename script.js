@@ -112,7 +112,7 @@ function initHeaderScroll() {
             }
         });
     }, observerOptions);
-    
+
     activeScrollObserver = scrollObserver;
 
     // Start observing the sentinel (but it won't trigger until initialStateSet is true)
@@ -540,43 +540,59 @@ if (document.readyState === 'loading') {
     setActiveNavState();
 }
 
-// Hero Video Background - Handle fallback for unsupported autoplay
+// Hero Video Background - Optimized delayed loading for performance
 function initHeroVideo() {
     const heroVideo = document.querySelector('.hero-video');
     const heroBackground = document.querySelector('.hero-background');
     
     if (!heroVideo || !heroBackground) return;
     
-    // Check if video can play
-    const checkVideoPlayback = () => {
-        const video = heroVideo;
+    // Determine optimal video width based on viewport
+    const getOptimalVideoWidth = () => {
+        const viewportWidth = window.innerWidth;
+        // Use w_960 for viewports smaller than 1280px, w_1280 for larger
+        return viewportWidth < 1280 ? 960 : 1280;
+    };
+    
+    // Build optimized Cloudinary URL with transformations
+    const buildVideoUrl = () => {
+        const width = getOptimalVideoWidth();
+        return `https://res.cloudinary.com/dqpqgmn1k/video/upload/w_${width},q_auto,f_auto,fps_24/v1770049664/HeroSectionVid_xry4l9.mp4`;
+    };
+    
+    // Load video source after page is idle
+    const loadVideoSource = () => {
+        // Create and set the source element
+        const source = document.createElement('source');
+        source.src = buildVideoUrl();
+        source.type = 'video/mp4';
+        heroVideo.appendChild(source);
         
-        // If video is playing, hide fallback
-        if (!video.paused && !video.ended && video.readyState > 2) {
-            heroBackground.classList.add('video-playing');
-        } else {
-            // Try to play the video
-            const playPromise = video.play();
-            
-            if (playPromise !== undefined) {
-                playPromise
-                    .then(() => {
-                        // Video is playing, hide fallback
-                        heroBackground.classList.add('video-playing');
-                    })
-                    .catch(() => {
-                        // Autoplay was prevented, show fallback
-                        heroBackground.classList.remove('video-playing');
-                    });
-            } else {
-                // Fallback for older browsers
-                heroBackground.classList.remove('video-playing');
-            }
+        // Load the video
+        heroVideo.load();
+    };
+    
+    // Start video playback when ready
+    const startVideoPlayback = () => {
+        const playPromise = heroVideo.play();
+        
+        if (playPromise !== undefined) {
+            playPromise
+                .then(() => {
+                    // Video is playing, hide fallback
+                    heroBackground.classList.add('video-playing');
+                })
+                .catch(() => {
+                    // Autoplay was prevented, keep poster visible
+                    heroBackground.classList.remove('video-playing');
+                });
         }
     };
     
-    // Check when video metadata is loaded
-    heroVideo.addEventListener('loadedmetadata', checkVideoPlayback);
+    // Handle video canplay event - start autoplay
+    heroVideo.addEventListener('canplay', () => {
+        startVideoPlayback();
+    });
     
     // Check when video starts playing
     heroVideo.addEventListener('playing', () => {
@@ -588,16 +604,30 @@ function initHeroVideo() {
         heroBackground.classList.remove('video-playing');
     });
     
-    // Check when video fails to load
+    // Check when video fails to load - keep poster visible
     heroVideo.addEventListener('error', () => {
         heroBackground.classList.remove('video-playing');
     });
     
-    // Initial check
+    // Delayed loading: wait for DOMContentLoaded, then wait for idle time
+    const scheduleVideoLoad = () => {
+        // Use requestIdleCallback if available, otherwise use setTimeout
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => {
+                // Additional delay for better first paint
+                setTimeout(loadVideoSource, 600);
+            }, { timeout: 1200 });
+        } else {
+            // Fallback: wait 800ms after DOMContentLoaded
+            setTimeout(loadVideoSource, 800);
+        }
+    };
+    
+    // Initialize after DOM is ready
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', checkVideoPlayback);
+        document.addEventListener('DOMContentLoaded', scheduleVideoLoad);
     } else {
-        checkVideoPlayback();
+        scheduleVideoLoad();
     }
 }
 

@@ -8,7 +8,7 @@ const projects = [
         title: 'Convenio N°025 de 2025',
         subtitle: 'Cali, Valle del Cauca',
         description: 'Fortalecimiento del espacio público urbano mediante la implementación de jardines y acciones de conectividad ecológica, orientadas a mejorar la calidad ambiental, conservar la biodiversidad y promover infraestructura verde en el Distrito de Santiago de Cali.',
-        imageUrl: 'Assets/Proyectos - Subpage/Tarjetas/Jardines.jpeg',
+        imageUrl: 'Assets/Proyectos - Subpage/Tarjetas/Jardines.jpg',
         year: '2025',
         type: 'Urbanismo'
     },

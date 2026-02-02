@@ -165,13 +165,13 @@ const strategicPartners = [
     {
         name: 'CVC',
         fullName: 'Corporación Autónoma Regional del Valle del Cauca',
-        logo: 'Assets/Logros - subpage/CVC Logo.png',
+        logo: 'Assets/Logros - subpage/CVC.png',
         description: 'Autoridad ambiental regional con la que trabajamos en proyectos de gestión y conservación del recurso hídrico.',
     },
     {
         name: 'DAGMA',
         fullName: 'Departamento Administrativo de Gestión del Medio Ambiente',
-        logo: 'Assets/Logros - subpage/Dagma Logo.png',
+        logo: 'Assets/Logros - subpage/Dagma.png',
         description: 'Entidad municipal que articula nuestras iniciativas de sostenibilidad y gestión ambiental en el territorio.',
     },
 ];

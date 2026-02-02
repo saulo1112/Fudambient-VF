@@ -467,18 +467,30 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: clamp(20px, 2.5vw, 28px); /* Responsive gap to fit all items */
     position: relative;
-    width: 100%;
+}
+
+/* IMPORTANTE: Cuando .pill-content está dentro de .projects-pill, debe usar grid, no flex */
+.proyectos-page .pill-content.projects-pill,
+.proyectos-page .pill-projects.pill-content.projects-pill {
+    display: grid !important;
+    /* Eliminar TODAS las propiedades de flex */
+    flex-direction: unset !important;
+    flex-wrap: unset !important;
+    flex-flow: unset !important;
+    justify-content: unset !important;
+    align-content: unset !important;
+    align-items: center !important; /* Mantener centrado vertical para grid */
+    gap: 0 !important; /* El gap lo controla el grid */
+    /* Asegurar que las transiciones no interfieran con el layout */
     transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
                 transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    justify-content: center; /* Center content */
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow: visible; /* Allow content to be visible */
-    /* Ensure content doesn't get cut off */
-    min-width: 0; /* Allow flex shrinking if needed */
-    padding: 0 clamp(8px, 1vw, 16px); /* Extra padding to prevent text cutoff */
+    /* Asegurar que el contenido del grid empiece desde la izquierda sin padding adicional */
+    padding-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 .pill-global {
+    display: block;
     opacity: 1;
     transform: translateY(0);
 }
@@ -488,19 +500,23 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     right: 0;
+    display: none;
     opacity: 0;
     transform: translateY(-8px);
     pointer-events: none;
 }
 
-/* Projects Mode: Show projects nav, hide global nav */
+/* Projects Mode: Show projects nav, hide global nav (desktop only, overridden by media queries for mobile) */
+/* NOTE: These rules are for desktop only - mobile media query overrides them */
 .nav-pill-glass.projects-mode .pill-global {
+    display: none;
     opacity: 0;
     transform: translateY(8px);
     pointer-events: none;
 }
 
 .nav-pill-glass.projects-mode .pill-projects {
+    display: block;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
@@ -520,6 +536,9 @@ h1, h2, h3, h4, h5, h6 {
        al primer link cuando el nav total ~1140px (evidencia en logs: overlapPx ~46px). */
     max-width: min(1320px, calc(100vw - 48px));
     min-width: 0; /* importante: permitir que max-width se aplique */
+    /* Asegurar que el contenido interno no esté centrado por defecto */
+    text-align: left;
+    /* El padding se mantiene para el diseño general, pero el contenido del grid debe empezar desde la izquierda */
 }
 
 /* Solo UN contenedor participa en el flow a la vez */
@@ -535,56 +554,229 @@ h1, h2, h3, h4, h5, h6 {
     inset: 0;
 }
 .proyectos-page .nav-pill-glass.projects-mode .pill-projects {
-    position: relative; /* en flow => el ancho del pill depende SOLO de projects */
+    position: relative !important; /* en flow => el ancho del pill depende SOLO de projects */
     inset: auto;
+    /* Asegurar que el grid se aplique cuando está en projects-mode */
+    display: grid !important;
+    grid-template-columns: 44px 1fr 44px !important;
 }
 
 /* El contenido define el ancho real del pill (evita width:100% expandiendo) */
+/* Desktop only - in mobile, pill-content should be transparent */
 .proyectos-page .nav-pill-glass .pill-content {
     width: max-content;
     max-width: 100%;
-    padding: 0; /* el padding ya lo controla el pill externo */
+    padding: 0 !important; /* el padding ya lo controla el pill externo */
+    /* Asegurar que no esté centrado */
+    margin: 0 !important;
+    text-align: left;
+}
+
+/* IMPORTANTE: Cuando .pill-content es .projects-pill, debe tener padding 0 y empezar desde la izquierda */
+.proyectos-page .nav-pill-glass .pill-content.projects-pill,
+.proyectos-page .nav-pill-glass.projects-mode .pill-content.projects-pill {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /* Asegurar que el grid se aplique y el contenido empiece desde la izquierda */
+    display: grid !important;
+    grid-template-columns: 44px 1fr 44px !important;
+}
+
+/* Asegurar que .pill-content dentro de .projects-pill use grid, no flex */
+.proyectos-page .pill-projects.pill-content.projects-pill {
+    /* display: grid ya está definido arriba con !important */
+    /* Solo asegurar que no haya gap de flex interfiriendo */
+    gap: 0 !important; /* El gap lo controla .projects-pill__nav */
+    /* Asegurar que el contenido comience desde la izquierda */
+    padding-left: 0 !important;
+    margin-left: 0 !important;
 }
 
 /* Layout interno en 3 zonas: back | nav (centrado real) | spacer */
+/* IMPORTANTE: .projects-pill debe sobrescribir .pill-content (display: flex) */
+/* Aumentar especificidad para asegurar que se aplique sobre .pill-content */
+.proyectos-page .nav-pill-glass .pill-projects.projects-pill,
+.proyectos-page .nav-pill-glass.projects-mode .pill-projects.projects-pill,
+.proyectos-page .pill-projects.pill-content.projects-pill,
 .proyectos-page .projects-pill {
-    display: grid;
-    grid-template-columns: 44px 1fr 44px;
+    display: grid !important; /* Sobrescribir display: flex de .pill-content */
+    grid-template-columns: 44px 1fr 44px !important; /* Forzar las 3 columnas */
+    grid-template-rows: 1fr !important; /* Una sola fila */
     align-items: center;
-    column-gap: 0;
+    justify-items: start; /* Alinear items al inicio (izquierda) por defecto */
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    /* Eliminar TODAS las propiedades de flex que puedan interferir */
+    flex-direction: unset !important;
+    flex-wrap: unset !important;
+    flex-flow: unset !important;
+    justify-content: unset !important;
+    align-content: unset !important;
+    /* Asegurar que no haya width que interfiera */
+    width: max-content !important;
+    min-width: 0;
+    /* Forzar que el grid se aplique inmediatamente */
+    grid-auto-flow: row !important;
 }
 
 .proyectos-page .projects-pill__back {
-    grid-column: 1;
-    justify-self: start;
-    width: 44px;
-    height: 32px;
-    margin: 0; /* no empujar */
+    grid-column: 1 / 2 !important; /* Forzar columna 1 del grid (start at 1, end at 2) */
+    grid-row: 1 !important; /* Forzar fila 1 */
+    justify-self: start !important; /* Alinear a la izquierda de la celda del grid */
+    align-self: center; /* Centrar verticalmente */
+    width: 44px !important;
+    height: 32px !important;
+    margin: 0 !important; /* Eliminar cualquier margin que pueda tener .pill-scroll-top */
+    padding: 0 !important;
     border-radius: 9999px;
+    /* Asegurar que no haya order o flex que lo mueva */
+    order: 0 !important; /* Primero en el orden visual */
+    flex-order: unset !important;
+    /* Posicionamiento para asegurar que esté a la izquierda */
+    position: relative !important;
+    left: 0 !important;
+    right: auto !important;
+    /* Asegurar que esté al inicio de la columna 1, sin ningún offset */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    /* Asegurar que el botón esté visualmente al borde izquierdo del contenido del grid */
+    transform: translateX(0) !important;
+    /* Forzar que esté al inicio absoluto de la columna 1 */
+    grid-column-start: 1 !important;
+    grid-column-end: 2 !important;
+}
+
+/* Asegurar que el botón dentro de .projects-pill__back no tenga margins que interfieran */
+.proyectos-page .projects-pill__back .pill-scroll-top {
+    margin: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+    height: 100%;
+    /* Asegurar que no tenga order que lo mueva */
+    order: unset !important;
 }
 
 .proyectos-page .projects-pill__nav {
-    grid-column: 2;
+    grid-column: 2 / 3 !important; /* Columna 2 del grid */
+    grid-row: 1 !important; /* Fila 1 */
     justify-self: center;
     display: flex;
+    flex-wrap: nowrap; /* Forzar una sola fila */
     align-items: center;
     justify-content: center;
     gap: clamp(18px, 2vw, 28px);
     min-width: 0;
+    white-space: nowrap; /* Evitar que los textos se partan */
+    /* Asegurar que no tenga order que lo mueva */
+    order: unset !important;
+    /* Asegurar que esté en la posición correcta del grid */
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: 0 !important;
 }
 
 .proyectos-page .projects-pill__spacer {
-    grid-column: 3;
+    grid-column: 3 / 4 !important; /* Columna 3 del grid */
+    grid-row: 1 !important; /* Fila 1 */
     width: 44px;
     height: 1px;
+    /* Asegurar que no tenga order que lo mueva */
+    order: unset !important;
 }
 
-@media (max-width: 1024px) {
+/* =========================================================
+   RESPONSIVE PILL NAVIGATION - PROYECTOS PAGE
+   Breakpoint strategy:
+   - Desktop (> 1200px): Show pill-projects (long) when in projects-mode, hide pill-global
+   - Tablet/Mobile (≤ 1200px): Hide pill-projects completely, always show pill-global
+   ========================================================= */
+
+/* Desktop (> 1200px): Show pill-projects when in projects-mode, show pill-global when not */
+@media (min-width: 1201px) {
     .proyectos-page .nav-pill-glass {
-        max-width: min(98vw, 1200px);
+        /* Mantener el ancho suficiente para que todos los links quepan en una fila */
+        max-width: min(1320px, calc(100vw - 48px));
     }
     .proyectos-page .projects-pill__nav {
-        gap: 18px;
+        gap: clamp(18px, 2vw, 28px);
+    }
+    
+    /* Desktop: pill-projects is visible when in projects-mode */
+    .proyectos-page .nav-pill-glass.projects-mode .pill-projects {
+        display: grid !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+        position: relative !important;
+    }
+    
+    /* Desktop: pill-global is hidden when in projects-mode */
+    .proyectos-page .nav-pill-glass.projects-mode .pill-global {
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    /* Desktop: pill-global is visible when NOT in projects-mode */
+    .proyectos-page .nav-pill-glass:not(.projects-mode) .pill-global {
+        display: block !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        pointer-events: auto !important;
+        position: relative !important;
+    }
+    
+    /* Desktop: pill-projects is hidden when NOT in projects-mode */
+    .proyectos-page .nav-pill-glass:not(.projects-mode) .pill-projects {
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+}
+
+/* Tablet and Mobile (≤ 1200px): Hide pill-projects completely, show pill-global identical to other pages */
+@media (max-width: 1200px) {
+    /* CRITICAL: Hide pill-projects and ALL its children completely */
+    .proyectos-page .nav-pill-glass .pill-projects,
+    .proyectos-page .nav-pill-glass.projects-mode .pill-projects,
+    .proyectos-page #navPillGlass .pill-projects,
+    .proyectos-page #navPillGlass.projects-mode .pill-projects,
+    .proyectos-page .pill-projects,
+    .proyectos-page .pill-projects * {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    
+    /* CRITICAL: Show pill-global - override ALL projects-mode rules that hide it */
+    .proyectos-page .nav-pill-glass .pill-global,
+    .proyectos-page .nav-pill-glass.projects-mode .pill-global,
+    .proyectos-page #navPillGlass .pill-global,
+    .proyectos-page #navPillGlass.projects-mode .pill-global {
+        display: contents !important; /* Transparent - nav-items become direct children */
+        position: static !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+        transform: none !important;
+        inset: unset !important;
+    }
+    
+    /* Make pill-content transparent - nav-items appear directly in nav-pill-glass */
+    .proyectos-page .nav-pill-glass .pill-global.pill-content,
+    .proyectos-page .nav-pill-glass.projects-mode .pill-global.pill-content {
+        display: contents !important; /* Transparent wrapper */
+    }
+    
+    /* Remove proyectos-specific overrides for nav-pill-glass in mobile */
+    .proyectos-page .nav-pill-glass {
+        display: flex !important; /* Override proyectos-specific display: block */
     }
 }
 
@@ -616,19 +808,8 @@ h1, h2, h3, h4, h5, h6 {
         max-width: calc(100vw - 24px);
     }
 
-    /* Hide internal projects pill (categories) on mobile */
-    .proyectos-page #navPillGlass .pill-projects,
-    .proyectos-page #navPillGlass.projects-mode .pill-projects {
-        display: none !important;
-    }
-
-    /* Even if JS toggles projects-mode, keep legacy/global links visible inside the capsule */
-    .proyectos-page #navPillGlass.projects-mode .pill-global {
-        opacity: 1 !important;
-        transform: none !important;
-        pointer-events: auto !important;
-        /* Critical: ensure global content participates in sizing (avoid tiny/collapsed pill) */
-        position: relative !important;
+    /* Mobile: pill-projects is already hidden by the 1024px breakpoint above */
+    /* Mobile: pill-global is already shown by the 1024px breakpoint above */
         inset: auto !important;
     }
 }
@@ -743,6 +924,11 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: clamp(16px, 2vw, 24px);
         padding-right: clamp(16px, 2vw, 24px);
     }
+    
+    /* Ensure pill-global in proyectos page matches other pages */
+    .proyectos-page .nav-pill-glass .pill-global.pill-content {
+        gap: clamp(20px, 2.5vw, 28px) !important; /* Match default pill-content gap */
+    }
 }
 
 @media (max-width: 768px) {
@@ -763,6 +949,11 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 98vw;
         padding-left: 12px;
         padding-right: 12px;
+    }
+    
+    /* Ensure pill-global in proyectos page matches other pages on mobile */
+    .proyectos-page .nav-pill-glass .pill-global.pill-content {
+        gap: clamp(20px, 2.5vw, 28px) !important; /* Match default pill-content gap */
     }
 }
 
@@ -6510,9 +6701,66 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Cambiado a contain para formato vertical 9:16 */
+    border: 0;
     border-radius: 16px;
 }
+
+/* Instagram embed styling */
+.logros-instagram-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logros-instagram-embed iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 16px;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+/* Fallback button for Instagram embed - shown when embed hasn't loaded */
+.logros-instagram-fallback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #E4405F 0%, #C13584 50%, #833AB4 100%);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logros-instagram-fallback:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* When Instagram script replaces content with iframe, fallback link is automatically removed */
 
 .logros-video-btn {
     display: inline-flex;
@@ -6576,6 +6824,19 @@ h1, h2, h3, h4, h5, h6 {
     
     .logros-video-wrapper {
         border-radius: 12px;
+    }
+    
+    .logros-instagram-embed {
+        border-radius: 12px;
+    }
+    
+    .logros-instagram-embed iframe {
+        border-radius: 12px;
+    }
+    
+    .logros-instagram-fallback {
+        font-size: 13px;
+        padding: 10px 20px;
     }
 }
 
