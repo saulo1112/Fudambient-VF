@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUDAMBIENT - Fundación para el Desarrollo Ambiental</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Bebas+Neue&family=Chewy&family=Raleway:wght@500;800&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body class="index-page">
+    <!-- Initial Header (non-sticky, shows at top) -->
+    <header class="header header-initial" id="headerInitial">
+        <div class="header-container">
+            <a class="brand-text-logo" href="index.html#inicio" aria-label="FUDAMBIENT home">
+                <span class="brand-fud">FUD</span><span class="brand-ambient">AMBIENT</span>
+            </a>
+            <nav class="nav-initial">
+                <a href="index.html#inicio" class="nav-item" data-page="index" data-i18n="header.nav.home">Inicio</a>
+                <a href="nosotros.html" class="nav-item" data-page="nosotros" data-i18n="header.nav.about">Nosotros</a>
+                <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+                <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+                <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+            </nav>
+            <div class="header-cta">
+                <a href="contacto.html" class="contact-btn" data-i18n="header.contact">Contacto</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma" data-i18n-aria="header.langToggle">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Glass Nav (appears after scroll) -->
+    <nav class="nav-pill-glass" id="navPillGlass">
+        <a href="index.html#inicio" class="nav-item" data-page="index" data-i18n="header.nav.home">Inicio</a>
+        <a href="nosotros.html" class="nav-item" data-page="nosotros" data-i18n="header.nav.about">Nosotros</a>
+        <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+        <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+        <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <video class="hero-video" autoplay loop muted playsinline>
+                <source src="Assets/HeroSectionVid.mp4" type="video/mp4">
+            </video>
+            <div class="hero-image-fallback"></div>
+        </div>
+        <div class="hero-video-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-description-wrapper reveal">
+                    <h1 class="hero-title">
+                        <span class="hero-title__brand fudambient" data-i18n="home.hero.title.brand">FUDAMBIENT</span>
+                        <span class="hero-title__plus plus" data-i18n="home.hero.title.plus">+</span>
+                        <span class="hero-title__you tu">
+                            <span class="hero-you-text" data-i18n="home.hero.title.you">Tú!</span>
+                            <img src="Assets/Vector curve.png" alt="" class="underline-curve">
+                        </span>
+                    </h1>
+                    <p class="hero-description" data-i18n="home.hero.description">
+                        Somos una organización de profesionales que trabajan con el propósito de asesorar y ejecutar obras de desarrollo y sostenibilidad; teniendo en cuenta los componentes socio-ambientales del territorio.
+                    </p>
+                    
+                    <!-- CTA Section inside the left card -->
+                    <div class="hero-cta-section">
+                        <a href="proyectos.html" class="cta-hero-button" data-i18n="home.hero.cta">¡Ven y conócenos!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- 2nd Section - Soft Gradient with Particles -->
+    <section class="soft-gradient-section" id="nuestro-enfoque">
+        <div class="soft-gradient-background">
+            <div class="soft-gradient-sphere sphere-1"></div>
+            <div class="soft-gradient-sphere sphere-2"></div>
+            <div class="soft-gradient-sphere sphere-3"></div>
+            <div class="soft-gradient-glow"></div>
+            <div class="soft-particles-container" id="soft-particles-container"></div>
+        </div>
+        <div class="soft-gradient-content">
+            <div class="soft-gradient-text reveal">
+                <h2 class="soft-gradient-title" data-i18n="home.approach.title">Ingeniería que comprende el territorio</h2>
+                <p class="soft-gradient-description" data-i18n="home.approach.description">
+                    FUDAMBIENT es la Fundación para el Desarrollo Social, el Medio Ambiente y el Territorio.
+Integramos la ingeniería civil, la gestión ambiental y la acción comunitaria para impulsar proyectos sostenibles que fortalecen el desarrollo, la calidad de vida y el equilibrio socioambiental.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3rd Section - Mission/Vision -->
+    <section class="section-3" id="nosotros">
+        <div class="section-3-container reveal-group">
+            <div class="mission-image reveal">
+                <img src="Assets/picture-2nd-section.png" alt="FUDAMBIENT team working in the field" class="mission-image-img">
+            </div>
+            <div class="mission-text reveal">
+                <div class="text-content">
+                    <div class="text-block">
+                        <h3 class="section-label" data-i18n="home.mission.label">Nuestra Misión</h3>
+                        <h2 class="mission-heading" data-i18n="home.mission.title">CUIDAR LA TIERRA QUE SOSTIENE LA VIDA</h2>
+                        <p class="mission-description" data-i18n="home.mission.description">
+                            FUDAMBIENT es una organización dedicada a asesorar y ejecutar proyectos de desarrollo con enfoque socioambiental, optimizando los recursos económicos, sociales y ambientales. Contamos con un equipo interdisciplinario de profesionales especializados que trabajan con compromiso, ética y cooperación para contribuir al desarrollo sostenible y a la satisfacción de nuestros clientes.
+                        </p>
+                    </div>
+                    <div class="vision-block">
+                        <h4 class="section-label" data-i18n="home.vision.label">Nuestra visión</h4>
+                        <p class="vision-description" data-i18n="home.vision.description">
+                            Nuestra organización pretende liderar en la región con soluciones de vanguardia en el campo de la ingeniería, mediante la unión de diferentes disciplinas para el afianzamiento de procesos constructivos que involucren componentes de alta calidad y eficiencia en el diagnóstico, inicio, ejecución y finalización de un proyecto, comprometidos con su sostenibilidad socio económica y ambiental.
+                        </p>
+                    </div>
+                </div>
+                <a href="nosotros.html" class="learn-more-btn" data-i18n="home.mission.cta">Conoce más sobre nosotros</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5th Section - Projects -->
+    <section class="section-6" id="proyectos">
+        <div class="projects-section">
+            <div class="projects-label" data-i18n="home.projects.badge">PROYECTOS</div>
+            <div class="project-slider" data-slider-reveal>
+                <button class="slider-btn prev" id="prevBtn" aria-label="Previous slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="slide active" data-slide="0" data-i18n-slide="rivers"
+                             data-counter="+40" 
+                             data-title="Procesos de recuperación y manejo integral de ríos"
+                             data-description="Intervenciones geomorfológicas y descolmatación en tramos priorizados para mejorar la dinámica hidráulica, reducir riesgos y fortalecer la resiliencia de las cuencas hidrográficas.">
+                            <div class="slide-image" style="background-image: url('Assets/Proyectos - Section/Design.JPG');"></div>
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide" data-slide="1" data-i18n-slide="sanitation"
+                             data-counter="+2000" 
+                             data-title="Sistemas individuales de saneamiento implementados"
+                             data-description="Diseño e instalación de soluciones descentralizadas para el tratamiento de aguas residuales en comunidades rurales, con enfoque en salud pública y sostenibilidad.">
+                            <div class="slide-image" style="background-image: url('Assets/Proyectos - Section/FTSITARES.jpeg');"></div>
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide" data-slide="2" data-i18n-slide="education"
+                             data-counter="+150" 
+                             data-title="Procesos de educación ambiental y gestión comunitaria"
+                             data-description="Acompañamiento participativo para fortalecer el uso responsable del territorio y asegurar la permanencia de las soluciones ambientales.">
+                            <div class="slide-image" style="background-image: url('Assets/Proyectos - Section/Educación Ambiental.png');"></div>
+                            <div class="slide-overlay"></div>
+                        </div>
+                        <div class="slide" data-slide="3" data-i18n-slide="restoration"
+                             data-counter="+60" 
+                             data-title="Intervenciones de estabilización y restauración ecológica"
+                             data-description="Ejecución de obras de bioingeniería para el control de erosión, movimientos en masa y aporte de sedimentos en zonas críticas.">
+                            <div class="slide-image" style="background-image: url('Assets/Proyectos - Section/Infraestructura.JPG');"></div>
+                            <div class="slide-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-card">
+                        <div class="slide-metric">
+                            <div class="slide-value">+40</div>
+                            <div class="slide-underline"></div>
+                        </div>
+                        <h3 class="slide-title">Procesos de recuperación y manejo integral de ríos</h3>
+                        <p class="slide-description">
+                            Intervenciones geomorfológicas y descolmatación en tramos priorizados para mejorar la dinámica hidráulica, reducir riesgos y fortalecer la resiliencia de las cuencas.
+                        </p>
+                    </div>
+                    <div class="slider-dots">
+                        <button class="dot active" data-slide="0" aria-label="Go to slide 1" aria-current="true"></button>
+                        <button class="dot" data-slide="1" aria-label="Go to slide 2"></button>
+                        <button class="dot" data-slide="2" aria-label="Go to slide 3"></button>
+                        <button class="dot" data-slide="3" aria-label="Go to slide 4"></button>
+                    </div>
+                </div>
+                <button class="slider-btn next" id="nextBtn" aria-label="Next slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6th Section - Specialties -->
+    <section class="section-5" id="servicios">
+        <div class="specialties-section">
+            <div class="specialties-background"></div>
+            <div class="specialties-overlay"></div>
+            <div class="specialties-content">
+                <div class="specialties-header reveal">
+                    <h2 class="specialties-title" data-i18n="home.specialties.title">Nuestras Especialidades</h2>
+                    <p class="specialties-subtitle" data-i18n="home.specialties.subtitle">Soluciones integrales en ingeniería civil y gestión ambiental para un desarrollo sostenible</p>
+                </div>
+                <div class="specialties-grid reveal-stagger">
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/1.svg" alt="Recuperación Geomorfológica" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.geomorphological">Recuperación Geomorfológica</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/2.svg" alt="Control de Erosión y Orillas" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.erosion">Control de Erosión y Orillas</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/3.svg" alt="Saneamiento Básico" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.sanitation">Saneamiento Básico</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/4.svg" alt="Urbanismo" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.urbanism">Urbanismo</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/5.svg" alt="Infraestructura Hidráulica" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.hydraulic">Infraestructura Hidráulica</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/6.svg" alt="Riego y drenaje" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.irrigation">Riego y drenaje</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/7.svg" alt="Almacenamiento de Agua" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.water">Almacenamiento de Agua</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                    <div class="specialty-card reveal">
+                        <div class="specialty-icon">
+                            <img src="Assets/Especialidades/8.svg" alt="Obras Civiles, Ambientales y Forestales" class="specialty-icon-img">
+                        </div>
+                        <div class="specialty-header">
+                            <h3 class="specialty-title" data-i18n="home.specialties.items.civil">Obras Civiles, Ambientales y Forestales</h3>
+                            <svg class="specialty-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 10L15.83 10M10 4.17L15.83 10L10 15.83" stroke="#00D492" stroke-width="1.67" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="specialty-gradient"></div>
+                    </div>
+                </div>
+                <div class="specialties-divider">
+                    <div class="divider-line left"></div>
+                    <div class="divider-dot"></div>
+                    <div class="divider-line right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7th Section - Achievements -->
+    <section class="section-4" id="logros">
+        <div class="section-4-content">
+            <div class="achievements-header reveal">
+                <h2 class="achievements-title" data-i18n="home.achievements.title">Nuestros Logros</h2>
+                <p class="achievements-subtitle" data-i18n="home.achievements.subtitle">Construyendo un futuro sostenible con ingeniería responsable</p>
+            </div>
+            <div class="achievements-grid reveal-stagger">
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">
+                        <img src="Assets/Nuestros logros - vectores/1.svg" alt="Proyectos de Ingeniería" class="achievement-icon-img">
+                    </div>
+                    <div class="achievement-number" data-i18n="home.achievements.items.engineering.value">40+</div>
+                    <div class="achievement-label" data-i18n="home.achievements.items.engineering.label">Proyectos de Ingeniería</div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">
+                        <img src="Assets/Nuestros logros - vectores/2.svg" alt="Reducción de Impacto Ambiental" class="achievement-icon-img">
+                    </div>
+                    <div class="achievement-number" data-i18n="home.achievements.items.environmental.value">85%</div>
+                    <div class="achievement-label" data-i18n="home.achievements.items.environmental.label">Reducción de Impacto Ambiental</div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">
+                        <img src="Assets/Nuestros logros - vectores/3.svg" alt="Personas Beneficiadas" class="achievement-icon-img">
+                    </div>
+                    <div class="achievement-number" data-i18n="home.achievements.items.people.value">1,200+</div>
+                    <div class="achievement-label" data-i18n="home.achievements.items.people.label">Personas Beneficiadas</div>
+                </div>
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon">
+                        <img src="Assets/Nuestros logros - vectores/4.svg" alt="Aliados Estratégicos" class="achievement-icon-img">
+                    </div>
+                    <div class="achievement-number" data-i18n="home.achievements.items.municipalities.value">42+</div>
+                    <div class="achievement-label" data-i18n="home.achievements.items.municipalities.label">Municipios Apoyados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4th Section - Territory -->
+    <section class="section-territory">
+        <div class="earth-particles-container" id="earth-particles-container"></div>
+        <div class="territory-decor" aria-hidden="true">
+            <img class="territory-decor-icon territory-decor-icon--tr" src="Assets/Territorio - Section/Vectors/Flower1.svg" alt="">
+            <img class="territory-decor-icon territory-decor-icon--br" src="Assets/Territorio - Section/Vectors/Flower2.svg" alt="">
+            <img class="territory-decor-icon territory-decor-icon--midl" src="Assets/Territorio - Section/Vectors/Flower3.svg" alt="">
+        </div>
+        <div class="territory-content">
+            <div class="territory-text reveal">
+                <h2 class="territory-title" data-i18n="home.territory.title">Pensado para el territorio</h2>
+                <p class="territory-description" data-i18n="home.territory.description">
+                    Cada proyecto nace del análisis técnico, el contexto ambiental y las dinámicas sociales, para construir soluciones que perduren en el tiempo.
+                </p>
+            </div>
+            <div class="territory-cards reveal-stagger">
+                <div class="territory-card reveal">
+                    <div class="territory-image card-media">
+                        <img src="Assets/Territorio - Section/Left.jpg" 
+                             srcset="Assets/Territorio - Section/Left.jpg 1x, Assets/Territorio - Section/Left@2x.jpg 2x"
+                             sizes="(max-width: 768px) 100vw, 320px"
+                             alt="Territorio" 
+                             class="territory-img"
+                             loading="lazy">
+                    </div>
+                    <div class="territory-card-content">
+                        <p class="territory-card-text" data-i18n="home.territory.cards.left">
+                            Diseñamos y ejecutamos soluciones de ingeniería que responden a las condiciones reales del territorio, integrando criterios técnicos, ambientales y sociales para un desarrollo sostenible y duradero.
+                        </p>
+                        <a href="logros.html" class="territory-link" data-i18n="home.territory.link">Aprende más ></a>
+                    </div>
+                </div>
+                <div class="territory-card reveal">
+                    <div class="territory-image card-media">
+                        <img src="Assets/Territorio - Section/Right.jpg" 
+                             srcset="Assets/Territorio - Section/Right.jpg 1x, Assets/Territorio - Section/Right@2x.jpg 2x"
+                             sizes="(max-width: 768px) 100vw, 320px"
+                             alt="Territorio" 
+                             class="territory-img"
+                             loading="lazy">
+                    </div>
+                    <div class="territory-card-content">
+                        <p class="territory-card-text" data-i18n="home.territory.cards.right">
+                            Acompañamos a comunidades e instituciones en la planificación y ejecución de proyectos, promoviendo la participación activa y la apropiación del territorio como eje del desarrollo sostenible.
+                        </p>
+                        <a href="logros.html" class="territory-link" data-i18n="home.territory.link">Aprende más ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="territory-shapes">
+            <svg class="shape-1" width="214" height="230" viewBox="0 0 214 230" fill="none">
+                <path d="M8.92 9.54L204.09 219.46" stroke="white" stroke-width="2"/>
+            </svg>
+            <svg class="shape-2" width="204" height="201" viewBox="0 0 204 201" fill="none">
+                <path d="M8.52 8.37L195.94 192.55" stroke="white" stroke-width="2"/>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- CTA Section with White-to-Image Fade -->
+    <section class="section-cta-fade">
+        <div class="cta-white-section">
+            <div class="cta-fade-content">
+                <div class="cta-logo-wrapper reveal">
+                    <img src="Assets/Fudambient-Logo.png" alt="FUDAMBIENT Logo" class="cta-logo">
+                </div>
+                <p class="cta-text reveal" data-i18n="home.cta.question">¿Conversamos sobre tu proyecto?</p>
+            </div>
+        </div>
+        <div class="cta-landscape-section">
+            <div class="cta-fade-background"></div>
+            <div class="cta-fade-gradient"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-cta reveal">
+                <h2 class="footer-cta-title" data-i18n="footer.cta.title">Construyamos territorios sostenibles juntos</h2>
+                <a href="contacto.html" class="footer-cta-btn" data-i18n="footer.cta.button">Contáctanos</a>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-brand-lockup">
+                    <img src="Assets/Logo - FA (Blanco).svg" alt="FUDAMBIENT Logo" class="footer-brand-logo">
+                    <h3 class="footer-brand-title">FUDAMBIENT</h3>
+                </div>
+                <div class="footer-brand-content">
+                    <p class="footer-brand-description" data-i18n="footer.brand.description">Ingeniería para el desarrollo sostenible del territorio.</p>
+                    <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="Assets/Social Media/Instagram.svg" alt="Instagram" class="social-icon-img">
+                    </a>
+                    <a href="https://www.facebook.com/fudambient/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <img src="Assets/Social Media/Facebook.svg" alt="Facebook" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <img src="Assets/Social Media/Linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-links-title" data-i18n="footer.explore.title">Explorar</h4>
+                <nav class="footer-nav">
+                    <a href="index.html#inicio" class="footer-link" data-i18n="footer.explore.home">Inicio</a>
+                    <a href="nosotros.html" class="footer-link" data-i18n="footer.explore.about">Nosotros</a>
+                    <a href="servicios.html" class="footer-link" data-i18n="footer.explore.services">Servicios</a>
+                    <a href="proyectos.html" class="footer-link" data-i18n="footer.explore.projects">Proyectos</a>
+                    <a href="logros.html" class="footer-link" data-i18n="footer.explore.achievements">Logros</a>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-contact-title" data-i18n="footer.contact.title">Contacto</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="Assets/Social Media/Home.svg" alt="Address" class="contact-icon">
+                        <span>Carrera 59 # 1-116</span>
+                    </div>
+                    <a href="mailto:fudambient@gmail.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <rect x="1.5" y="3" width="15" height="12" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                            <path d="M1.5 5.25L9 10.5L16.5 5.25" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                        </svg>
+                        <span>fudambient@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/573188369777?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20con%20FUDAMBIENT." target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="Assets/Social Media/Whatsapp.svg" alt="WhatsApp" class="contact-icon">
+                        <span>+57 318 836 9777</span>
+                    </a>
+                    <a href="tel:6025536217" class="contact-item">
+                        <img src="Assets/Social Media/Phone.svg" alt="Phone" class="contact-icon">
+                        <span>602-5536217</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2026 FUDAMBIENT - Por un futuro verde y sustentable</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+    <script src="src/js/scroll-reveal.js"></script>
+</body>
+</html>
+

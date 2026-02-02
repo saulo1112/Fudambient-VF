@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logros - FUDAMBIENT</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Bebas+Neue&family=Chewy&family=Raleway:wght@500;800&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body class="logros-page">
+    <!-- Initial Header (non-sticky, shows at top) -->
+    <header class="header header-initial" id="headerInitial">
+        <div class="header-container">
+            <a class="brand-text-logo" href="index.html" aria-label="FUDAMBIENT home">
+                <span class="brand-fud">FUD</span><span class="brand-ambient">AMBIENT</span>
+            </a>
+            <nav class="nav-initial">
+                <a href="index.html" class="nav-item" data-i18n="header.nav.home">Inicio</a>
+                <a href="nosotros.html" class="nav-item" data-i18n="header.nav.about">Nosotros</a>
+                <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+                <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+                <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+            </nav>
+            <div class="header-cta">
+                <a href="contacto.html" class="contact-btn" data-i18n="header.contact">Contacto</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma" data-i18n-aria="header.langToggle">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Glass Nav (appears after scroll) -->
+    <nav class="nav-pill-glass" id="navPillGlass">
+        <a href="index.html" class="nav-item" data-i18n="header.nav.home">Inicio</a>
+        <a href="nosotros.html" class="nav-item" data-i18n="header.nav.about">Nosotros</a>
+        <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+        <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+        <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+    </nav>
+
+    <!-- Hero Impacto Section -->
+    <section class="logros-hero">
+        <div class="logros-hero-background"></div>
+        <div class="logros-hero-content">
+            <div class="logros-hero-container">
+                <!-- Main Title -->
+                <h1 class="logros-hero-title" data-reveal="up" data-i18n="achievements.hero.title">Transformando territorios con ingeniería y sostenibilidad</h1>
+
+                <!-- Subtitle -->
+                <p class="logros-hero-subtitle" data-reveal="up" data-i18n="achievements.hero.subtitle">
+                    Desde 2005, FUDAMBIENT trabaja en el desarrollo sostenible de comunidades a través de 
+                    proyectos ambientales, ingeniería social y construcción participativa.
+                </p>
+
+                <!-- Stats Quick View -->
+                <div class="logros-hero-stats" data-stagger data-stagger-delay="80">
+                    <div class="logros-hero-stat">
+                        <div class="logros-hero-stat-value" data-i18n="achievements.stats.projects.value">+40</div>
+                        <div class="logros-hero-stat-label" data-i18n="achievements.stats.projects.label">Proyectos ejecutados</div>
+                    </div>
+                    <div class="logros-hero-stat">
+                        <div class="logros-hero-stat-value" data-i18n="achievements.stats.municipalities.value">42/42</div>
+                        <div class="logros-hero-stat-label" data-i18n="achievements.stats.municipalities.label">Municipios intervenidos en el Valle del Cauca</div>
+                    </div>
+                    <div class="logros-hero-stat">
+                        <div class="logros-hero-stat-value" data-i18n="achievements.stats.years.value">+20</div>
+                        <div class="logros-hero-stat-label" data-i18n="achievements.stats.years.label">Años de experiencia</div>
+                    </div>
+                    <div class="logros-hero-stat">
+                        <div class="logros-hero-stat-value logros-hero-stat-value-text" data-i18n="achievements.stats.communities.value">Comunidades</div>
+                        <div class="logros-hero-stat-label" data-i18n="achievements.stats.communities.label">rurales y urbanas acompañadas</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="logros-hero-cta" data-reveal="up">
+                    <a href="index.html#proyectos" class="logros-btn-primary" data-i18n="achievements.hero.cta.projects">Explora nuestros proyectos</a>
+                    <a href="servicios.html" class="logros-btn-secondary" data-i18n="achievements.hero.cta.services">Conoce nuestros servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="logros-testimonios">
+        <div class="logros-testimonios-background"></div>
+        <div class="logros-testimonios-container">
+            <!-- Header -->
+            <div class="logros-testimonios-header">
+                <h2 class="logros-testimonios-title" data-reveal="up" data-i18n="achievements.testimonials.title">Voces del territorio</h2>
+                <p class="logros-testimonios-subtitle" data-reveal="up" data-i18n="achievements.testimonials.subtitle">
+                    Las palabras de quienes viven el impacto de nuestro trabajo son nuestro mayor reconocimiento.
+                </p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="logros-testimonios-grid" data-stagger data-stagger-delay="100">
+                <!-- Testimonial cards will be populated by JavaScript -->
+            </div>
+
+            <!-- Community Impact Quote -->
+            <div class="logros-testimonios-quote" data-reveal="scale">
+                <div class="logros-quote-card">
+                    <p class="logros-quote-text" data-i18n="achievements.testimonials.quote.text">
+                        "La verdadera ingeniería no es solo cálculos y estructuras, es la capacidad de 
+                        escuchar, aprender y construir junto a las comunidades."
+                    </p>
+                    <div class="logros-quote-author" data-i18n="achievements.testimonials.quote.author">— Filosofía FUDAMBIENT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials Section -->
+    <section class="logros-video-testimonials">
+        <div class="logros-video-testimonials-background"></div>
+        <div class="logros-video-testimonials-container">
+            <!-- Header -->
+            <div class="logros-video-testimonials-header">
+                <h2 class="logros-video-testimonials-title" data-reveal="up" data-i18n="achievements.videos.title">Testimonios en video</h2>
+                <p class="logros-video-testimonials-subtitle" data-reveal="up" data-i18n="achievements.videos.subtitle">
+                    Historias reales que muestran el impacto de nuestros proyectos en el territorio.
+                </p>
+            </div>
+
+            <!-- Videos Grid -->
+            <div class="logros-video-testimonials-grid" data-stagger data-stagger-delay="120">
+                <!-- Video 1: Jardines -->
+                <div class="logros-video-card">
+                    <p class="logros-video-subtitle" data-i18n="achievements.videos.gardens.subtitle">Conoce el impacto de nuestra intervención en la infraestructura verde de la ciudad.</p>
+                    <div class="logros-video-wrapper">
+                        <video 
+                            class="logros-video-player"
+                            controls
+                            preload="metadata"
+                            playsinline
+                            aria-label="Testimonio sobre jardines urbanos e infraestructura verde"
+                            data-i18n-aria="achievements.videos.gardens.aria">
+                            <source src="Assets/Logros - Subpage/Jardines.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <a href="https://www.instagram.com/reel/DS29dIkEetZ/?igsh=MTNpcnd6c2pmcnpvMA==" target="_blank" rel="noopener noreferrer" class="logros-video-btn" data-i18n="achievements.videos.cta">Ver nota completa</a>
+                </div>
+
+                <!-- Video 2: SITARES -->
+                <div class="logros-video-card">
+                    <p class="logros-video-subtitle" data-i18n="achievements.videos.sitares.subtitle">Explora el reportaje más reciente sobre nuestro trabajo en cuidado del recurso hídrico y educación ambiental.</p>
+                    <div class="logros-video-wrapper">
+                        <video 
+                            class="logros-video-player"
+                            controls
+                            preload="metadata"
+                            playsinline
+                            aria-label="Testimonio sobre sistemas SITARES"
+                            data-i18n-aria="achievements.videos.sitares.aria">
+                            <source src="Assets/Logros - Subpage/SITARES.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <a href="https://www.instagram.com/reel/DQXXU50EUqq/?igsh=ZzVydzN6MjFhM2d5" target="_blank" rel="noopener noreferrer" class="logros-video-btn" data-i18n="achievements.videos.cta">Ver nota completa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología Timeline Section -->
+    <section class="logros-metodologia">
+        <div class="logros-metodologia-container">
+            <!-- Header -->
+            <div class="logros-metodologia-header">
+                <h2 class="logros-metodologia-title" data-reveal="up" data-i18n="achievements.methodology.title">Nuestra metodología</h2>
+                <p class="logros-metodologia-subtitle" data-reveal="up" data-i18n="achievements.methodology.subtitle">
+                    Un proceso probado que integra ingeniería de calidad, participación comunitaria 
+                    y enfoque de sostenibilidad en cada etapa.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="logros-timeline" data-reveal="up">
+                <div class="logros-timeline-line"></div>
+                
+                <!-- Timeline Steps -->
+                <div class="logros-timeline-steps" data-stagger data-stagger-delay="100">
+                    <!-- Steps will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aliados Section -->
+    <section class="logros-aliados">
+        <div class="logros-aliados-background"></div>
+        <div class="logros-aliados-container">
+            <!-- Header -->
+            <div class="logros-aliados-header">
+                <h2 class="logros-aliados-title" data-reveal="up" data-i18n="achievements.allies.title">Aliados y articulaciones institucionales</h2>
+                <p class="logros-aliados-subtitle" data-reveal="up" data-i18n="achievements.allies.subtitle">
+                    Nuestro trabajo se fortalece a través de alianzas sólidas con autoridades ambientales y actores territoriales.
+                </p>
+            </div>
+
+            <!-- Aliados Estratégicos Section -->
+            <div class="logros-aliados-estrategicos">
+                <h3 class="logros-aliados-estrategicos-title" data-reveal="up" data-i18n="achievements.allies.strategic.title">Aliados estratégicos</h3>
+                <div class="logros-aliados-estrategicos-grid" id="aliadosEstrategicosGrid" data-stagger data-stagger-delay="80">
+                    <!-- Strategic partners will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Articulación con Actores Locales Section -->
+            <div class="logros-aliados-locales">
+                <h3 class="logros-aliados-locales-title" data-reveal="up" data-i18n="achievements.allies.local.title">Articulación con actores locales</h3>
+                <ul class="logros-aliados-locales-list" id="actoresLocalesList" data-stagger data-stagger-delay="60">
+                    <!-- Local actors will be populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mascot Footer Section -->
+    <section class="mascot-footer">
+        <!-- Floating decorative circles -->
+        <div class="mascot-footer-circles">
+            <!-- Large circles -->
+            <div class="mascot-circle mascot-circle-large mascot-circle-1"></div>
+            <div class="mascot-circle mascot-circle-large mascot-circle-2"></div>
+            <div class="mascot-circle mascot-circle-large mascot-circle-3"></div>
+            <div class="mascot-circle mascot-circle-large mascot-circle-4"></div>
+            <!-- Medium circles -->
+            <div class="mascot-circle mascot-circle-medium mascot-circle-5"></div>
+            <div class="mascot-circle mascot-circle-medium mascot-circle-6"></div>
+            <div class="mascot-circle mascot-circle-medium mascot-circle-7"></div>
+            <div class="mascot-circle mascot-circle-medium mascot-circle-8"></div>
+            <!-- Small circles -->
+            <div class="mascot-circle mascot-circle-small mascot-circle-9"></div>
+            <div class="mascot-circle mascot-circle-small mascot-circle-10"></div>
+            <div class="mascot-circle mascot-circle-small mascot-circle-11"></div>
+            <div class="mascot-circle mascot-circle-small mascot-circle-12"></div>
+        </div>
+
+        <div class="mascot-footer-container">
+            <div class="mascot-footer-grid">
+                <!-- Left column - Mascot -->
+                <div class="mascot-footer-mascot">
+                    <!-- Organic white blob behind mascot -->
+                    <div class="mascot-blob">
+                        <svg viewBox="0 0 200 200" class="mascot-blob-svg">
+                            <path
+                                d="M45.5,-66.3C58.1,-56.8,67.3,-42.5,72.8,-26.8C78.3,-11.1,80.1,5.9,76.2,21.8C72.3,37.7,62.7,52.5,49.8,62.8C36.9,73.1,20.7,78.9,3.8,73.5C-13.1,68.1,-30.7,51.5,-44.8,36.3C-58.9,21.1,-69.5,7.3,-72.4,-8.5C-75.3,-24.3,-70.5,-42.1,-59.8,-53.8C-49.1,-65.5,-32.5,-71.1,-16.7,-72.1C-0.9,-73.1,14.1,-69.5,28.9,-63.8C43.7,-58.1,32.9,-75.8,45.5,-66.3Z"
+                                fill="white"
+                                transform="translate(100 100)"
+                            />
+                        </svg>
+                    </div>
+                    
+                    <!-- Mascot image -->
+                    <div class="mascot-image-wrapper">
+                        <img 
+                            src="Assets/Logros - Subpage/Mascot.png" 
+                            alt="FUDAMBIENT mascot - friendly tree engineer" 
+                            class="mascot-image"
+                        />
+                    </div>
+                </div>
+
+                <!-- Right column - Text content -->
+                <div class="mascot-footer-text" data-reveal="left">
+                    <div class="mascot-text-content">
+                        <p class="mascot-text-main" data-i18n="achievements.mascot.text">
+                            Creemos en una ingeniería cercana, que escucha el territorio y trabaja junto a las comunidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2 class="footer-cta-title" data-i18n="footer.cta.title">Construyamos territorios sostenibles juntos</h2>
+                <a href="contacto.html" class="footer-cta-btn" data-i18n="footer.cta.button">Contáctanos</a>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-brand-lockup">
+                    <img src="Assets/Logo - FA (Blanco).svg" alt="FUDAMBIENT Logo" class="footer-brand-logo">
+                    <h3 class="footer-brand-title">FUDAMBIENT</h3>
+                </div>
+                <div class="footer-brand-content">
+                    <p class="footer-brand-description" data-i18n="footer.brand.description">Ingeniería para el desarrollo sostenible del territorio.</p>
+                    <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="Assets/Social Media/Instagram.svg" alt="Instagram" class="social-icon-img">
+                    </a>
+                    <a href="https://www.facebook.com/fudambient/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <img src="Assets/Social Media/Facebook.svg" alt="Facebook" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <img src="Assets/Social Media/Linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-links-title" data-i18n="footer.explore.title">Explorar</h4>
+                <nav class="footer-nav">
+                    <a href="index.html#inicio" class="footer-link" data-i18n="footer.explore.home">Inicio</a>
+                    <a href="nosotros.html" class="footer-link" data-i18n="footer.explore.about">Nosotros</a>
+                    <a href="servicios.html" class="footer-link" data-i18n="footer.explore.services">Servicios</a>
+                    <a href="proyectos.html" class="footer-link" data-i18n="footer.explore.projects">Proyectos</a>
+                    <a href="logros.html" class="footer-link" data-i18n="footer.explore.achievements">Logros</a>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-contact-title" data-i18n="footer.contact.title">Contacto</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="Assets/Social Media/Home.svg" alt="Address" class="contact-icon">
+                        <span>Carrera 59 # 1-116</span>
+                    </div>
+                    <a href="mailto:fudambient@gmail.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <rect x="1.5" y="3" width="15" height="12" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                            <path d="M1.5 5.25L9 10.5L16.5 5.25" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                        </svg>
+                        <span>fudambient@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/573188369777?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20con%20FUDAMBIENT." target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="Assets/Social Media/Whatsapp.svg" alt="WhatsApp" class="contact-icon">
+                        <span>+57 318 836 9777</span>
+                    </a>
+                    <a href="tel:6025536217" class="contact-item">
+                        <img src="Assets/Social Media/Phone.svg" alt="Phone" class="contact-icon">
+                        <span>602-5536217</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2026 FUDAMBIENT - Por un futuro verde y sustentable</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+    <script src="logros.js"></script>
+    <script src="logros-animations.js"></script>
+</body>
+</html>
+

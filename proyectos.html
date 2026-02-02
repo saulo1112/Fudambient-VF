@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - FUDAMBIENT</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Bebas+Neue&family=Chewy&family=Raleway:wght@500;800&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body class="proyectos-page">
+    <!-- Initial Header (non-sticky, shows at top) -->
+    <header class="header header-initial" id="headerInitial">
+        <div class="header-container">
+            <a class="brand-text-logo" href="index.html" aria-label="FUDAMBIENT home">
+                <span class="brand-fud">FUD</span><span class="brand-ambient">AMBIENT</span>
+            </a>
+            <nav class="nav-initial">
+                <a href="index.html" class="nav-item" data-i18n="header.nav.home">Inicio</a>
+                <a href="nosotros.html" class="nav-item" data-i18n="header.nav.about">Nosotros</a>
+                <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+                <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+                <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+            </nav>
+            <div class="header-cta">
+                <a href="contacto.html" class="contact-btn" data-i18n="header.contact">Contacto</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma" data-i18n-aria="header.langToggle">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Glass Nav (appears after scroll) -->
+    <nav class="nav-pill-glass" id="navPillGlass">
+        <!-- Global Navigation (Estado A) -->
+        <div class="pill-global pill-content">
+            <a href="index.html" class="nav-item" data-i18n="header.nav.home">Inicio</a>
+            <a href="nosotros.html" class="nav-item" data-i18n="header.nav.about">Nosotros</a>
+            <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+            <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+            <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+        </div>
+        
+        <!-- Projects Navigation (Estado B) -->
+        <div class="pill-projects pill-content projects-pill" aria-label="Navegación interna de Proyectos">
+            <button class="pill-scroll-top projects-pill__back" aria-label="Volver al inicio" type="button">↑</button>
+
+            <div class="projects-pill__nav" aria-label="Secciones de Proyectos">
+                <a href="#relevante" class="nav-item projects-pill__link" data-section="relevante" data-i18n="projects.nav.featured">Proyectos destacados</a>
+                <a href="#urbanismo" class="nav-item projects-pill__link" data-section="urbanismo" data-i18n="projects.nav.urbanism">Urbanismo</a>
+                <a href="#saneamiento-basico" class="nav-item projects-pill__link" data-section="saneamiento-basico" data-i18n="projects.nav.sanitation">Saneamiento básico</a>
+                <a href="#educacion-ambiental" class="nav-item projects-pill__link" data-section="educacion-ambiental" data-i18n="projects.nav.education">Educación ambiental</a>
+                <a href="#restauracion-ecologica" class="nav-item projects-pill__link" data-section="restauracion-ecologica" data-i18n="projects.nav.restoration">Restauración ecológica</a>
+                <a href="#completa" class="nav-item projects-pill__link" data-section="completa" data-i18n="projects.nav.complete">Experiencia completa</a>
+            </div>
+
+            <span class="projects-pill__spacer" aria-hidden="true"></span>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="projects-hero">
+        <img src="Assets/Proyectos - Subpage/Background.png" 
+             srcset="Assets/Proyectos - Subpage/Background.png 1x, Assets/Proyectos - Subpage/Background@2x.png 2x"
+             sizes="100vw"
+             alt=""
+             class="hero-bg"
+             loading="eager">
+        <svg class="projects-hero-curve" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,100 C240,150 480,80 720,120 C960,160 1200,90 1440,130 L1440,200 L0,200 Z" fill="rgb(250, 250, 249)"/>
+        </svg>
+
+        <div class="projects-hero-content">
+            <div class="projects-hero-container">
+                <!-- Project Cards Grid -->
+                <div class="projects-hero-grid">
+                    <div class="projects-hero-card projects-hero-card-1">
+                        <div class="projects-hero-card-image" data-lightbox="true" data-lightbox-group="hero-proyectos" data-src="Assets/Proyectos - Subpage/1.jpeg" data-caption="Educación Ambiental">
+                            <img src="Assets/Proyectos - Subpage/1.jpeg" alt="Educación Ambiental" class="projects-hero-card-img">
+                        </div>
+                        <div class="projects-hero-card-content">
+                            <h3 class="projects-hero-card-title" data-i18n="projects.hero.card1.title">Obras de bioingeniería y control de erosión en taludes</h3>
+                            <p class="projects-hero-card-category" data-i18n="projects.hero.card1.location">Restrepo, Valle del Cauca</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-hero-card projects-hero-card-2">
+                        <div class="projects-hero-card-image" data-lightbox="true" data-lightbox-group="hero-proyectos" data-src="Assets/Proyectos - Subpage/2.JPG" data-caption="Construcción de sistemas de saneamiento básico">
+                            <img src="Assets/Proyectos - Subpage/2.JPG" alt="Construcción de sistemas de saneamiento básico" class="projects-hero-card-img">
+                        </div>
+                        <div class="projects-hero-card-content">
+                            <h3 class="projects-hero-card-title" data-i18n="projects.hero.card2.title">Construcción de sistemas de saneamiento básico</h3>
+                            <p class="projects-hero-card-category" data-i18n="projects.hero.card2.location">Valle del Cauca</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-hero-card projects-hero-card-3">
+                        <div class="projects-hero-card-image" data-lightbox="true" data-lightbox-group="hero-proyectos" data-src="Assets/Proyectos - Subpage/3.png" data-caption="Restauración ecológica de humedales">
+                            <img src="Assets/Proyectos - Subpage/3.png" alt="Restauración ecológica de humedales" class="projects-hero-card-img">
+                        </div>
+                        <div class="projects-hero-card-content">
+                            <h3 class="projects-hero-card-title" data-i18n="projects.hero.card3.title">Manejo integral y mantenimiento de jardines urbanos</h3>
+                            <p class="projects-hero-card-category" data-i18n="projects.hero.card3.location">Santiago de Cali</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-hero-card projects-hero-card-4">
+                        <div class="projects-hero-card-image" data-lightbox="true" data-lightbox-group="hero-proyectos" data-src="Assets/Proyectos - Subpage/4.png" data-caption="River Valley Master Plan">
+                            <img src="Assets/Proyectos - Subpage/4.png" alt="River Valley Master Plan" class="projects-hero-card-img">
+                        </div>
+                        <div class="projects-hero-card-content">
+                            <h3 class="projects-hero-card-title" data-i18n="projects.hero.card4.title">Recuperación geomorfológica del río Cañaveralejo</h3>
+                            <p class="projects-hero-card-category" data-i18n="projects.hero.card4.location">Santiago de Cali</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manifesto Line -->
+                <div class="projects-hero-manifesto">
+                    <p class="projects-hero-manifesto-text" data-i18n="projects.hero.manifesto">
+                        Cada proyecto refleja nuestra experiencia técnica, nuestro trabajo con las comunidades 
+                        y nuestro compromiso con soluciones ambientales sostenibles y funcionales.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internal Anchor Navigation -->
+    <!-- Experiencia Relevante Section -->
+    <section id="relevante" class="projects-section projects-section-relevante">
+        <div class="projects-section-container">
+            <div class="projects-section-header">
+                <h2 class="projects-section-title" data-i18n="projects.sections.featured.title">Proyectos destacados</h2>
+                <p class="projects-section-intro" data-i18n="projects.sections.featured.intro">
+                    Selección de proyectos destacados que representan nuestro compromiso con la ingeniería sostenible, 
+                    la gestión ambiental y el desarrollo territorial integral.
+                </p>
+            </div>
+            <div class="projects-list-grid" id="projectsListGrid">
+                <!-- Project cards will be populated by JavaScript -->
+            </div>
+            <div class="projects-section-cta">
+                <a href="#completa" class="projects-cta-button" data-i18n="projects.sections.featured.cta">Ver experiencia completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urbanismo Section -->
+    <section id="urbanismo" class="projects-section projects-section-category">
+        <div class="projects-section-container">
+            <div class="urbanismo-section">
+                <!-- Apertura -->
+                <header class="urbanismo-header">
+                    <h2 class="projects-section-title" data-i18n="projects.sections.urbanism.title">Urbanismo</h2>
+                    <p class="projects-section-intro" data-i18n="projects.sections.urbanism.intro">
+                        Diseñamos y transformamos espacios urbanos pensando en las personas, la naturaleza y el territorio como un todo. En FUDAMBIENT entendemos el urbanismo como una herramienta para mejorar la calidad de vida, fortalecer el espacio público y reconectar la ciudad con sus ecosistemas.
+
+                        Nuestros proyectos combinan infraestructura verde, criterios ambientales y participación comunitaria, creando entornos más habitables, resilientes y funcionales. Cada intervención busca equilibrar lo técnico con lo social, promoviendo ciudades más sostenibles, inclusivas y adaptadas a su contexto local.
+                    </p>
+                    <div class="urbanismo-chips" aria-label="Enfoques de urbanismo">
+                        <span class="urbanismo-chip" data-i18n="projects.sections.urbanism.chips.planning">Planificación territorial</span>
+                        <span class="urbanismo-chip" data-i18n="projects.sections.urbanism.chips.design">Diseño urbano sostenible</span>
+                        <span class="urbanismo-chip" data-i18n="projects.sections.urbanism.chips.management">Ordenamiento territorial</span>
+                    </div>
+                </header>
+
+                <!-- Separador elegante -->
+                <div class="urbanismo-separator"></div>
+
+                <!-- Jardines -->
+                <section class="urbanismo-block urbanismo-block-card" aria-labelledby="urbanismo-jardines-title">
+                    <div class="urbanismo-block-grid urbanismo-block-grid--jardines">
+                        <div class="urbanismo-copy">
+                            <h3 class="urbanismo-title" id="urbanismo-jardines-title">
+                                <span class="urbanismo-title-accent"></span>
+                                <span data-i18n="projects.sections.urbanism.gardens.title">Jardines urbanos e infraestructura verde</span>
+                            </h3>
+                            <p class="urbanismo-text" data-i18n="projects.sections.urbanism.gardens.text">
+                                En convenio con el Departamento Administrativo de Gestión del Medio Ambiente - DAGMA, implementamos jardines urbanos como estrategias de infraestructura verde orientadas a recuperar y cualificar el espacio público, mejorar la conectividad ecológica y fortalecer la biodiversidad urbana. Estas intervenciones integran criterios paisajísticos, ambientales y funcionales, promoviendo entornos urbanos más habitables, resilientes y ambientalmente equilibrados.
+                            </p>
+                            <ul class="urbanismo-bullets">
+                                <li data-i18n="projects.sections.urbanism.gardens.bullet1">Infraestructura verde urbana</li>
+                                <li data-i18n="projects.sections.urbanism.gardens.bullet2">Conectividad ecológica</li>
+                                <li data-i18n="projects.sections.urbanism.gardens.bullet3">Biodiversidad y paisaje</li>
+                                <li data-i18n="projects.sections.urbanism.gardens.bullet4">Espacio público funcional</li>
+                            </ul>
+                        </div>
+                        <div class="urbanismo-gallery">
+                            <figure class="urbanismo-gallery-main">
+                                <img class="urbanismo-img urbanismo-img--j1" src="Assets/Proyectos - Subpage/Urbanismo/J1.JPG" alt="Jardines urbanos e infraestructura verde en espacio público" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-jardines">
+                            </figure>
+                            <div class="urbanismo-gallery-rail">
+                                <figure class="urbanismo-gallery-thumb">
+                                    <img class="urbanismo-img urbanismo-img--center" src="Assets/Proyectos - Subpage/Urbanismo/J2.jpeg" alt="Jardines urbanos - detalle 1" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-jardines">
+                                </figure>
+                                <figure class="urbanismo-gallery-thumb">
+                                    <img class="urbanismo-img urbanismo-img--center" src="Assets/Proyectos - Subpage/Urbanismo/J3.jpeg" alt="Jardines urbanos - detalle 2" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-jardines">
+                                </figure>
+                                <figure class="urbanismo-gallery-thumb">
+                                    <img class="urbanismo-img urbanismo-img--center" src="Assets/Proyectos - Subpage/Urbanismo/J4.jpeg" alt="Jardines urbanos - detalle 3" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-jardines">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Separador elegante -->
+                <div class="urbanismo-separator"></div>
+
+                <!-- Arbolado -->
+                <section class="urbanismo-block urbanismo-block-card" aria-labelledby="urbanismo-arbolado-title">
+                    <div class="urbanismo-block-grid urbanismo-block-grid--arbolado">
+                        <div class="urbanismo-copy">
+                            <h3 class="urbanismo-title" id="urbanismo-arbolado-title">
+                                <span class="urbanismo-title-accent"></span>
+                                <span data-i18n="projects.sections.urbanism.trees.title">Gestión y manejo del arbolado urbano</span>
+                            </h3>
+                            <p class="urbanismo-text" data-i18n="projects.sections.urbanism.trees.text">
+                                Tenemos amplia experiencia en procesos continuos de manejo y mantenimiento del arbolado urbano orientados a mejorar la funcionalidad ecológica, la seguridad urbana y la sostenibilidad del verde en la ciudad. Nuestro trabajo integra criterios técnicos, ambientales y operativos, fortaleciendo la relación entre infraestructura urbana, paisaje y bienestar comunitario a lo largo del tiempo.
+                            </p>
+                            <ul class="urbanismo-bullets">
+                                <li data-i18n="projects.sections.urbanism.trees.bullet1">Mantenimiento y manejo técnico</li>
+                                <li data-i18n="projects.sections.urbanism.trees.bullet2">Seguridad urbana y funcionalidad</li>
+                                <li data-i18n="projects.sections.urbanism.trees.bullet3">Infraestructura verde existente</li>
+                                <li data-i18n="projects.sections.urbanism.trees.bullet4">Procesos de largo plazo</li>
+                            </ul>
+                        </div>
+                        <div class="urbanismo-gallery">
+                            <figure class="urbanismo-gallery-main">
+                                <img class="urbanismo-img urbanismo-img--a1" src="Assets/Proyectos - Subpage/Urbanismo/A1.png" alt="Gestión y manejo del arbolado urbano" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-arbolado">
+                            </figure>
+                            <div class="urbanismo-gallery-rail">
+                                <figure class="urbanismo-gallery-thumb">
+                                    <img class="urbanismo-img urbanismo-img--center" src="Assets/Proyectos - Subpage/Urbanismo/A2.png" alt="Secuencia de intervención de arbolado urbano 1" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-arbolado">
+                                </figure>
+                                <figure class="urbanismo-gallery-thumb">
+                                    <img class="urbanismo-img urbanismo-img--center" src="Assets/Proyectos - Subpage/Urbanismo/A3.png" alt="Secuencia de intervención de arbolado urbano 2" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-arbolado">
+                                </figure>
+                                <figure class="urbanismo-gallery-thumb">
+                                    <img class="urbanismo-img urbanismo-img--center" src="Assets/Proyectos - Subpage/Urbanismo/A4.jpg" alt="Secuencia de intervención de arbolado urbano 3" loading="lazy" data-lightbox="true" data-lightbox-group="urbanismo-arbolado">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cierre -->
+                <footer class="urbanismo-footer">
+                    <p class="urbanismo-footnote" data-i18n="projects.sections.urbanism.footer">
+                        Estos enfoques se reflejan en los proyectos de urbanismo ejecutados por FUDAMBIENT en diferentes contextos del Valle del Cauca, evidenciando una combinación de experiencia técnica, trabajo territorial y resultados sostenibles.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Saneamiento básico (Editorial module) -->
+    <section id="saneamiento-basico" class="projects-section projects-section-category">
+        <div class="projects-section-container">
+            <div class="sb-section">
+                <!-- Header premium -->
+                <header class="sb-header sb-reveal">
+                    <h2 class="sb-title" data-i18n="projects.sections.sanitation.title">Saneamiento básico</h2>
+                    <p class="sb-subtitle" data-i18n="projects.sections.sanitation.subtitle">
+                        Implementamos soluciones descentralizadas para el tratamiento de agua potable y residual en comunidades rurales y suburbanas, integrando educación sanitaria, sostenibilidad operativa y apropiación comunitaria.
+                    </p>
+                    <div class="sb-chips" aria-label="Temas de saneamiento básico">
+                        <span class="sb-chip sb-chip--blue" data-i18n="projects.sections.sanitation.chips.sitares">SITARES</span>
+                        <span class="sb-chip" data-i18n="projects.sections.sanitation.chips.hydraulic">Infraestructura hidráulica</span>
+                        <span class="sb-chip" data-i18n="projects.sections.sanitation.chips.supply">Sistemas de abastecimiento</span>
+                        <span class="sb-chip" data-i18n="projects.sections.sanitation.chips.education">Educación sanitaria</span>
+                    </div>
+                </header>
+
+                <!-- Bloque 1 (prioridad): SITARES como estrella -->
+                <section class="sb-feature sb-reveal" aria-labelledby="sb-feature-title">
+                    <div class="sb-feature-bg" aria-hidden="true"></div>
+
+                    <div class="sb-feature-content">
+                        <!-- (1) Descripción del SITAR -->
+                        <div class="sb-feature-copy">
+                            <h3 class="sb-h3 sb-feature-title" id="sb-feature-title" data-i18n="projects.sections.sanitation.feature.title">Saneamiento básico que funciona en el territorio</h3>
+                            <p class="sb-text sb-text--wide sb-feature-text" data-i18n="projects.sections.sanitation.feature.text">
+                                En FUDAMBIENT no solo diseñamos soluciones de saneamiento básico: las ejecutamos, acompañamos y dejamos operando en el tiempo. Nuestros Sistemas Individuales de Tratamiento de Aguas Residuales (SITARES) han sido instalados en la mayoría de municipios del Valle del Cauca, adaptándose a contextos rurales y comunitarios y logrando eficiencias de remoción destacadas.
+                            </p>
+                        </div>
+
+                        <!-- (2) Eficiencias de remoción -->
+                        <aside class="sb-efficiency" aria-label="Eficiencias de remoción SITARES">
+                            <div class="sb-efficiency-head">
+                                <div class="sb-efficiency-kicker" data-i18n="projects.sections.sanitation.efficiency.kicker">Eficiencias de remoción</div>
+                                <div class="sb-efficiency-title" data-i18n="projects.sections.sanitation.efficiency.title">Resultados en operación</div>
+                            </div>
+
+                            <div class="sb-efficiency-grid" aria-label="Indicadores de eficiencia">
+                                <div class="sb-kpi"><span class="sb-kpi-value">90%</span><span class="sb-kpi-label" data-i18n="projects.sections.sanitation.efficiency.sst">SST</span></div>
+                                <div class="sb-kpi"><span class="sb-kpi-value">70%</span><span class="sb-kpi-label" data-i18n="projects.sections.sanitation.efficiency.dbo">DBO</span></div>
+                                <div class="sb-kpi"><span class="sb-kpi-value">60%</span><span class="sb-kpi-label" data-i18n="projects.sections.sanitation.efficiency.nitrogen">Nitrógeno</span></div>
+                                <div class="sb-kpi"><span class="sb-kpi-value">65%</span><span class="sb-kpi-label" data-i18n="projects.sections.sanitation.efficiency.phosphorus">Fósforo</span></div>
+                                <div class="sb-kpi sb-kpi--wide"><span class="sb-kpi-value">95%</span><span class="sb-kpi-label" data-i18n="projects.sections.sanitation.efficiency.coliforms">Coliformes</span></div>
+                            </div>
+                        </aside>
+
+                        <!-- Subtítulo introductorio a la galería -->
+                        <h4 class="sb-gallery-subtitle" data-i18n="projects.sections.sanitation.gallery.subtitle">Implementación en territorio</h4>
+
+                        <!-- (3) Fotos -->
+                        <div class="sb-gallery" aria-label="Galería SITARES">
+                            <figure class="sb-gallery-item">
+                                <img class="sb-gallery-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/S1.JPG" alt="SITARES: acompañamiento comunitario (S1)" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-sitares" data-caption="SITARES: acompañamiento comunitario">
+                            </figure>
+                            <figure class="sb-gallery-item">
+                                <img class="sb-gallery-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/S2.jpeg" alt="SITARES: educación sanitaria y apropiación (S2)" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-sitares" data-caption="SITARES: educación sanitaria y apropiación">
+                            </figure>
+                            <figure class="sb-gallery-item">
+                                <img class="sb-gallery-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/S3.jpeg" alt="SITARES: operación comunitaria y seguimiento (S3)" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-sitares" data-caption="SITARES: operación comunitaria y seguimiento">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hero interno (cartilla-inspired) -->
+                <section class="sb-hero sb-reveal" aria-label="Cómo funcionan los SITARES (fases)">
+                    <div class="sb-hero-bg" aria-hidden="true"></div>
+                    <svg class="sb-wave" viewBox="0 0 900 220" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M0 120C90 70 190 40 300 78C420 124 505 175 640 160C760 146 820 85 900 60V220H0V120Z" fill="rgba(34, 123, 229, 0.16)"/>
+                        <path d="M0 150C120 112 230 120 330 150C450 188 560 196 690 168C790 146 850 110 900 95V220H0V150Z" fill="rgba(60, 165, 255, 0.12)"/>
+                    </svg>
+
+                    <div class="sb-hero-grid">
+                        <div class="sb-hero-copy">
+                            <p class="sb-lead" data-i18n="projects.sections.sanitation.hero.lead1">
+                                Los SITARES se implementan mediante un proceso técnico estructurado que incluye diagnóstico y diseño, instalación, puesta en marcha y acompañamiento continuo, garantizando su adecuado funcionamiento en el tiempo.
+                            </p>
+                            <p class="sb-lead" data-i18n="projects.sections.sanitation.hero.lead2">
+                                Previamente, realizamos estudios técnicos en el predio para verificar la viabilidad del sistema, evaluando condiciones como el suelo, la pendiente, el nivel freático y las distancias normativas, asegurando una implementación segura y eficiente.
+                            </p>
+                            <p class="sb-lead" data-i18n="projects.sections.sanitation.hero.lead3">
+                                Integramos educación sanitaria y fortalecimiento comunitario en cada fase del proceso, promoviendo el uso responsable, el mantenimiento adecuado y la sostenibilidad del sistema, en armonía con la protección del recurso hídrico.
+                            </p>
+                            
+                            <div class="sb-points">
+                                <div class="sb-point">
+                                    <span class="sb-point-dot" aria-hidden="true"></span>
+                                    <span data-i18n="projects.sections.sanitation.hero.point1">Tratamiento descentralizado y enfoque rural</span>
+                                </div>
+                                <div class="sb-point">
+                                    <span class="sb-point-dot" aria-hidden="true"></span>
+                                    <span data-i18n="projects.sections.sanitation.hero.point2">Educación sanitaria y operación comunitaria</span>
+                                </div>
+                                <div class="sb-point">
+                                    <span class="sb-point-dot" aria-hidden="true"></span>
+                                    <span data-i18n="projects.sections.sanitation.hero.point3">Protección del recurso hídrico</span>
+                                </div>
+                            </div>
+
+                            <div class="sb-pdf-cta">
+                                <a href="Assets/Proyectos - Subpage/Guía para cuidar tu SITAR.pdf"
+                                   class="sb-pdf-button"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   aria-label="Descargar cartilla SITARES en PDF"
+                                   data-i18n="projects.sections.sanitation.hero.cta">
+                                    Haz clic aquí para conocer la versión más reciente de este proyecto
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Tarjeta portada (mock) -->
+                        <aside class="sb-cover" aria-label="Tarjeta portada del módulo">
+                            <div class="sb-cover-card">
+                                <div class="sb-cover-media" data-lightbox="true" data-lightbox-group="saneamiento-portada" data-src="Assets/Proyectos - Subpage/Saneamiento Básico/Esquema SITAR.png" data-caption="Esquema SITAR">
+                                    <img class="sb-cover-img sb-img--sitar" src="Assets/Proyectos - Subpage/Saneamiento Básico/Esquema SITAR.png" alt="Esquema SITAR" loading="lazy">
+                                    <div class="sb-cover-overlay" aria-hidden="true"></div>
+                                </div>
+
+                                <div class="sb-cover-badge" aria-hidden="true">GUÍA</div>
+
+                                <div class="sb-cover-circle" aria-hidden="true">
+                                    <img class="sb-cover-img sb-img--walter" src="Assets/Proyectos - Subpage/Saneamiento Básico/Walter Ríos.png" alt="Walter Ríos" loading="lazy">
+                                </div>
+
+                                <div class="sb-cover-mascot" aria-hidden="true">
+                                    <!-- Placeholder (puedes reemplazar por ícono/mascota real) -->
+                                    <span class="sb-cover-mascot-dot"></span>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+
+                <!-- Bloque 3: Proyectos técnicos destacados -->
+                <section class="sb-evidences sb-reveal" aria-labelledby="sb-evidences-title">
+                    <div class="sb-evidences-bg" aria-hidden="true"></div>
+                    <header class="sb-section-head">
+                        <h3 class="sb-h3" id="sb-evidences-title" data-i18n="projects.sections.sanitation.projects.title">Proyectos técnicos destacados</h3>
+                        <p class="sb-text sb-text--wide" data-i18n="projects.sections.sanitation.projects.text">
+                            Además de la implementación de SITARES, FUDAMBIENT ha liderado proyectos de alta complejidad técnica en diseño, consultoría y construcción de infraestructura hidráulica. Estos proyectos reflejan nuestra capacidad para abordar el ciclo completo del saneamiento y abastecimiento de agua, desde los estudios técnicos y el diseño especializado, hasta la construcción, puesta en marcha y optimización de sistemas para el acceso seguro al agua.
+                        </p>
+                
+                    </header>
+
+                    <div class="sb-evidences-list" aria-label="Evidencias por sub-proyecto">
+                        <!-- C2) Ginebra -->
+                        <article class="sb-evidence">
+                            <header class="sb-evidence-head">
+                                <h4 class="sb-evidence-title" data-i18n="projects.sections.sanitation.projects.ginebra.title">Diseño y consultoría en infraestructura hidráulica</h4>
+                                <div class="sb-evidence-subtitle" data-i18n="projects.sections.sanitation.projects.ginebra.subtitle">Ginebra y Guacarí – Valle del Cauca</div>
+                                <p class="sb-evidence-text" data-i18n="projects.sections.sanitation.projects.ginebra.text">
+                                    Desarrollo de estudios técnicos y diseños integrales para sistemas de captación, aducción, conducción, almacenamiento y plantas de tratamiento de agua potable. El proyecto integró análisis territoriales, hidráulicos y normativos para proponer soluciones viables, seguras y adaptadas a las condiciones locales, fortaleciendo la planificación de los acueductos municipales y su sostenibilidad a largo plazo.
+                                </p>
+    
+                            </header>
+
+                            <div class="sb-evidence-grid sb-evidence-grid--3" aria-label="Evidencias Ginebra (G1 a G3)">
+                                <figure class="sb-evidence-shot">
+                                    <img class="sb-evidence-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/G1.png" alt="Ginebra: estudios y levantamientos (G1)" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-ginebra" data-caption="Ginebra: estudios y levantamientos">
+                                </figure>
+                                <figure class="sb-evidence-shot">
+                                    <img class="sb-evidence-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/G2.png" alt="Ginebra: diseño técnico y criterios de ingeniería (G2)" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-ginebra" data-caption="Ginebra: diseño técnico y criterios de ingeniería">
+                                </figure>
+                                <figure class="sb-evidence-shot">
+                                    <img class="sb-evidence-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/G3.png" alt="Ginebra: consultoría y análisis territorial (G3)" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-ginebra" data-caption="Ginebra: consultoría y análisis territorial">
+                                </figure>
+                            </div>
+                        </article>
+
+                        <!-- C3) PTAP Pasto -->
+                        <article class="sb-evidence sb-evidence--featured">
+                            <header class="sb-evidence-head">
+                                <h4 class="sb-evidence-title" data-i18n="projects.sections.sanitation.projects.pasto.title">Construcción y puesta en marcha de sistemas de tratamiento de agua potable</h4>
+                                <div class="sb-evidence-subtitle" data-i18n="projects.sections.sanitation.projects.pasto.subtitle">Pasto, Nariño</div>
+                                <p class="sb-evidence-text" data-i18n="projects.sections.sanitation.projects.pasto.text">
+                                    Diseño, construcción y puesta en marcha de plantas de tratamiento de agua potable y sistemas de desinfección para acueductos rurales y suburbanos, orientados a mejorar el acceso a agua segura y garantizar la operación eficiente de la infraestructura. Este proyecto consolidó la experiencia de FUDAMBIENT en la ejecución de obras hidráulicas, integrando criterios técnicos, operativos y de sostenibilidad para asegurar su correcto funcionamiento en el tiempo.
+                                </p>
+
+                            </header>
+
+                            <figure class="sb-evidence-featured" aria-label="Evidencia PTAP Pasto">
+                                <img class="sb-evidence-img" src="Assets/Proyectos - Subpage/Saneamiento Básico/PTAP.jpg" alt="PTAP Pasto: construcción y puesta en marcha" loading="lazy" data-lightbox="true" data-lightbox-group="saneamiento-ptap" data-caption="PTAP Pasto: construcción y puesta en marcha">
+                            </figure>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educación ambiental (Editorial module) -->
+    <section id="educacion-ambiental" class="projects-section projects-section-category">
+        <div class="projects-section-container">
+            <div class="ea-section">
+                <!-- Header editorial -->
+                <header class="ea-header ea-reveal">
+                    <h2 class="ea-title" data-i18n="projects.sections.education.title">Educación ambiental</h2>
+                    <p class="ea-subtitle" data-i18n="projects.sections.education.subtitle">
+                        Diseñamos e implementamos procesos pedagógicos y participativos que acompañen proyectos ambientales e infraestructura comunitaria, fortaleciendo la apropiación, el cuidado del territorio y la sostenibilidad a largo plazo.
+                    </p>
+                    <div class="ea-chips" aria-label="Enfoques de educación ambiental">
+                        <span class="ea-chip" data-i18n="projects.sections.education.chips.methodologies">Metodologías</span>
+                        <span class="ea-chip" data-i18n="projects.sections.education.chips.activities">Banco de actividades</span>
+                        <span class="ea-chip" data-i18n="projects.sections.education.chips.evaluation">Evaluación de jornadas</span>
+                        <span class="ea-chip" data-i18n="projects.sections.education.chips.participation">Participación comunitaria</span>
+                        <span class="ea-chip" data-i18n="projects.sections.education.chips.sustainability">Sostenibilidad</span>
+                    </div>
+                </header>
+
+                <!-- Cómo trabajamos (4 fases) -->
+                <section class="ea-card ea-reveal" aria-labelledby="ea-metodologia-title">
+                    <div class="ea-card-bg" aria-hidden="true"></div>
+                    <header class="ea-card-head">
+                        <h3 class="ea-h3" id="ea-metodologia-title" data-i18n="projects.sections.education.howWeWork.title">¿Cómo trabajamos?</h3>
+                        <p class="ea-text ea-text--wide" data-i18n="projects.sections.education.howWeWork.text">
+                            Aplicamos educación ambiental donde sea clave para asegurar operación, cuidado y sostenibilidad de las intervenciones.
+                        </p>
+                    </header>
+
+                    <div class="ea-steps" aria-label="Metodología en cuatro fases">
+                        <article class="ea-step ea-reveal" data-ea-stagger>
+                            <div class="ea-step-num">01</div>
+                            <div class="ea-step-main">
+                                <div class="ea-step-title" data-i18n="projects.sections.education.steps.step1.title">Diagnosticar</div>
+                                <p class="ea-step-text" data-i18n="projects.sections.education.steps.step1.text">Identificamos contexto, actores, prácticas y necesidades del territorio.</p>
+                            </div>
+                        </article>
+
+                        <article class="ea-step ea-reveal" data-ea-stagger>
+                            <div class="ea-step-num">02</div>
+                            <div class="ea-step-main">
+                                <div class="ea-step-title" data-i18n="projects.sections.education.steps.step2.title">Diseñar</div>
+                                <p class="ea-step-text" data-i18n="projects.sections.education.steps.step2.text">Construimos metodologías, guías, materiales y banco de actividades según el proyecto.</p>
+                            </div>
+                        </article>
+
+                        <article class="ea-step ea-reveal" data-ea-stagger>
+                            <div class="ea-step-num">03</div>
+                            <div class="ea-step-main">
+                                <div class="ea-step-title" data-i18n="projects.sections.education.steps.step3.title">Implementar</div>
+                                <p class="ea-step-text" data-i18n="projects.sections.education.steps.step3.text">Ejecutamos jornadas, talleres y acciones participativas con enfoque práctico.</p>
+                            </div>
+                        </article>
+
+                        <article class="ea-step ea-reveal" data-ea-stagger>
+                            <div class="ea-step-num">04</div>
+                            <div class="ea-step-main">
+                                <div class="ea-step-title" data-i18n="projects.sections.education.steps.step4.title">Evaluar y sostener</div>
+                                <p class="ea-step-text" data-i18n="projects.sections.education.steps.step4.text">Aplicamos instrumentos de evaluación, retroalimentar y dejar capacidades instaladas.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Instrumentos y evidencias -->
+                <section id="ea-instrumentos" class="ea-reveal" aria-labelledby="ea-evidencias-title">
+                    <header class="ea-section-head">
+                        <h3 class="ea-h3" id="ea-evidencias-title" data-i18n="projects.sections.education.instruments.title">Instrumentos y evidencias</h3>
+                        <p class="ea-text ea-text--wide" data-i18n="projects.sections.education.instruments.text">
+                            A continuación, te enseñamos una pequeña muestra de nuestro banco de actividades e instrumentos de evaluación para asegurar calidad, aprendizaje y apropiación en el tiempo.
+                        </p>
+                    </header>
+
+                    <div class="ea-recursos-grid">
+                        <!-- Fila 1: Evaluación (2 cols) + Conecta el SITAR (4 cols) -->
+                        <article class="ea-recursos-card ea-recursos-card--span-2 ea-recursos-card--row-1" data-lightbox-index="0">
+                            <div class="ea-recursos-media" data-lightbox="true" data-lightbox-group="educacion-instrumentos">
+                                <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/Recursos/Evaluación de la jornada.jpg" alt="Evaluación de la jornada" loading="lazy">
+                                <div class="ea-recursos-label" data-i18n="projects.sections.education.instruments.labels.evaluation">Evaluación de la jornada</div>
+                            </div>
+                        </article>
+
+                        <article class="ea-recursos-card ea-recursos-card--span-4 ea-recursos-card--row-1" data-lightbox-index="1">
+                            <div class="ea-recursos-media" data-lightbox="true" data-lightbox-group="educacion-instrumentos">
+                                <img class="ea-img ea-img--landscape" src="Assets/Proyectos - Subpage/Educación Ambiental/Recursos/Conecta el SITAR.jpg" alt="Conecta el SITAR" loading="lazy">
+                                <div class="ea-recursos-label" data-i18n="projects.sections.education.instruments.labels.connectSitar">Conecta el SITAR</div>
+                            </div>
+                        </article>
+
+                        <!-- Fila 2: Mandalas (2 cols) + Guía (2 cols) + Árbol (2 cols) -->
+                        <article class="ea-recursos-card ea-recursos-card--span-2 ea-recursos-card--row-2" data-lightbox-index="2">
+                            <div class="ea-recursos-media" data-lightbox="true" data-lightbox-group="educacion-instrumentos">
+                                <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/Recursos/Mandalas.jpg" alt="Mandalas" loading="lazy">
+                                <div class="ea-recursos-label" data-i18n="projects.sections.education.instruments.labels.mandalas">Mandalas</div>
+                            </div>
+                        </article>
+
+                        <article class="ea-recursos-card ea-recursos-card--span-2 ea-recursos-card--row-2" data-lightbox-index="3">
+                            <div class="ea-recursos-media" data-lightbox="true" data-lightbox-group="educacion-instrumentos">
+                                <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/Recursos/Guía de observación.jpg" alt="Guía de observación" loading="lazy">
+                                <div class="ea-recursos-label" data-i18n="projects.sections.education.instruments.labels.observation">Guía de observación</div>
+                            </div>
+                        </article>
+
+                        <article class="ea-recursos-card ea-recursos-card--span-2 ea-recursos-card--row-2" data-lightbox-index="4">
+                            <div class="ea-recursos-media" data-lightbox="true" data-lightbox-group="educacion-instrumentos">
+                                <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/Recursos/Árbol de los recuerdos.jpg" alt="Árbol de los recuerdos" loading="lazy">
+                                <div class="ea-recursos-label" data-i18n="projects.sections.education.instruments.labels.tree">Árbol de los recuerdos</div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Aplicación transversal -->
+                <section id="ea-aplicacion" class="ea-card ea-reveal" aria-labelledby="ea-aplicacion-title">
+                    <div class="ea-card-bg ea-card-bg--green" aria-hidden="true"></div>
+                    <header class="ea-section-head">
+                        <h3 class="ea-h3" id="ea-aplicacion-title" data-i18n="projects.sections.education.application.title">Aplicación transversal por tipo de proyecto</h3>
+                        <p class="ea-text ea-text--wide" data-i18n="projects.sections.education.application.text">
+                            Incorporar educación ambiental como eje transversal para fortalecer la operación, el cuidado del territorio y la sostenibilidad de cada intervención.
+                        </p>
+                    </header>
+
+                    <div class="ea-map" aria-label="Aplicaciones por tipo de proyecto">
+                        <div class="ea-map-line" aria-hidden="true"></div>
+                        <div class="ea-map-grid">
+                            <article class="ea-map-card ea-reveal" data-ea-stagger>
+                                <h4 class="ea-map-title" data-i18n="projects.sections.education.application.cards.restoration.title">Restauración de ríos y ecosistemas estratégicos</h4>
+                                <p class="ea-map-text" data-i18n="projects.sections.education.application.cards.restoration.text">Integración de acciones de recuperación geomorfológica, restauración ecológica y control de procesos erosivos para recuperar la funcionalidad de ríos, laderas y ecosistemas degradados, reduciendo riesgos y fortaleciendo la resiliencia del territorio.</p>
+                            </article>
+                            <article class="ea-map-card ea-reveal" data-ea-stagger>
+                                <h4 class="ea-map-title" data-i18n="projects.sections.education.application.cards.sitares.title">SITARES y saneamiento básico</h4>
+                                <p class="ea-map-text" data-i18n="projects.sections.education.application.cards.sitares.text">Aseguramiento de la correcta operación, mantenimiento y apropiación comunitaria de los sistemas de saneamiento, promoviendo hábitos de cuidado del agua y sostenibilidad a largo plazo de las soluciones implementadas.</p>
+                            </article>
+                            <article class="ea-map-card ea-reveal" data-ea-stagger>
+                                <h4 class="ea-map-title" data-i18n="projects.sections.education.application.cards.hmp.title">HMP / herramientas de manejo del paisaje</h4>
+                                <p class="ea-map-text" data-i18n="projects.sections.education.application.cards.hmp.text">Promoción de prácticas sostenibles y procesos de seguimiento comunitario para el manejo del paisaje, integrando criterios ambientales, productivos y sociales que fortalezcan la relación entre comunidad y territorio.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Galería premium (5 fotos) -->
+                <section id="ea-galeria" class="ea-reveal" aria-labelledby="ea-galeria-title">
+                    <header class="ea-section-head">
+                        <h3 class="ea-h3" id="ea-galeria-title" data-i18n="projects.sections.education.gallery.title">Galería</h3>
+                        <p class="ea-text ea-text--wide" data-i18n="projects.sections.education.gallery.text">
+                            Evidencia visual de participación comunitaria, actividades pedagógicas y seguimiento para sostener intervenciones en el tiempo.
+                        </p>
+                    </header>
+
+                    <div class="ea-visual">
+                        <!-- (1) HERO VISUAL (F1 y F2) -->
+                        <section class="ea-visual-hero" aria-label="Hero visual de Educación ambiental">
+                            <figure class="ea-visual-hero-item">
+                                <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/F1.png" alt="Educación ambiental - actividad principal 1" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-galeria">
+                            </figure>
+                            <figure class="ea-visual-hero-item">
+                                <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/F2.jpeg" alt="Educación ambiental - actividad principal 2" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-galeria">
+                            </figure>
+                        </section>
+
+                        <!-- (2) Capacitación SITAR (S1 y S2) -->
+                        <section id="ea-capacitacion-sitar" class="ea-visual-block" aria-labelledby="ea-sitar-capacitacion-title">
+                            <header class="ea-visual-head ea-section-head">
+                                <h4 class="ea-visual-title" id="ea-sitar-capacitacion-title" data-i18n="projects.sections.education.sitar.title">Capacitación para uso y manejo del SITAR</h4>
+                                <p class="ea-text ea-text--wide" data-i18n="projects.sections.education.sitar.text">
+                                    Aplicamos educación ambiental al uso, operación y mantenimiento del SITAR para garantizar sostenibilidad, apropiación y correcto funcionamiento del sistema en el tiempo.
+                                </p>
+                            </header>
+
+                            <div class="ea-visual-grid ea-visual-grid--2" aria-label="Evidencias de capacitación SITAR">
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/S1.JPG" alt="Capacitación SITAR - evidencia 1" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-galeria" data-caption="Capacitación para uso y manejo del SITAR">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/S2.JPG" alt="Capacitación SITAR - evidencia 2" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-galeria" data-caption="Capacitación para uso y manejo del SITAR">
+                                </figure>
+                            </div>
+                        </section>
+
+                        <!-- (3) Banco de actividades y evidencias (todas las BANCO) -->
+                        <section class="ea-visual-block" aria-labelledby="ea-banco-title">
+                            <header class="ea-visual-head">
+                                <h4 class="ea-visual-title" id="ea-banco-title" data-i18n="projects.sections.education.bank.title">Banco de actividades y evidencias</h4>
+                                <p class="ea-text ea-text--wide" data-i18n="projects.sections.education.bank.text">Registro visual de talleres, jornadas, materiales y procesos de participación comunitaria.</p>
+                            </header>
+
+                            <div class="ea-visual-grid ea-visual-grid--banco" aria-label="Banco de actividades y evidencias">
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (1).jpeg" alt="Banco de actividades - 1" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (2).jpeg" alt="Banco de actividades - 2" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (3).jpeg" alt="Banco de actividades - 3" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (4).jpeg" alt="Banco de actividades - 4" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (1).jpg" alt="Banco de actividades - 1 (variante)" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (2).JPG" alt="Banco de actividades - 2 (variante)" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (3).JPG" alt="Banco de actividades - 3 (variante)" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                                <figure class="ea-visual-photo">
+                                    <img class="ea-img ea-img--center" src="Assets/Proyectos - Subpage/Educación Ambiental/BANCO (4).jpg" alt="Banco de actividades - 4 (variante)" loading="lazy" data-lightbox="true" data-lightbox-group="educacion-banco" data-caption="Banco de actividades y evidencias">
+                                </figure>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- Cierre -->
+                <footer class="ea-footer ea-reveal">
+                    <p class="ea-footer-text" data-i18n="projects.sections.education.footer">
+                        Integrar educación ambiental en los proyectos permite sostener resultados en el tiempo, mejorar la apropiación comunitaria y fortalecer la gestión del territorio.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restauración ecológica (Editorial module) -->
+    <section id="restauracion-ecologica" class="projects-section projects-section-category">
+        <div class="projects-section-container">
+            <div class="reco-section">
+                <!-- Header editorial -->
+                <header class="reco-header reco-reveal">
+                    <h2 class="reco-title" data-i18n="projects.sections.restoration.title">Restauración ecológica</h2>
+                    <p class="reco-subtitle" data-i18n="projects.sections.restoration.subtitle">
+                        Implementamos intervenciones de recuperación ambiental y bioingeniería para estabilizar laderas, reducir sedimentos y recuperar tramos fluviales degradados, integrando diagnóstico, obra y sostenibilidad en el territorio.
+                    </p>
+                    <div class="reco-chips" aria-label="Enfoques de restauración ecológica">
+                        <span class="reco-chip" data-i18n="projects.sections.restoration.chips.geomorphological">Recuperación geomorfológica</span>
+                        <span class="reco-chip" data-i18n="projects.sections.restoration.chips.desilting">Descolmatación</span>
+                        <span class="reco-chip" data-i18n="projects.sections.restoration.chips.bioengineering">Bioingeniería</span>
+                        <span class="reco-chip" data-i18n="projects.sections.restoration.chips.erosion">Control de erosión</span>
+                        <span class="reco-chip" data-i18n="projects.sections.restoration.chips.liabilities">Pasivos ambientales</span>
+                    </div>
+                </header>
+
+                <!-- Enfoque técnico (5 fases) -->
+                <section class="reco-card reco-reveal" aria-labelledby="reco-enfoque-title">
+                    <div class="reco-card-bg" aria-hidden="true"></div>
+                    <header class="reco-card-head">
+                        <h3 class="reco-h3" id="reco-enfoque-title" data-i18n="projects.sections.restoration.approach.title">Enfoque técnico</h3>
+                    </header>
+
+                    <div class="reco-steps" aria-label="Metodología técnica en cinco fases">
+                        <article class="reco-step reco-reveal" data-reco-stagger>
+                            <div class="reco-step-num">01</div>
+                            <div class="reco-step-main">
+                                <div class="reco-step-title" data-i18n="projects.sections.restoration.steps.step1.title">Diagnosticar 🧭</div>
+                                <p class="reco-step-text" data-i18n="projects.sections.restoration.steps.step1.text">Caracterizar condiciones del terreno y dinámica fluvial; priorizar tramos críticos y causas de degradación.</p>
+                            </div>
+                            
+                        </article>
+
+                        <article class="reco-step reco-reveal" data-reco-stagger>
+                            <div class="reco-step-num">02</div>
+                            <div class="reco-step-main">
+                                <div class="reco-step-title" data-i18n="projects.sections.restoration.steps.step2.title">Diseñar 📐</div>
+                                <p class="reco-step-text" data-i18n="projects.sections.restoration.steps.step2.text">Definir soluciones de bioingeniería, hidráulica ambiental y manejo de sedimentos según el contexto.</p>
+                            </div>
+                          
+                        </article>
+
+                        <article class="reco-step reco-reveal" data-reco-stagger>
+                            <div class="reco-step-num">03</div>
+                            <div class="reco-step-main">
+                                <div class="reco-step-title" data-i18n="projects.sections.restoration.steps.step3.title">Intervenir 🛠️</div>
+                                <p class="reco-step-text" data-i18n="projects.sections.restoration.steps.step3.text">Ejecutar obras: descolmatación, reconformación, estabilización, estructuras vivas y manejo del cauce.</p>
+                            </div>
+                        
+                        </article>
+
+                        <article class="reco-step reco-reveal" data-reco-stagger>
+                            <div class="reco-step-num">04</div>
+                            <div class="reco-step-main">
+                                <div class="reco-step-title" data-i18n="projects.sections.restoration.steps.step4.title">Recuperar 🌱</div>
+                                <p class="reco-step-text" data-i18n="projects.sections.restoration.steps.step4.text">Restaurar cobertura y funcionalidad ecológica; mitigar procesos erosivos y pasivos ambientales.</p>
+                            </div>
+                          
+                        </article>
+
+                        <article class="reco-step reco-reveal" data-reco-stagger>
+                            <div class="reco-step-num">05</div>
+                            <div class="reco-step-main">
+                                <div class="reco-step-title" data-i18n="projects.sections.restoration.steps.step5.title">Sostener 📊</div>
+                                <p class="reco-step-text" data-i18n="projects.sections.restoration.steps.step5.text">Acompañar con educación ambiental, seguimiento y mantenimiento para asegurar resultados en el tiempo.</p>
+                            </div>
+                   
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Líneas de intervención -->
+                <section class="reco-reveal" aria-labelledby="reco-lineas-title">
+                    <header class="reco-section-head">
+                        <h3 class="reco-h3" id="reco-lineas-title" data-i18n="projects.sections.restoration.lines.title">Líneas de intervención</h3>
+                    </header>
+
+                    <div class="reco-lines">
+                        <article class="reco-line reco-reveal" data-reco-stagger>
+                            <h4 class="reco-line-title" data-i18n="projects.sections.restoration.lines.rivers.title">Ríos: recuperación geomorfológica y descolmatación</h4>
+                            <p class="reco-line-text" data-i18n="projects.sections.restoration.lines.rivers.text">Recuperamos la funcionalidad hidráulica y geomorfológica de ríos y quebradas mediante descolmatación, reconformación de cauces y manejo de sedimentos. Estas intervenciones reducen riesgos por inundación y socavación, fortalecen la resiliencia fluvial y mejoran la relación entre las comunidades y sus cuerpos de agua.</p>
+                            <div class="reco-line-tag">
+                                <span class="reco-line-tag-icon" aria-hidden="true">🌊</span>
+                                <span class="reco-line-tag-text" data-i18n="projects.sections.restoration.lines.rivers.tag">Recuperación fluvial</span>
+                            </div>
+                        </article>
+                        <article class="reco-line reco-reveal" data-reco-stagger>
+                            <h4 class="reco-line-title" data-i18n="projects.sections.restoration.lines.bioengineering.title">Obras de bioingeniería y control de erosión</h4>
+                            <p class="reco-line-text" data-i18n="projects.sections.restoration.lines.bioengineering.text">Diseñamos e implementamos soluciones de bioingeniería y estructuras vivas para la estabilización de taludes, laderas y áreas inestables. Integramos técnicas naturales y obras de soporte que permiten controlar la erosión, mitigar movimientos en masa y recuperar la funcionalidad del suelo con criterios ambientales y técnicos.</p>
+                            <div class="reco-line-tag">
+                                <span class="reco-line-tag-icon" aria-hidden="true">🧵</span>
+                                <span class="reco-line-tag-text" data-i18n="projects.sections.restoration.lines.bioengineering.tag">Taludes y laderas</span>
+                            </div>
+                        </article>
+                        <article class="reco-line reco-reveal" data-reco-stagger>
+                            <h4 class="reco-line-title" data-i18n="projects.sections.restoration.lines.mining.title">Recuperación de pasivos por minería</h4>
+                            <p class="reco-line-text" data-i18n="projects.sections.restoration.lines.mining.text">Intervenimos áreas afectadas por minería legal e ilegal mediante procesos de estabilización del terreno, control de pasivos ambientales y restauración ecológica. Nuestro enfoque busca reducir riesgos geotécnicos y ambientales, recuperar la funcionalidad del ecosistema y propiciar usos seguros y sostenibles del territorio.</p>
+                            <div class="reco-line-tag">
+                                <span class="reco-line-tag-icon" aria-hidden="true">⛏️</span>
+                                <span class="reco-line-tag-text" data-i18n="projects.sections.restoration.lines.mining.tag">Pasivos ambientales</span>
+                            </div>
+                        </article>
+                        <article class="reco-line reco-reveal" data-reco-stagger>
+                            <h4 class="reco-line-title" data-i18n="projects.sections.restoration.lines.sediments.title">Control de sedimentos y estabilización (laterización / movimientos en masa)</h4>
+                            <p class="reco-line-text" data-i18n="projects.sections.restoration.lines.sediments.text">Reducimos el aporte de sedimentos y mitigamos procesos de degradación mediante obras civiles, manejo de suelos y estabilización de zonas críticas afectadas por laterización y movimientos en masa, protegiendo la infraestructura y mejorando la seguridad del territorio.</p>
+                            <div class="reco-line-tag">
+                                <span class="reco-line-tag-icon" aria-hidden="true">🪨</span>
+                                <span class="reco-line-tag-text" data-i18n="projects.sections.restoration.lines.sediments.tag">Sedimentos y estabilidad</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Tres enfoques (capa visual explicativa) -->
+                <section id="restoration-process" class="reco-approaches reco-reveal" aria-labelledby="reco-approaches-title">
+                    <header class="reco-section-head">
+                        <h3 class="reco-h3" id="reco-approaches-title" data-i18n="projects.sections.restoration.howWeRestore.title">¿Cómo restauramos el territorio?</h3>
+                        <p class="reco-text" data-i18n="projects.sections.restoration.howWeRestore.text">
+                            Para responder a estas problemáticas, FUDAMBIENT aplica enfoques de restauración ecológica complementarios, que articulan paisaje, bioingeniería y obra técnica. Cada enfoque se adapta al contexto territorial y busca garantizar resultados sostenibles, funcionales y duraderos en el tiempo.
+                        </p>
+                    </header>
+
+                    <div class="reco-approach-cards" aria-label="Tres enfoques de intervención en restauración ecológica">
+                        <!-- HMP -->
+                        <article class="reco-approach">
+                            <header class="reco-approach-head">
+                                <h4 class="reco-approach-title" data-i18n="projects.sections.restoration.howWeRestore.hmp.title">HMP – Manejo del paisaje y restauración ecológica</h4>
+                                <p class="reco-approach-text" data-i18n="projects.sections.restoration.howWeRestore.hmp.text">
+                                    Abordamos la restauración ecológica desde el manejo integral del paisaje mediante la implementación de trinchos en madera, cercas vivas, revegetalización con especies nativas y aislamiento de áreas en recuperación. Estas técnicas permiten recuperar coberturas vegetales, estabilizar pendientes suaves y reconectar dinámicas ecológicas en zonas degradadas. Priorizamos el sostenimiento de áreas intervenidas en vigencias anteriores, asegurando que la restauración se consolide en el tiempo y se integre de manera armónica al territorio productivo y comunitario.
+                                </p>
+                            </header>
+                            <div class="reco-approach-gallery reco-approach-gallery--3" aria-label="Galería HMP">
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/HM.jpeg" alt="HMP: manejo del paisaje en área intervenida" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-hmp" data-caption="HMP: manejo del paisaje en área intervenida">
+                                </figure>
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/HM1.jpeg" alt="HMP: restauración ecológica blanda y recuperación de coberturas" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-hmp" data-caption="HMP: restauración ecológica blanda y recuperación de coberturas">
+                                </figure>
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/HM2.jpeg" alt="HMP: intervención paisajística con enfoque ecológico" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-hmp" data-caption="HMP: intervención paisajística con enfoque ecológico">
+                                </figure>
+                            </div>
+                        </article>
+
+                        <!-- Bioingeniería -->
+                        <article class="reco-approach">
+                            <header class="reco-approach-head">
+                                <h4 class="reco-approach-title" data-i18n="projects.sections.restoration.howWeRestore.bioeng.title">Bioingeniería y control de erosión</h4>
+                                <p class="reco-approach-text" data-i18n="projects.sections.restoration.howWeRestore.bioeng.text">
+                                    Implementamos soluciones de bioingeniería para la estabilización de suelos y el control de procesos erosivos mediante trinchos vivos, empalizadas, bolsacretos, bolsasuelos y estructuras mixtas con materiales naturales. Estas técnicas se aplican en taludes, laderas y zonas inestables para reducir el aporte de sedimentos, mitigar movimientos en masa y favorecer la recuperación progresiva del suelo, combinando criterios ambientales, hidráulicos y geotécnicos según las condiciones del sitio.
+                            </header>
+                            <div class="reco-approach-gallery reco-approach-gallery--2" aria-label="Galería Bioingeniería">
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/B1.jpeg" alt="Bioingeniería: estabilización y revegetación para control de erosión" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-bioingenieria" data-caption="Bioingeniería: estabilización y revegetación para control de erosión">
+                                </figure>
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/B2.jpeg" alt="Bioingeniería: intervención en talud con técnicas de control de erosión" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-bioingenieria" data-caption="Bioingeniería: intervención en talud con técnicas de control de erosión">
+                                </figure>
+                            </div>
+                        </article>
+
+                        <!-- Construcción -->
+                        <article class="reco-approach">
+                            <header class="reco-approach-head">
+                                <h4 class="reco-approach-title" data-i18n="projects.sections.restoration.howWeRestore.construction.title">Construcción para la restauración ecológica</h4>
+                                <p class="reco-approach-text" data-i18n="projects.sections.restoration.howWeRestore.construction.text">
+                                    Desarrollamos obras civiles orientadas a apoyar procesos de restauración ecológica y control de impactos ambientales, mediante la construcción de muros de contención, obras de drenaje, estructuras de disipación de energía y manejo de escorrentías. Estas intervenciones permiten estabilizar zonas críticas, controlar el transporte de sedimentos y proteger infraestructuras, integrando soluciones de ingeniería como soporte técnico para la recuperación ambiental y la reducción del riesgo en el territorio.
+                            </header>
+                            <div class="reco-approach-gallery reco-approach-gallery--4" aria-label="Galería Construcción para restauración ecológica">
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/R1.JPG" alt="Construcción: intervención en cauce para recuperación ecológica" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-construccion" data-caption="Construcción: intervención en cauce para recuperación ecológica">
+                                </figure>
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/R2.JPG" alt="Construcción: reconformación y manejo de sedimentos en área intervenida" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-construccion" data-caption="Construcción: reconformación y manejo de sedimentos en área intervenida">
+                                </figure>
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/R3.JPG" alt="Construcción: recuperación geomorfológica con maquinaria en campo" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-construccion" data-caption="Construcción: recuperación geomorfológica con maquinaria en campo">
+                                </figure>
+                                <figure class="reco-approach-shot">
+                                    <img class="reco-img reco-img--center" src="Assets/Proyectos - Subpage/Restauración ecológica/R4.JPG" alt="Construcción: recuperación de pasivos y estabilización del terreno" loading="lazy" data-lightbox="true" data-lightbox-group="restauracion-construccion" data-caption="Construcción: recuperación de pasivos y estabilización del terreno">
+                                </figure>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Cierre -->
+                <footer class="reco-footer reco-reveal">
+                    <p class="reco-footer-text" data-i18n="projects.sections.restoration.footer">
+                        Integrar diagnóstico técnico, intervención en campo y sostenibilidad social permite recuperar funcionalidad ecológica y reducir riesgos asociados a la degradación del territorio.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Completa Section -->
+    <section id="completa" class="projects-section projects-section-completa">
+        <div class="projects-section-container">
+            <div class="projects-section-header">
+                <h2 class="projects-section-title" data-i18n="projects.sections.complete.title">Experiencia completa</h2>
+                <p class="projects-section-intro" data-i18n="projects.sections.complete.intro">
+                    Catálogo completo de proyectos ejecutados por FUDAMBIENT, organizado por año y temática.
+                </p>
+            </div>
+            
+            <!-- Search and Filters Bar -->
+            <div class="experience-completa-controls">
+                <div class="experience-search-wrapper">
+                    <input 
+                        type="text" 
+                        id="experienceSearch" 
+                        class="experience-search-input" 
+                        placeholder="Buscar por contrato, municipio, palabra clave…"
+                        aria-label="Buscar proyectos"
+                        data-i18n-placeholder="projects.sections.complete.searchPlaceholder"
+                    >
+                </div>
+                <div class="experience-filters" id="experienceFilters">
+                    <button class="experience-filter-chip active" data-category="Todos" data-i18n="projects.sections.complete.filters.all">Todos</button>
+                    <button class="experience-filter-chip" data-category="Educación ambiental" data-i18n="projects.sections.complete.filters.education">Educación ambiental</button>
+                    <button class="experience-filter-chip" data-category="Urbanismo" data-i18n="projects.sections.complete.filters.urbanism">Urbanismo</button>
+                    <button class="experience-filter-chip" data-category="Saneamiento básico" data-i18n="projects.sections.complete.filters.sanitation">Saneamiento básico</button>
+                    <button class="experience-filter-chip" data-category="Restauración ecológica" data-i18n="projects.sections.complete.filters.restoration">Restauración ecológica</button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="experience-completa-grid" id="experienceCompletaGrid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+            
+            <!-- Empty State -->
+            <div class="experience-empty-state" id="experienceEmptyState" style="display: none;">
+                <p data-i18n="projects.sections.complete.emptyState">No se encontraron proyectos que coincidan con tu búsqueda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brochure CTA -->
+    <section class="brochure-cta">
+        <a 
+            href="Assets/Proyectos - Subpage/Brochure (2024).pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="brochure-btn"
+            aria-label="Descargar Brochure Institucional 2024"
+            data-i18n="projects.brochure.cta"
+        >
+            Descargar Brochure Institucional (2024)
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2 class="footer-cta-title" data-i18n="footer.cta.title">Construyamos territorios sostenibles juntos</h2>
+                <a href="contacto.html" class="footer-cta-btn" data-i18n="footer.cta.button">Contáctanos</a>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-brand-lockup">
+                    <img src="Assets/Logo - FA (Blanco).svg" alt="FUDAMBIENT Logo" class="footer-brand-logo">
+                    <h3 class="footer-brand-title">FUDAMBIENT</h3>
+                </div>
+                <div class="footer-brand-content">
+                    <p class="footer-brand-description" data-i18n="footer.brand.description">Ingeniería para el desarrollo sostenible del territorio.</p>
+                    <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="Assets/Social Media/Instagram.svg" alt="Instagram" class="social-icon-img">
+                    </a>
+                    <a href="https://www.facebook.com/fudambient/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <img src="Assets/Social Media/Facebook.svg" alt="Facebook" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <img src="Assets/Social Media/Linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-links-title" data-i18n="footer.explore.title">Explorar</h4>
+                <nav class="footer-nav">
+                    <a href="index.html#inicio" class="footer-link" data-i18n="footer.explore.home">Inicio</a>
+                    <a href="nosotros.html" class="footer-link" data-i18n="footer.explore.about">Nosotros</a>
+                    <a href="servicios.html" class="footer-link" data-i18n="footer.explore.services">Servicios</a>
+                    <a href="proyectos.html" class="footer-link" data-i18n="footer.explore.projects">Proyectos</a>
+                    <a href="logros.html" class="footer-link" data-i18n="footer.explore.achievements">Logros</a>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-contact-title" data-i18n="footer.contact.title">Contacto</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="Assets/Social Media/Home.svg" alt="Address" class="contact-icon">
+                        <span>Carrera 59 # 1-116</span>
+                    </div>
+                    <a href="mailto:fudambient@gmail.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <rect x="1.5" y="3" width="15" height="12" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                            <path d="M1.5 5.25L9 10.5L16.5 5.25" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                        </svg>
+                        <span>fudambient@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/573188369777?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20con%20FUDAMBIENT." target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="Assets/Social Media/Whatsapp.svg" alt="WhatsApp" class="contact-icon">
+                        <span>+57 318 836 9777</span>
+                    </a>
+                    <a href="tel:6025536217" class="contact-item">
+                        <img src="Assets/Social Media/Phone.svg" alt="Phone" class="contact-icon">
+                        <span>602-5536217</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2026 FUDAMBIENT - Por un futuro verde y sustentable</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal para Instrumentos y evidencias -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true">
+        <div class="lightbox-overlay"></div>
+        <div class="lightbox-container">
+            <button class="lightbox-close" aria-label="Cerrar modal" type="button">×</button>
+            <button class="lightbox-nav lightbox-nav--prev" aria-label="Imagen anterior" type="button">‹</button>
+            <button class="lightbox-nav lightbox-nav--next" aria-label="Imagen siguiente" type="button">›</button>
+            <div class="lightbox-content">
+                <img class="lightbox-image" src="" alt="" loading="eager">
+                <div class="lightbox-title"></div>
+            </div>
+            <div class="lightbox-thumbnails">
+                <div class="lightbox-thumbnails-track"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+    <script src="experience-full-data.js"></script>
+    <script src="proyectos.js"></script>
+    <script src="lightbox.js"></script>
+</body>
+</html>

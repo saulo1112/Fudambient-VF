@@ -1,0 +1,909 @@
+/* ============================================
+   SERVICIOS PAGE STYLES
+   ============================================ */
+
+/* Services Hero Section with Gradient Header */
+.servicios-hero {
+    position: relative;
+    width: 100%;
+    /* Increased height for more impactful presence */
+    min-height: 550px;
+    /* Full-width: removed max-width and margin auto to eliminate side gaps */
+    margin: 0;
+    /* Match Figma: Rounded container feel with visible border-radius */
+    border-radius: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Increased padding for taller, more impactful feel */
+    padding: 90px 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.servicios-hero-background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(13, 77, 61, 1) 0%, rgba(15, 92, 74, 1) 50%, rgba(10, 61, 48, 1) 100%);
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+
+.servicios-hero-bubbles {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Mascot-style floating bubbles for Services hero */
+.servicios-mascot-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    animation: serviciosFloat 6s ease-in-out infinite;
+}
+
+.servicios-mascot-circle-large {
+    width: 96px;
+    height: 96px;
+}
+
+.servicios-mascot-circle-medium {
+    width: 48px;
+    height: 48px;
+}
+
+.servicios-mascot-circle-small {
+    width: 24px;
+    height: 24px;
+}
+
+/* Circle positions */
+.servicios-mascot-circle-1 {
+    top: 15%;
+    left: 10%;
+    opacity: 0.18;
+    filter: blur(4px);
+    animation-delay: 0s;
+}
+
+.servicios-mascot-circle-2 {
+    top: 60%;
+    left: 5%;
+    opacity: 0.22;
+    animation-delay: 1s;
+}
+
+.servicios-mascot-circle-3 {
+    top: 25%;
+    right: 15%;
+    opacity: 0.15;
+    filter: blur(8px);
+    animation-delay: 2s;
+}
+
+.servicios-mascot-circle-4 {
+    bottom: 20%;
+    right: 8%;
+    width: 128px;
+    height: 128px;
+    opacity: 0.12;
+    filter: blur(12px);
+    animation-delay: 0.5s;
+}
+
+.servicios-mascot-circle-5 {
+    top: 45%;
+    left: 15%;
+    opacity: 0.25;
+    animation-delay: 1.5s;
+}
+
+.servicios-mascot-circle-6 {
+    top: 70%;
+    left: 25%;
+    opacity: 0.18;
+    filter: blur(4px);
+    animation-delay: 2.5s;
+}
+
+.servicios-mascot-circle-7 {
+    top: 35%;
+    right: 25%;
+    opacity: 0.22;
+    animation-delay: 0.8s;
+}
+
+.servicios-mascot-circle-8 {
+    bottom: 30%;
+    right: 20%;
+    width: 56px;
+    height: 56px;
+    opacity: 0.16;
+    animation-delay: 3s;
+}
+
+.servicios-mascot-circle-9 {
+    top: 20%;
+    left: 30%;
+    opacity: 0.25;
+    animation-delay: 1.2s;
+}
+
+.servicios-mascot-circle-10 {
+    top: 80%;
+    left: 18%;
+    opacity: 0.24;
+    animation-delay: 2.2s;
+}
+
+.servicios-mascot-circle-11 {
+    top: 50%;
+    right: 12%;
+    opacity: 0.18;
+    animation-delay: 0.3s;
+}
+
+.servicios-mascot-circle-12 {
+    bottom: 15%;
+    right: 30%;
+    opacity: 0.20;
+    filter: blur(4px);
+    animation-delay: 1.8s;
+}
+
+/* Floating animation */
+@keyframes serviciosFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .servicios-mascot-circle {
+        animation: none !important;
+    }
+}
+
+.servicios-hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Match Figma: Ensure text is vertically centered within compact section */
+    min-height: 100%;
+}
+
+.servicios-hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Match Figma: Reduced spacing between title and description */
+    gap: 12px;
+    padding: 0;
+    max-width: 630px;
+    text-align: center;
+}
+
+.servicios-hero-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.1em;
+    color: var(--white);
+    margin: 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.servicios-hero-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 4px rgba(0, 0, 0, 0.1);
+    max-width: 647px;
+}
+
+/* Services Section */
+.servicios-section {
+    position: relative;
+    width: 100%;
+    background: #FAFBFA;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.servicios-section-container {
+    max-width: 1305px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.servicios-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.servicio-card {
+    position: relative;
+    display: grid;
+    /* Fixed equal columns with consistent gap - using CSS variable for symmetric dot spacing */
+    --dot-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--dot-gap);
+    align-items: center;
+}
+
+/* Left side text, right side image (default) */
+.servicio-card-left {
+    grid-template-areas: "text image";
+}
+
+/* Right side text, left side image (reversed) */
+.servicio-card-right {
+    grid-template-areas: "image text";
+}
+
+.servicio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-area: text;
+    /* Consistent max-width for all text blocks */
+    max-width: 480px;
+}
+
+/* Left card: text on left, aligned to right edge */
+.servicio-card-left .servicio-content {
+    justify-self: end;
+    text-align: right;
+    padding-right: 0;
+}
+
+/* Right card: text on right, aligned to left edge (toward center) */
+.servicio-card-right .servicio-content {
+    justify-self: start;
+    text-align: right;
+    padding-left: 0;
+}
+
+.servicio-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.4em;
+    letter-spacing: -0.025em;
+    color: #1A1A1A;
+    margin: 0;
+    text-align: inherit;
+}
+
+.servicio-description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #4A4A4A;
+    margin: 0;
+    text-align: justify;
+}
+
+.servicio-image {
+    grid-area: image;
+    position: relative;
+    /* Fixed dimensions for consistent image cards */
+    width: 100%;
+    max-width: 520px;
+    aspect-ratio: 4 / 3;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Left card: image on right side, aligned to left edge */
+.servicio-card-left .servicio-image {
+    justify-self: start;
+}
+
+/* Right card: image on left side, aligned to right edge */
+.servicio-card-right .servicio-image {
+    justify-self: end;
+}
+
+.servicio-image:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.servicio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: auto;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.servicio-image:hover .servicio-img {
+    transform: scale(1.05);
+}
+
+/* Timeline indicator (desktop) - centered on grid gap */
+.servicio-card::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: #7CB342;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(124, 179, 66, 0.3), 0px 3px 10px rgba(0, 0, 0, 0.12), 0px 0px 0px 3px #FAFBFA;
+    z-index: 2;
+}
+
+/* Closing Section */
+.servicios-closing {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    background: linear-gradient(180deg, rgba(245, 249, 243, 1) 0%, rgba(250, 251, 250, 1) 50%, rgba(240, 245, 240, 1) 100%);
+    overflow: hidden;
+    padding: 80px 20px;
+}
+
+.servicios-closing-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.servicios-closing-background::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -166.67px;
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(180deg, rgba(124, 179, 66, 1) 0%, rgba(74, 144, 164, 1) 100%);
+    border-radius: 50%;
+    filter: blur(128px);
+    opacity: 0.04;
+    transform: translateY(33%);
+}
+
+.servicios-closing-background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(74, 144, 164, 1) 0%, rgba(124, 179, 66, 1) 100%);
+    border-radius: 50%;
+    filter: blur(128px);
+    opacity: 0.03;
+    transform: translate(33%, -33%);
+}
+
+.servicios-closing-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1071px;
+    margin: 0 auto;
+}
+
+.servicios-closing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.servicios-closing-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7CB342;
+    margin-bottom: 8px;
+}
+
+.servicios-closing-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2em;
+    letter-spacing: -0.025em;
+    color: #1A1A1A;
+    margin: 0;
+    max-width: 896px;
+}
+
+.servicios-closing-description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: #4A4A4A;
+    margin: 0;
+    max-width: 520px;
+}
+
+.servicios-methods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 896px;
+    margin: 32px 0;
+}
+
+.servicios-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.servicios-method-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    transition: box-shadow 0.3s ease;
+}
+
+.servicios-method:hover .servicios-method-icon {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.servicios-method-label {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #4A4A4A;
+    text-align: center;
+    margin: 0;
+    max-width: 140px;
+}
+
+.servicios-closing-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #7CB342;
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    padding: 16px 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 16px;
+    text-decoration: none;
+}
+
+.servicios-closing-cta:hover {
+    background: #6A9C37;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.servicios-closing-cta svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.servicios-closing-cta:hover svg {
+    transform: translateX(4px);
+}
+
+/* Vertical timeline line (desktop) */
+.servicios-section::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    bottom: 60px;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(124, 179, 66, 0.25) 0%, rgba(124, 179, 66, 0.45) 50%, rgba(124, 179, 66, 0.25) 100%);
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* Responsive Styles for Servicios Page */
+@media (max-width: 1200px) {
+    /* Responsive adjustments handled by percentage-based positioning */
+}
+
+@media (max-width: 1024px) {
+    .servicios-hero {
+        /* Increased height for better impact on tablet */
+        min-height: 450px;
+        padding: 70px 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 20px;
+    }
+    
+    .servicios-hero-title {
+        font-size: 44px;
+    }
+    
+    .servicios-hero-subtitle {
+        font-size: 19px;
+    }
+    
+    /* Scale down bubble sizes on tablet */
+    .servicios-mascot-circle-large {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .servicios-mascot-circle-medium {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .servicios-mascot-circle-small {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .servicios-mascot-circle-4 {
+        width: 96px;
+        height: 96px;
+    }
+    
+    .servicios-mascot-circle-8 {
+        width: 44px;
+        height: 44px;
+    }
+    
+    .servicios-section-container {
+        padding: 0 40px;
+    }
+    
+    .servicios-cards {
+        gap: 60px;
+    }
+    
+    .servicio-card {
+        /* Single column on tablet - stack vertically */
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "text"
+            "image";
+        gap: 32px;
+    }
+    
+    /* Both left and right cards stack the same way on tablet */
+    .servicio-card-left,
+    .servicio-card-right {
+        grid-template-areas: 
+            "text"
+            "image";
+    }
+    
+    .servicio-content {
+        max-width: 100%;
+        padding: 0;
+        text-align: right;
+    }
+    
+    .servicio-card-left .servicio-content,
+    .servicio-card-right .servicio-content {
+        justify-self: stretch;
+        padding: 0;
+    }
+    
+    .servicio-image {
+        max-width: 100%;
+    }
+    
+    .servicio-card-left .servicio-image,
+    .servicio-card-right .servicio-image {
+        justify-self: stretch;
+    }
+    
+    .servicio-card::before {
+        left: 24px;
+        top: 24px;
+        transform: translate(-50%, -50%);
+        width: 18px;
+        height: 18px;
+    }
+    
+    .servicios-section::before {
+        left: 24px;
+        transform: none;
+    }
+    
+    .servicios-methods {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+    
+    .servicios-closing-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios-hero {
+        /* Increased height for better impact on mobile */
+        min-height: 400px;
+        padding: 60px 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 16px;
+    }
+    
+    .servicios-hero-title {
+        font-size: 35px;
+    }
+    
+    .servicios-hero-subtitle {
+        font-size: 17px;
+    }
+    
+    /* Scale down bubbles on mobile */
+    .servicios-mascot-circle-large {
+        width: 64px;
+        height: 64px;
+    }
+    
+    .servicios-mascot-circle-medium {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .servicios-mascot-circle-small {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .servicios-mascot-circle-4 {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .servicios-mascot-circle-8 {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .servicios-section {
+        padding: 50px 0;
+    }
+    
+    .servicios-section-container {
+        padding: 0 24px;
+    }
+    
+    .servicios-cards {
+        gap: 48px;
+    }
+    
+    /* Mobile: remove timeline, center content */
+    .servicio-content {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .servicio-card-left .servicio-content,
+    .servicio-card-right .servicio-content {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .servicio-title {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .servicio-description {
+        font-size: 14px;
+        text-align: justify;
+    }
+    
+    /* Hide timeline on mobile */
+    .servicio-card::before {
+        display: none;
+    }
+    
+    .servicios-section::before {
+        display: none;
+    }
+    
+    .servicios-closing {
+        padding: 60px 16px;
+    }
+    
+    .servicios-closing-title {
+        font-size: 28px;
+    }
+    
+    .servicios-closing-description {
+        font-size: 14px;
+    }
+    
+    .servicios-methods {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-hero {
+        /* Increased height for better impact on small mobile */
+        min-height: 360px;
+        padding: 50px 12px;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 12px;
+    }
+    
+    .servicios-hero-title {
+        font-size: 30px;
+    }
+    
+    .servicios-hero-subtitle {
+        font-size: 15px;
+    }
+    
+    /* Smallest bubble sizes for small mobile */
+    .servicios-mascot-circle-large {
+        width: 56px;
+        height: 56px;
+    }
+    
+    .servicios-mascot-circle-medium {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .servicios-mascot-circle-small {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .servicios-mascot-circle-4 {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .servicios-mascot-circle-8 {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .servicio-title {
+        font-size: 20px;
+    }
+    
+    .servicios-closing-title {
+        font-size: 24px;
+    }
+    
+    .servicios-closing-cta {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+}
+
+/* ============================================
+   SCROLL-TRIGGERED ENTRANCE ANIMATIONS
+   ============================================ */
+
+/* Text elements - fade in + translate from left */
+.servicio-animate-text {
+    opacity: 0;
+    transform: translateX(-24px);
+    transition: opacity 600ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Image - fade in + translate from right + subtle scale */
+.servicio-animate-image {
+    opacity: 0;
+    transform: translateX(24px) scale(0.98);
+    transition: opacity 600ms cubic-bezier(0.2, 0.8, 0.2, 1),
+                transform 600ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* In-view state - triggered by IntersectionObserver */
+.servicio-card-animate.in-view .servicio-animate-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.servicio-card-animate.in-view .servicio-animate-image {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+/* Stagger delays for text elements (title then paragraph) */
+.servicio-card-animate.in-view .servicio-title {
+    transition-delay: 0ms;
+}
+
+.servicio-card-animate.in-view .servicio-description {
+    transition-delay: 150ms;
+}
+
+/* Image appears slightly after text starts */
+.servicio-card-animate.in-view .servicio-animate-image {
+    transition-delay: 100ms;
+}
+
+/* For right-aligned cards, reverse the direction */
+.servicio-card-right .servicio-animate-text {
+    transform: translateX(24px);
+}
+
+.servicio-card-right .servicio-animate-image {
+    transform: translateX(-24px) scale(0.98);
+}
+
+.servicio-card-right.in-view .servicio-animate-text {
+    transform: translateX(0);
+}
+
+.servicio-card-right.in-view .servicio-animate-image {
+    transform: translateX(0) scale(1);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .servicio-card-animate,
+    .servicio-animate-text,
+    .servicio-animate-image {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+    
+    .servicio-card-animate.in-view,
+    .servicio-card-animate.in-view .servicio-animate-text,
+    .servicio-card-animate.in-view .servicio-animate-image {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+

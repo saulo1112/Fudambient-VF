@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - FUDAMBIENT</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/servicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Bebas+Neue&family=Chewy&family=Raleway:wght@500;800&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body class="servicios-page">
+    <!-- Initial Header (non-sticky, shows at top) -->
+    <header class="header header-initial" id="headerInitial">
+        <div class="header-container">
+            <a class="brand-text-logo" href="index.html" aria-label="FUDAMBIENT home">
+                <span class="brand-fud">FUD</span><span class="brand-ambient">AMBIENT</span>
+            </a>
+            <nav class="nav-initial">
+                <a href="index.html" class="nav-item" data-i18n="header.nav.home">Inicio</a>
+                <a href="nosotros.html" class="nav-item" data-i18n="header.nav.about">Nosotros</a>
+                <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+                <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+                <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+            </nav>
+            <div class="header-cta">
+                <a href="contacto.html" class="contact-btn" data-i18n="header.contact">Contacto</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma" data-i18n-aria="header.langToggle">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Glass Nav (appears after scroll) -->
+    <nav class="nav-pill-glass" id="navPillGlass">
+        <a href="index.html" class="nav-item" data-i18n="header.nav.home">Inicio</a>
+        <a href="nosotros.html" class="nav-item" data-i18n="header.nav.about">Nosotros</a>
+        <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+        <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+        <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+    </nav>
+
+    <!-- Services Hero Section with Gradient Header -->
+    <section class="servicios-hero">
+        <div class="servicios-hero-background">
+            <!-- Floating bubbles (mascot-style) -->
+            <div class="servicios-hero-bubbles">
+                <span class="servicios-mascot-circle servicios-mascot-circle-large servicios-mascot-circle-1"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-medium servicios-mascot-circle-2"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-large servicios-mascot-circle-3"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-large servicios-mascot-circle-4"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-medium servicios-mascot-circle-5"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-small servicios-mascot-circle-6"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-medium servicios-mascot-circle-7"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-small servicios-mascot-circle-8"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-medium servicios-mascot-circle-9"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-small servicios-mascot-circle-10"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-small servicios-mascot-circle-11"></span>
+                <span class="servicios-mascot-circle servicios-mascot-circle-small servicios-mascot-circle-12"></span>
+            </div>
+        </div>
+        <div class="servicios-hero-content">
+            <div class="servicios-hero-container">
+                <h1 class="servicios-hero-title" data-i18n="services.hero.title">Nuestros Servicios</h1>
+                <p class="servicios-hero-subtitle" data-i18n="services.hero.description">
+                    Ingeniería aplicada al territorio para el diseño, implementación y acompañamiento de soluciones sostenibles 
+                    con enfoque comunitario y técnico.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="servicios-section">
+        <div class="servicios-section-container">
+            <!-- Services Cards -->
+            <div class="servicios-cards" id="serviciosCards">
+                <!-- Dynamic content -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="servicios-closing">
+        <div class="servicios-closing-background"></div>
+        <div class="servicios-closing-container">
+            <div class="servicios-closing-content">
+                <h2 class="servicios-closing-title" data-i18n="services.closing.title">La ingeniería cobra sentido cuando entiende el territorio</h2>
+                <p class="servicios-closing-description" data-i18n="services.closing.description">
+                    Integramos análisis técnico, visión ambiental y acompañamiento institucional para desarrollar 
+                    soluciones sostenibles, adaptadas a cada contexto y comunidad.
+                </p>
+                
+                <!-- Method Overview -->
+                <div class="servicios-methods">
+                    <div class="servicios-method">
+                        <div class="servicios-method-icon">🔍</div>
+                        <p class="servicios-method-label" data-i18n="services.closing.methods.diagnosis">Diagnóstico del territorio</p>
+                    </div>
+                    <div class="servicios-method">
+                        <div class="servicios-method-icon">✏️</div>
+                        <p class="servicios-method-label" data-i18n="services.closing.methods.design">Diseño técnico integral</p>
+                    </div>
+                    <div class="servicios-method">
+                        <div class="servicios-method-icon">🔧</div>
+                        <p class="servicios-method-label" data-i18n="services.closing.methods.implementation">Implementación responsable</p>
+                    </div>
+                    <div class="servicios-method">
+                        <div class="servicios-method-icon">📈</div>
+                        <p class="servicios-method-label" data-i18n="services.closing.methods.follow">Seguimiento y sostenibilidad</p>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <a href="proyectos.html" class="servicios-closing-cta">
+                    <span data-i18n="services.closing.cta">Conoce nuestra experiencia</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2 class="footer-cta-title" data-i18n="footer.cta.title">Construyamos territorios sostenibles juntos</h2>
+                <a href="contacto.html" class="footer-cta-btn" data-i18n="footer.cta.button">Contáctanos</a>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-brand-lockup">
+                    <img src="Assets/Logo - FA (Blanco).svg" alt="FUDAMBIENT Logo" class="footer-brand-logo">
+                    <h3 class="footer-brand-title">FUDAMBIENT</h3>
+                </div>
+                <div class="footer-brand-content">
+                    <p class="footer-brand-description" data-i18n="footer.brand.description">Ingeniería para el desarrollo sostenible del territorio.</p>
+                    <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="Assets/Social Media/Instagram.svg" alt="Instagram" class="social-icon-img">
+                    </a>
+                    <a href="https://www.facebook.com/fudambient/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <img src="Assets/Social Media/Facebook.svg" alt="Facebook" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <img src="Assets/Social Media/Linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-links-title" data-i18n="footer.explore.title">Explorar</h4>
+                <nav class="footer-nav">
+                    <a href="index.html#inicio" class="footer-link" data-i18n="footer.explore.home">Inicio</a>
+                    <a href="nosotros.html" class="footer-link" data-i18n="footer.explore.about">Nosotros</a>
+                    <a href="servicios.html" class="footer-link" data-i18n="footer.explore.services">Servicios</a>
+                    <a href="proyectos.html" class="footer-link" data-i18n="footer.explore.projects">Proyectos</a>
+                    <a href="logros.html" class="footer-link" data-i18n="footer.explore.achievements">Logros</a>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-contact-title" data-i18n="footer.contact.title">Contacto</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="Assets/Social Media/Home.svg" alt="Address" class="contact-icon">
+                        <span>Carrera 59 # 1-116</span>
+                    </div>
+                    <a href="mailto:fudambient@gmail.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <rect x="1.5" y="3" width="15" height="12" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                            <path d="M1.5 5.25L9 10.5L16.5 5.25" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                        </svg>
+                        <span>fudambient@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/573188369777?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20con%20FUDAMBIENT." target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="Assets/Social Media/Whatsapp.svg" alt="WhatsApp" class="contact-icon">
+                        <span>+57 318 836 9777</span>
+                    </a>
+                    <a href="tel:6025536217" class="contact-item">
+                        <img src="Assets/Social Media/Phone.svg" alt="Phone" class="contact-icon">
+                        <span>602-5536217</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2026 FUDAMBIENT - Por un futuro verde y sustentable</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+    <script src="servicios.js"></script>
+</body>
+</html>
+

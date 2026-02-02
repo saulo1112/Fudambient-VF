@@ -1,0 +1,938 @@
+{
+  "meta": {
+    "title": "FUDAMBIENT - Foundation for Environmental Development",
+    "description": "Engineering for sustainable territorial development"
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "achievements": "Achievements"
+    },
+    "contact": "Contact",
+    "langToggle": "Change language"
+  },
+  "footer": {
+    "cta": {
+      "title": "Let's build sustainable territories together",
+      "button": "Contact Us"
+    },
+    "brand": {
+      "description": "Engineering for sustainable territorial development."
+    },
+    "explore": {
+      "title": "Explore",
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "achievements": "Achievements"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "copyright": "© 2026 FUDAMBIENT - For a green and sustainable future"
+  },
+  "home": {
+    "hero": {
+      "title": {
+        "brand": "FUDAMBIENT",
+        "plus": "+",
+        "you": "You!"
+      },
+      "description": "We are an organization of professionals working with the purpose of advising and executing development and sustainability projects, considering the socio-environmental components of the territory.",
+      "cta": "Come and meet us!"
+    },
+    "projects": {
+      "badge": "PROJECTS",
+      "slides": {
+        "rivers": {
+          "title": "River recovery and comprehensive management processes",
+          "description": "Geomorphological interventions and dredging in prioritized sections to improve hydraulic dynamics, reduce risks and strengthen watershed resilience."
+        },
+        "sanitation": {
+          "title": "Individual sanitation systems implemented",
+          "description": "Design and installation of decentralized solutions for wastewater treatment in rural communities, with a focus on public health and sustainability."
+        },
+        "education": {
+          "title": "Environmental education and community management processes",
+          "description": "Participatory support to strengthen responsible land use and ensure the permanence of environmental solutions."
+        },
+        "restoration": {
+          "title": "Stabilization and ecological restoration interventions",
+          "description": "Execution of bioengineering works for erosion control, mass movements and sediment contribution in critical areas."
+        }
+      }
+    },
+    "approach": {
+      "title": "Engineering that understands the territory",
+      "description": "FUDAMBIENT is the Foundation for Social Development, Environment and Territory. We integrate civil engineering, environmental management and community action to promote sustainable projects that strengthen development, quality of life and socio-environmental balance."
+    },
+    "mission": {
+      "label": "Our Mission",
+      "title": "CARING FOR THE EARTH THAT SUSTAINS LIFE",
+      "description": "FUDAMBIENT is an organization dedicated to advising and executing development projects with a socio-environmental approach, optimizing economic, social and environmental resources. We have an interdisciplinary team of specialized professionals who work with commitment, ethics and cooperation to contribute to sustainable development and customer satisfaction.",
+      "cta": "Learn more about us"
+    },
+    "vision": {
+      "label": "Our Vision",
+      "description": "Our organization aims to lead the region with cutting-edge solutions in the field of engineering, through the union of different disciplines for the consolidation of construction processes that involve high-quality and efficiency components in the diagnosis, start, execution and completion of a project, committed to its socio-economic and environmental sustainability."
+    },
+    "specialties": {
+      "title": "Our Specialties",
+      "subtitle": "Comprehensive solutions in civil engineering and environmental management for sustainable development",
+      "items": {
+        "geomorphological": "Geomorphological Recovery",
+        "erosion": "Erosion and Shoreline Control",
+        "sanitation": "Basic Sanitation",
+        "urbanism": "Urbanism",
+        "hydraulic": "Hydraulic Infrastructure",
+        "irrigation": "Irrigation and Drainage",
+        "water": "Water Storage",
+        "civil": "Civil, Environmental and Forestry Works"
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "subtitle": "Building a sustainable future with responsible engineering",
+      "items": {
+        "engineering": {
+          "value": "40+",
+          "label": "Engineering Projects"
+        },
+        "environmental": {
+          "value": "85%",
+          "label": "Environmental Impact Reduction"
+        },
+        "people": {
+          "value": "1,200+",
+          "label": "People Benefited"
+        },
+        "municipalities": {
+          "value": "42+",
+          "label": "Municipalities Supported"
+        }
+      }
+    },
+    "territory": {
+      "title": "Designed for the territory",
+      "description": "Each project is born from technical analysis, environmental context and social dynamics, to build solutions that last over time.",
+      "cards": {
+        "left": "We design and execute engineering solutions that respond to the real conditions of the territory, integrating technical, environmental and social criteria for sustainable and lasting development.",
+        "right": "We accompany communities and institutions in the planning and execution of projects, promoting active participation and territorial ownership as the axis of sustainable development."
+      },
+      "link": "Learn more >"
+    },
+    "cta": {
+      "question": "Shall we discuss your project?"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About Us",
+      "title": "Engineering with purpose",
+      "description": "Our commitment is based on environmental sustainability, community well-being and technical rigor in every project. We transform environmental challenges into innovative solutions."
+    },
+    "whoWeAre": {
+      "title": "Who are we?",
+      "description": "FUDAMBIENT is a foundation dedicated to environmental engineering with more than two decades of experience. We work with communities, companies and governments to develop projects that protect the environment and generate sustainable development."
+    },
+    "reasons": {
+      "title": "Reasons to choose us",
+      "items": {
+        "context": "We design from the environmental and social context",
+        "analysis": "We don't apply recipes: we analyze each territory",
+        "community": "We work with communities, not just for them",
+        "technical": "We execute with technical criteria and responsibility"
+      }
+    },
+    "history": {
+      "title": "Our history",
+      "description": "Since our beginnings, we have worked tirelessly to transform territories and communities. With more than a decade of experience, we have developed projects that integrate engineering, sustainability and community participation, generating a positive and lasting impact on the environment."
+    },
+    "whyUs": {
+      "title": "Why choose us?",
+      "description": "Every project we develop generates measurable and lasting impact on ecosystems and communities. Our results speak for themselves.",
+      "stats": {
+        "trees": {
+          "value": "120K+",
+          "label": "Trees planted"
+        },
+        "communities": {
+          "value": "45+",
+          "label": "Communities served"
+        },
+        "hectares": {
+          "value": "3.5K",
+          "label": "Hectares restored"
+        },
+        "satisfaction": {
+          "value": "95%",
+          "label": "Client satisfaction"
+        }
+      }
+    },
+    "howWeWork": {
+      "title": "How do we work?",
+      "description": "We work from a deep understanding of the territory, integrating technical knowledge, community participation and environmental commitment in each project.",
+      "steps": {
+        "step1": {
+          "title": "We listen to the territory",
+          "description": "Each project begins by understanding the environmental, social and cultural context of the territory."
+        },
+        "step2": {
+          "title": "We build with communities",
+          "description": "We work participatively with communities and local stakeholders."
+        },
+        "step3": {
+          "title": "We apply responsible engineering",
+          "description": "We design and implement viable technical solutions with a focus on sustainability."
+        },
+        "step4": {
+          "title": "We accompany over time",
+          "description": "We monitor to ensure positive and lasting impacts."
+        }
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Services",
+      "title": "Our Services",
+      "description": "Engineering applied to the territory for the design, implementation and support of sustainable solutions with a community and technical approach."
+    },
+    "timeline": {
+      "items": {
+        "education": {
+          "title": "Environmental Education",
+          "description": "We develop and implement educational strategies to reduce water resource pollution and promote water care for future generations as a fundamental, cross-cutting and philosophical approach to all our work."
+        },
+        "hydraulicUrbanism": {
+          "title": "Hydraulic infrastructure and urbanism",
+          "description": "We build hydraulic infrastructure for efficient water resource management, including aqueducts, sewer systems, pumping stations and irrigation and drainage systems, integrated with sustainable urbanism solutions aimed at proper territorial planning and development."
+        },
+        "designConstruction": {
+          "title": "Design and construction of works",
+          "description": "We design and build civil, environmental and forestry works that contribute to the sustainable development of territories, incorporating landscape management tools and ecological restoration systems to promote healthier and more resilient environments for life."
+        },
+        "urbanManagement": {
+          "title": "Urban management and maintenance",
+          "description": "We carry out planting, maintenance and management of urban trees to keep our cities green and vibrant, promoting biodiversity conservation, improving the urban landscape and enhancing community well-being."
+        },
+        "basicSanitation": {
+          "title": "Basic sanitation",
+          "description": "We implement basic sanitation projects aimed at improving community quality of life through planning and execution of hydraulic infrastructure, aqueduct, sewer and drainage systems, as well as structuring sanitation and discharge management plans. We complement these actions with comprehensive solid waste management plans, promoting proper resource management and contributing to healthier, sustainable and resilient environments."
+        },
+        "environmentalRestoration": {
+          "title": "Environmental restoration and recovery of degraded areas",
+          "description": "We execute comprehensive bioengineering solutions aimed at environmental restoration and the recovery of degraded areas by rehabilitating ecosystems affected by erosion processes. We carry out geomorphological interventions and decontamination actions in rivers and water bodies to restore their natural balance, mitigate bank erosion and protect shorelines, contributing to the conservation of landscapes, forests and water systems."
+        }
+      }
+    },
+    "items": {
+      "sanitation": {
+        "title": "Basic sanitation",
+        "description": "Design and implementation of wastewater treatment systems and sanitation solutions for rural communities."
+      },
+      "recovery": {
+        "title": "Environmental recovery",
+        "description": "Ecological restoration of degraded ecosystems, erosion control and slope stabilization."
+      },
+      "hydraulics": {
+        "title": "Hydraulics",
+        "description": "Design and construction of hydraulic infrastructure, watershed management and drainage systems."
+      },
+      "urbanism": {
+        "title": "Urbanism",
+        "description": "Sustainable urban planning, public space design and territorial management."
+      },
+      "education": {
+        "title": "Environmental education",
+        "description": "Training and awareness programs for communities, institutions and companies."
+      },
+      "design": {
+        "title": "Design and construction",
+        "description": "Civil infrastructure projects with sustainable approach and environmental responsibility."
+      }
+    },
+    "closing": {
+      "title": "Engineering makes sense when it understands the territory",
+      "description": "We integrate technical analysis, environmental vision and institutional support to develop sustainable solutions, adapted to each context and community.",
+      "methods": {
+        "diagnosis": "Territory diagnosis",
+        "design": "Comprehensive technical design",
+        "implementation": "Responsible implementation",
+        "follow": "Monitoring and sustainability"
+      },
+      "cta": "Discover our experience"
+    },
+    "cta": "Learn more"
+  },
+  "projects": {
+    "hero": {
+      "title": "Projects",
+      "description": "Discover our portfolio of projects executed in different regions of the country.",
+      "manifesto": "Each project reflects our technical experience, our work with communities and our commitment to sustainable and functional environmental solutions.",
+      "card1": {
+        "title": "Bioengineering works and erosion control on slopes",
+        "location": "Restrepo, Valle del Cauca"
+      },
+      "card2": {
+        "title": "Construction of basic sanitation systems",
+        "location": "Valle del Cauca"
+      },
+      "card3": {
+        "title": "Comprehensive management and maintenance of urban gardens",
+        "location": "Santiago de Cali"
+      },
+      "card4": {
+        "title": "Geomorphological recovery of the Cañaveralejo river",
+        "location": "Santiago de Cali"
+      }
+    },
+    "nav": {
+      "featured": "Featured Projects",
+      "urbanism": "Urbanism",
+      "sanitation": "Basic Sanitation",
+      "education": "Environmental Education",
+      "restoration": "Ecological Restoration",
+      "complete": "Complete Experience"
+    },
+    "sections": {
+      "featured": {
+        "title": "Featured Projects",
+        "intro": "Selection of featured projects that represent our commitment to sustainable engineering, environmental management and comprehensive territorial development.",
+        "cta": "View complete experience"
+      },
+      "urbanism": {
+        "title": "Urbanism",
+        "intro": "We design and transform urban spaces with people, nature and the territory as a whole in mind. At FUDAMBIENT we understand urbanism as a tool to improve quality of life, strengthen public space and reconnect the city with its ecosystems. Our projects combine green infrastructure, environmental criteria and community participation, creating more livable, resilient and functional environments. Each intervention seeks to balance technical and social aspects, promoting more sustainable, inclusive cities adapted to their local context.",
+        "chips": {
+          "planning": "Territorial planning",
+          "design": "Sustainable urban design",
+          "management": "Territorial management"
+        },
+        "gardens": {
+          "title": "Urban gardens and green infrastructure",
+          "text": "In agreement with the Administrative Department of Environmental Management - DAGMA, we implement urban gardens as green infrastructure strategies aimed at recovering and qualifying public space, improving ecological connectivity and strengthening urban biodiversity. These interventions integrate landscape, environmental and functional criteria, promoting more livable, resilient and environmentally balanced urban environments.",
+          "bullet1": "Urban green infrastructure",
+          "bullet2": "Ecological connectivity",
+          "bullet3": "Biodiversity and landscape",
+          "bullet4": "Functional public space"
+        },
+        "trees": {
+          "title": "Urban tree management and maintenance",
+          "text": "We have extensive experience in continuous urban tree management and maintenance processes aimed at improving ecological functionality, urban safety and the sustainability of green areas in the city. Our work integrates technical, environmental and operational criteria, strengthening the relationship between urban infrastructure, landscape and community well-being over time.",
+          "bullet1": "Technical maintenance and management",
+          "bullet2": "Urban safety and functionality",
+          "bullet3": "Existing green infrastructure",
+          "bullet4": "Long-term processes"
+        },
+        "footer": "These approaches are reflected in the urbanism projects executed by FUDAMBIENT in different contexts of Valle del Cauca, evidencing a combination of technical experience, territorial work and sustainable results."
+      },
+      "sanitation": {
+        "title": "Basic Sanitation",
+        "subtitle": "We implement decentralized solutions for drinking water and wastewater treatment in rural and suburban communities, integrating health education, operational sustainability and community ownership.",
+        "chips": {
+          "sitares": "SITARES",
+          "hydraulic": "Hydraulic infrastructure",
+          "supply": "Supply systems",
+          "education": "Health education"
+        },
+        "feature": {
+          "title": "Basic sanitation that works in the territory",
+          "text": "At FUDAMBIENT we don't just design basic sanitation solutions: we execute, accompany and leave them operating over time. Our Individual Wastewater Treatment Systems (SITARES) have been installed in most municipalities of Valle del Cauca, adapting to rural and community contexts and achieving outstanding removal efficiencies."
+        },
+        "efficiency": {
+          "kicker": "Removal efficiencies",
+          "title": "Operational results",
+          "sst": "TSS",
+          "dbo": "BOD",
+          "nitrogen": "Nitrogen",
+          "phosphorus": "Phosphorus",
+          "coliforms": "Coliforms"
+        },
+        "gallery": {
+          "subtitle": "Implementation in the territory"
+        },
+        "hero": {
+          "lead1": "SITARES are implemented through a structured technical process that includes diagnosis and design, installation, commissioning and continuous support, ensuring their proper operation over time.",
+          "lead2": "Previously, we carry out technical studies on the property to verify the viability of the system, evaluating conditions such as soil, slope, water table level and regulatory distances, ensuring a safe and efficient implementation.",
+          "lead3": "We integrate health education and community strengthening in each phase of the process, promoting responsible use, proper maintenance and system sustainability, in harmony with the protection of water resources.",
+          "point1": "Decentralized treatment and rural approach",
+          "point2": "Health education and community operation",
+          "point3": "Protection of water resources",
+          "cta": "Click here to learn about the latest version of this project"
+        },
+        "projects": {
+          "title": "Featured technical projects",
+          "text": "In addition to the implementation of SITARES, FUDAMBIENT has led projects of high technical complexity in design, consulting and construction of hydraulic infrastructure. These projects reflect our capacity to address the complete cycle of sanitation and water supply, from technical studies and specialized design, to construction, commissioning and optimization of systems for safe water access.",
+          "ginebra": {
+            "title": "Design and consulting in hydraulic infrastructure",
+            "subtitle": "Ginebra and Guacarí – Valle del Cauca",
+            "text": "Development of technical studies and comprehensive designs for water collection, adduction, conduction, storage and drinking water treatment plant systems. The project integrated territorial, hydraulic and regulatory analyses to propose viable, safe solutions adapted to local conditions, strengthening the planning of municipal aqueducts and their long-term sustainability."
+          },
+          "pasto": {
+            "title": "Construction and commissioning of drinking water treatment systems",
+            "subtitle": "Pasto, Nariño",
+            "text": "Design, construction and commissioning of drinking water treatment plants and disinfection systems for rural and suburban aqueducts, aimed at improving access to safe water and ensuring efficient operation of infrastructure. This project consolidated FUDAMBIENT's experience in the execution of hydraulic works, integrating technical, operational and sustainability criteria to ensure its correct operation over time."
+          }
+        }
+      },
+      "education": {
+        "title": "Environmental Education",
+        "subtitle": "We design and implement pedagogical and participatory processes that accompany environmental projects and community infrastructure, strengthening ownership, care for the territory and long-term sustainability.",
+        "chips": {
+          "methodologies": "Methodologies",
+          "activities": "Activity bank",
+          "evaluation": "Session evaluation",
+          "participation": "Community participation",
+          "sustainability": "Sustainability"
+        },
+        "howWeWork": {
+          "title": "How do we work?",
+          "text": "We apply environmental education where it is key to ensure operation, care and sustainability of the interventions."
+        },
+        "steps": {
+          "step1": {
+            "title": "Diagnose",
+            "text": "We identify context, actors, practices and needs of the territory."
+          },
+          "step2": {
+            "title": "Design",
+            "text": "We build methodologies, guides, materials and activity banks according to the project."
+          },
+          "step3": {
+            "title": "Implement",
+            "text": "We execute sessions, workshops and participatory actions with a practical approach."
+          },
+          "step4": {
+            "title": "Evaluate and sustain",
+            "text": "We apply evaluation instruments, provide feedback and leave installed capacities."
+          }
+        },
+        "instruments": {
+          "title": "Instruments and evidence",
+          "text": "Below, we show you a small sample of our activity bank and evaluation instruments to ensure quality, learning and ownership over time.",
+          "labels": {
+            "evaluation": "Session evaluation",
+            "connectSitar": "Connect the SITAR",
+            "mandalas": "Mandalas",
+            "observation": "Observation guide",
+            "tree": "Memory tree"
+          }
+        },
+        "sitar": {
+          "title": "Training for SITAR use and management",
+          "text": "We apply environmental education to the use, operation and maintenance of SITAR to ensure sustainability, ownership and proper system operation over time."
+        },
+        "bank": {
+          "title": "Activity bank and evidence",
+          "text": "Visual record of workshops, sessions, materials and community participation processes."
+        },
+        "application": {
+          "title": "Cross-cutting application by project type",
+          "text": "Incorporate environmental education as a cross-cutting axis to strengthen operation, territorial care and sustainability of each intervention.",
+          "cards": {
+            "restoration": {
+              "title": "River and strategic ecosystem restoration",
+              "text": "Integration of geomorphological recovery, ecological restoration and erosion control actions to recover the functionality of rivers, slopes and degraded ecosystems, reducing risks and strengthening territorial resilience."
+            },
+            "sitares": {
+              "title": "SITARES and basic sanitation",
+              "text": "Ensuring proper operation, maintenance and community ownership of sanitation systems, promoting water care habits and long-term sustainability of implemented solutions."
+            },
+            "hmp": {
+              "title": "HMP / landscape management tools",
+              "text": "Promotion of sustainable practices and community follow-up processes for landscape management, integrating environmental, productive and social criteria that strengthen the community-territory relationship."
+            }
+          }
+        },
+        "gallery": {
+          "title": "Gallery",
+          "text": "Visual evidence of community participation, pedagogical activities and follow-up to sustain interventions over time."
+        },
+        "footer": "Integrating environmental education in projects allows sustaining results over time, improving community ownership and strengthening territorial management."
+      },
+      "restoration": {
+        "title": "Ecological Restoration",
+        "subtitle": "We implement environmental recovery and bioengineering interventions to stabilize slopes, reduce sediments and recover degraded river sections, integrating diagnosis, construction and sustainability in the territory.",
+        "chips": {
+          "geomorphological": "Geomorphological recovery",
+          "desilting": "Desilting",
+          "bioengineering": "Bioengineering",
+          "erosion": "Erosion control",
+          "liabilities": "Environmental liabilities"
+        },
+        "approach": {
+          "title": "Technical approach"
+        },
+        "steps": {
+          "step1": { "title": "Diagnose 🧭", "text": "Characterize terrain conditions and fluvial dynamics; prioritize critical sections and causes of degradation." },
+          "step2": { "title": "Design 📐", "text": "Define bioengineering, environmental hydraulics and sediment management solutions according to context." },
+          "step3": { "title": "Intervene 🛠️", "text": "Execute works: desilting, reshaping, stabilization, living structures and channel management." },
+          "step4": { "title": "Recover 🌱", "text": "Restore coverage and ecological functionality; mitigate erosive processes and environmental liabilities." },
+          "step5": { "title": "Sustain 📊", "text": "Accompany with environmental education, monitoring and maintenance to ensure results over time." }
+        },
+        "lines": {
+          "title": "Intervention lines",
+          "rivers": {
+            "title": "Rivers: geomorphological recovery and desilting",
+            "text": "We recover the hydraulic and geomorphological functionality of rivers and streams through desilting, channel reshaping and sediment management. These interventions reduce flood and scour risks, strengthen fluvial resilience and improve the relationship between communities and their water bodies.",
+            "tag": "Fluvial recovery"
+          },
+          "bioengineering": {
+            "title": "Bioengineering works and erosion control",
+            "text": "We design and implement bioengineering solutions and living structures for the stabilization of slopes, hillsides and unstable areas. We integrate natural techniques and support works that allow controlling erosion, mitigating mass movements and recovering soil functionality with environmental and technical criteria.",
+            "tag": "Slopes and hillsides"
+          },
+          "mining": {
+            "title": "Recovery of mining liabilities",
+            "text": "We intervene in areas affected by legal and illegal mining through terrain stabilization processes, environmental liability control and ecological restoration. Our approach seeks to reduce geotechnical and environmental risks, recover ecosystem functionality and promote safe and sustainable uses of the territory.",
+            "tag": "Environmental liabilities"
+          },
+          "sediments": {
+            "title": "Sediment control and stabilization (laterization / mass movements)",
+            "text": "We reduce sediment contribution and mitigate degradation processes through civil works, soil management and stabilization of critical areas affected by laterization and mass movements, protecting infrastructure and improving territorial safety.",
+            "tag": "Sediments and stability"
+          }
+        },
+        "footer": "Integrating technical diagnosis, field intervention and social sustainability allows recovering ecological functionality and reducing risks associated with territorial degradation.",
+        "howWeRestore": {
+          "title": "How do we restore the territory?",
+          "text": "To address these issues, FUDAMBIENT applies complementary ecological restoration approaches that articulate landscape, bioengineering and technical work. Each approach adapts to the territorial context and seeks to guarantee sustainable, functional and lasting results over time.",
+          "hmp": {
+            "title": "HMP – Landscape management and ecological restoration",
+            "text": "We approach ecological restoration from comprehensive landscape management through the implementation of wooden log barriers, living fences, revegetation with native species and isolation of recovering areas. These techniques allow recovering vegetation cover, stabilizing gentle slopes and reconnecting ecological dynamics in degraded areas. We prioritize the maintenance of previously intervened areas, ensuring that restoration consolidates over time and integrates harmoniously into the productive and community territory."
+          },
+          "bioeng": {
+            "title": "Bioengineering and erosion control",
+            "text": "We implement bioengineering solutions for soil stabilization and erosion control through live log barriers, palisades, bag retaining walls, soil bags and mixed structures with natural materials. These techniques are applied on slopes, hillsides and unstable areas to reduce sediment input, mitigate mass movements and promote progressive soil recovery, combining environmental, hydraulic and geotechnical criteria according to site conditions."
+          },
+          "construction": {
+            "title": "Construction for ecological restoration",
+            "text": "We develop civil works aimed at supporting ecological restoration processes and environmental impact control, through the construction of retaining walls, drainage works, energy dissipation structures and runoff management. These interventions allow stabilizing critical areas, controlling sediment transport and protecting infrastructure, integrating engineering solutions as technical support for environmental recovery and risk reduction in the territory."
+          }
+        }
+      },
+      "complete": {
+        "title": "Complete Experience",
+        "intro": "Complete catalog of projects executed by FUDAMBIENT, organized by year and theme.",
+        "searchPlaceholder": "Search by contract, municipality, keyword...",
+        "filters": {
+          "all": "All",
+          "education": "Environmental education",
+          "urbanism": "Urbanism",
+          "sanitation": "Basic sanitation",
+          "restoration": "Ecological restoration"
+        },
+        "emptyState": "No projects found matching your search.",
+        "seeMore": "See more",
+        "seeLess": "See less",
+        "categoriesAriaLabel": "Categories",
+        "categoryLabels": {
+          "education": "Environmental Education",
+          "urbanism": "Urbanism",
+          "sanitation": "Basic Sanitation",
+          "restoration": "Ecological Restoration",
+          "urbanPublic": "Urbanism and Public Space",
+          "hydraulics": "Hydraulics",
+          "bioengineering": "Bioengineering"
+        }
+      }
+    },
+    "experience": {
+      "convenio98": {
+        "title": "Agreement 98 of 2009",
+        "description": "Implementation of environmental education strategy for solid waste management through source separation in the municipalities of Florida, Alcalá, Ulloa, La Victoria, Tuluá and Buenaventura."
+      },
+      "contratocvc559": {
+        "title": "CVC Contract No.559 of 2016",
+        "description": "Strengthening technical capacity, supporting the verification of the physical and environmental status of water supply and wastewater treatment systems in territories of Black and Indigenous communities."
+      },
+      "convenio39": {
+        "title": "Agreement 39 of 2016",
+        "description": "Conduct participatory diagnosis and design of water supply systems, socialization, organization and community strengthening for the operation and management of the water supply system in the collective territories of the Community Councils of La Brea, Kilometer 9 and La Esperanza, located in the municipality of Buenaventura."
+      },
+      "conveniodeasociacin2017": {
+        "title": "Association Agreement 2017",
+        "description": "Join technical efforts and economic resources to implement technologies and practices for the recovery of areas degraded by laterization processes, through biomechanical activities and participatory ecological restoration, for mass movement control and sediment input control in the municipality of Restrepo."
+      },
+      "contratocvc0408": {
+        "title": "CVC Contract 0408 of 2018",
+        "description": "Carry out pit filling for the recovery of environmental liabilities in areas affected by illegal alluvial gold mining in the Dagua River, in the Alto and Medio Dagua sector in the municipality of Buenaventura."
+      },
+      "contratocvc0586": {
+        "title": "CVC Contract 0586 of 2018",
+        "description": "Carry out recovery and maintenance actions for the Charco Azul, Cañasgordas, Santa Elena and Canal Islands wetlands, during the development of project 7001 \"Conservation of biodiversity and its ecosystem services in the urban area of Santiago de Cali, through knowledge, preservation, restoration and sustainable use\"."
+      },
+      "contratocvc0588": {
+        "title": "CVC Contract 0588 of 2018",
+        "description": "Recovery of areas degraded by laterization processes through biomechanical activities and ecological restoration for mass movement control and sediment input control in the San Pablo township, Calimita village, municipality of Restrepo, Dagua basin."
+      },
+      "contratocvc0709": {
+        "title": "CVC Contract 0709 of 2018",
+        "description": "Construction of individual domestic wastewater treatment systems, prefabricated plastic type system, with treated effluent disposal by ground infiltration, in rural communities located in the Dagua basin in the municipality of La Cumbre and conducting socialization and training workshops."
+      },
+      "contratocvc0750": {
+        "title": "CVC Contract 0750 of 2018",
+        "description": "Carry out the construction of protection works for the Cauca River, Caramanta and Ciénaga Redonda sector in the municipality of Bugalagrande."
+      },
+      "contrato192892": {
+        "title": "Contract 192892",
+        "description": "Construction, supply and commissioning of drinking water treatment plants and disinfection systems in rural and suburban aqueducts of the municipality of Pasto - second stage."
+      },
+      "contratocvc0501": {
+        "title": "CVC Contract 0501 of 2019",
+        "description": "Construction of individual domestic wastewater treatment systems, prefabricated plastic type system, in rural communities located in the department of Valle del Cauca and conducting socialization and training workshops."
+      },
+      "contrato20192971": {
+        "title": "Contract 20192971 of 2019",
+        "description": "Construction, improvement and preservation of water supply and sewerage systems in the rural and urban sector of the municipality of Pasto."
+      },
+      "contratocvc0614": {
+        "title": "CVC Contract 0614 of 2020",
+        "description": "Carry out the recovery of areas degraded by severe erosion processes, through civil works, bioengineering works and ecological restoration, for mass movement control and sediment input control in the municipality of Toro, RUT basin."
+      },
+      "conveniodeasociacin0138": {
+        "title": "CVC Association Agreement 0138 of 2020",
+        "description": "Implement urban tree management actions by planting tree individuals in commune 21 and extracting roots and stumps in communes 15, 16 and 21 of Santiago de Cali."
+      },
+      "convenio0992021": {
+        "title": "Agreement 099-2021",
+        "description": "Implementation of landscape management tools - HMP, in ecological restoration systems and the maintenance of restored areas, in the hydrographic basins of Los Micos, Obando and RUT under CVC jurisdiction."
+      },
+      "conveniodeasociacin01492021": {
+        "title": "CVC Association Agreement 0149-2021",
+        "description": "Implement maintenance and urban tree management actions to improve environmental conditions in commune 22 and prioritized road corridors in Santiago de Cali."
+      },
+      "conveniodeasociacin0912022": {
+        "title": "CVC Association Agreement 091-2022",
+        "description": "Implement maintenance and urban tree management actions to improve environmental conditions in commune 22 and prioritized road corridors in Santiago de Cali."
+      },
+      "contratocvc07402021": {
+        "title": "CVC Contract 0740/2021",
+        "description": "Carry out the recovery of areas degraded by severe erosion processes, through civil works, bioengineering works and ecological restoration, for mass movement control and sediment input control in the municipalities of Dagua, Restrepo, Bolívar and Roldanillo in the department of Valle del Cauca."
+      },
+      "conveniodeasociacin1722": {
+        "title": "Association Agreement 1722 of 2022",
+        "description": "Implement environmental and forestry recovery actions and rehabilitation of areas undergoing erosion in the municipalities of Dagua, Restrepo, Roldanillo and El Dovio."
+      },
+      "conveniodeasociacin198": {
+        "title": "Association Agreement 198 of 2022",
+        "description": "Implement actions that promote water resource decontamination through environmental education strategies and individual wastewater treatment systems in rural communities of Valle del Cauca."
+      },
+      "contratocvc693": {
+        "title": "CVC Contract 693 of 2022",
+        "description": "Carry out pit filling for the recovery of environmental liabilities in areas affected by illegal alluvial gold mining in the Dagua River, in the Los Pereda II and Los Valencia sectors of the Córdoba township in the municipality of Buenaventura, Valle del Cauca."
+      },
+      "convenio992021": {
+        "title": "Agreement 99-2021",
+        "description": "Implementation of landscape management tools - HMP, in ecological restoration systems and the maintenance of restored areas, in the hydrographic basins of Los Micos, Obando and RUT under CVC jurisdiction."
+      },
+      "convenio017": {
+        "title": "Agreement 017 of 2024",
+        "description": "Join technical efforts and physical and economic resources to advance ecological restoration processes, through the maintenance of restored areas in previous periods in the hydrographic basins of the Catarina rivers, municipality of Ansermanuevo, Los Micos municipalities of La Victoria and Zarzal, Obando municipality of Obando and RUT municipalities of La Unión, Roldanillo and Toro under CVC jurisdiction."
+      },
+      "contrato656": {
+        "title": "Contract 656 of 2024",
+        "description": "Carry out geomorphological recovery and alluvial berm restoration in prioritized sections of the Cali, Aguacatal, Cañaveralejo, Lili and Meléndez rivers, within the framework of project 0505."
+      },
+      "convenio058": {
+        "title": "Agreement 058 of 2024",
+        "description": "Join technical, economic and human resources to maintain ecological restoration actions in water-regulating ecosystems, executed during the last semester of 2023, within the framework of the implementation of the Reciprocal Water Agreements Strategy."
+      },
+      "convenio083": {
+        "title": "Agreement 083 of 2024",
+        "description": "Join technical, human and economic resources for urban tree recovery and risk management tree intervention, to improve environmental conditions in communes 7, 19 and prioritized road corridors in Santiago de Cali."
+      },
+      "convenio133": {
+        "title": "Agreement 133 of 2024",
+        "description": "Join technical and economic and human resources to implement actions that promote water resource protection and decontamination, through environmental education processes and basic sanitation alternatives in rural communities of Valle del Cauca."
+      },
+      "convenio146": {
+        "title": "Agreement 146 of 2024",
+        "description": "Join technical, physical and economic resources to carry out environmental recovery and rehabilitation actions in prioritized areas undergoing severe erosion, in soils degraded by natural or anthropic interventions, in the Dagua River basin (Municipality of Dagua) Valle del Cauca."
+      },
+      "contrato546": {
+        "title": "Contract 546 of 2025",
+        "description": "Carry out works for risk mitigation in critical sites affected by mass movements through: hydraulic works, bioengineering works, geomorphological recovery and alluvial berm restoration in the streams of the Santiago de Cali district."
+      },
+      "convenio031": {
+        "title": "Agreement 031 of 2025",
+        "description": "Join technical and economic and human resources to implement actions aimed at protecting water resources, through environmental education processes and complementary implementations, in rural communities of Valle del Cauca."
+      },
+      "convenio094": {
+        "title": "Agreement 094 of 2025",
+        "description": "Join technical human and economic resources for urban tree recovery and intervention of trees at risk to improve environmental conditions in communes 7, 9 and prioritized road corridors in Santiago de Cali."
+      },
+      "convenio025": {
+        "title": "Agreement 025 of 2025",
+        "description": "Join technical, administrative and financial efforts to strengthen the ornamentation of public spaces through gardens in the Santiago de Cali District, within the framework of Biodiversity Week."
+      },
+      "contrato858": {
+        "title": "Contract 858 of 2025",
+        "description": "Carry out environmental recovery and risk mitigation actions in areas undergoing severe erosion and at risk from flash floods in the Jamundí-Cali basin, Valle del Cauca."
+      }
+    },
+    "brochure": {
+      "cta": "Download Institutional Brochure (2024)"
+    },
+    "card": {
+      "location": "Location",
+      "year": "Year",
+      "client": "Client",
+      "seeMore": "See more"
+    },
+    "items": {
+      "1": {
+        "category": "URBANISM",
+        "title": "Agreement N°025 of 2025",
+        "subtitle": "Cali, Valle del Cauca",
+        "description": "Strengthening of urban public space through the implementation of gardens and ecological connectivity actions, aimed at improving environmental quality, conserving biodiversity and promoting green infrastructure in the District of Santiago de Cali.",
+        "tag": "Green infrastructure"
+      },
+      "2": {
+        "category": "URBANISM",
+        "title": "CVC Agreement N° 094 of 2025",
+        "subtitle": "Cali, Valle del Cauca",
+        "description": "Implementation of maintenance and management actions for urban trees in prioritized communes and road corridors, in order to improve environmental conditions, urban safety and the functionality of urban greenery in Santiago de Cali.",
+        "tag": "Urban forestry"
+      },
+      "3": {
+        "category": "BASIC SANITATION",
+        "title": "Association Agreement N° 198 of 2022",
+        "subtitle": "Rural communities of Valle del Cauca",
+        "description": "Implementation of environmental education strategies and basic sanitation alternatives in rural communities, aimed at the protection, decontamination and sustainable use of water resources, strengthening the environmental and community health of the territory.",
+        "tag": "Individual Wastewater Treatment Systems"
+      },
+      "4": {
+        "category": "ENVIRONMENTAL RESTORATION AND RECOVERY OF DEGRADED AREAS",
+        "title": "CVC Contract N° 693 2022",
+        "subtitle": "Buenaventura, Valle del Cauca",
+        "description": "Recovery of environmental liabilities generated by illegal mining through filling of pits and geomorphological restoration of the Dagua river channel, in the Los Perea II and Los Valencia sectors of the municipality of Buenaventura, aimed at improving fluvial stability and ecological recovery of the territory.",
+        "tag": "Ecological restoration"
+      },
+      "5": {
+        "category": "LANDSCAPE MANAGEMENT TOOLS",
+        "title": "CVC Agreement N° 017 of 2024",
+        "subtitle": "Prioritized watersheds of Valle del Cauca",
+        "description": "Implementation of ecological restoration processes through the maintenance of areas restored in previous terms, in the river basins of the Catarina, Micos and RUT rivers, covering the municipalities of Ansermanuevo, La Victoria, Zarzal, Obando, La Unión, Roldanillo and Toro, under the jurisdiction of the CVC.",
+        "tag": "Ecological restoration"
+      },
+      "6": {
+        "category": "ENVIRONMENTAL RESTORATION AND RECOVERY OF DEGRADED AREAS",
+        "title": "CVC Contract N° 0731 of 2021",
+        "subtitle": "Santiago de Cali",
+        "description": "Geomorphological recovery and desilting actions in prioritized sections of the Cali, Aguacatal, Cañaveralejo, Lili, Meléndez and Pance rivers, aimed at improving hydraulic capacity, reducing flood risk and strengthening the environmental management of the urban water system of Santiago de Cali.",
+        "tag": "Geomorphological recovery"
+      },
+      "7": {
+        "category": "ENVIRONMENTAL RESTORATION AND RECOVERY OF DEGRADED AREAS",
+        "title": "CVC Contract N° 0740 of 2021",
+        "subtitle": "Prioritized municipalities of Valle del Cauca",
+        "description": "Recovery of areas degraded by severe erosion processes through civil works, bioengineering and ecological restoration, aimed at controlling mass movements and reducing sediment contribution in the municipalities of Dagua, Restrepo, Bolívar and Roldanillo, in Valle del Cauca.",
+        "tag": "Ecological restoration"
+      },
+      "8": {
+        "category": "BASIC SANITATION",
+        "title": "CONTRACT 192892 of 2019",
+        "subtitle": "Pasto, Nariño",
+        "description": "Construction, supply and commissioning of drinking water treatment plants and disinfection systems in rural and suburban aqueducts of the municipality of Pasto, improving access to safe water and strengthening the sanitary infrastructure of the territory.",
+        "tag": "Hydraulic infrastructure"
+      },
+      "9": {
+        "category": "DESIGN AND CONSULTING",
+        "title": "Contract N° 2000.13.04.001-219",
+        "subtitle": "Ginebra and Guacarí",
+        "description": "Studies and designs for water collection, adduction, conduction, storage and treatment systems in the municipalities of Ginebra and Guacarí, strengthening the planning and optimization of municipal aqueduct infrastructure.",
+        "tag": "Supply systems"
+      },
+      "10": {
+        "category": "ENVIRONMENTAL RESTORATION AND RECOVERY OF DEGRADED AREAS",
+        "title": "CVC Contract N°0588 of 2018",
+        "subtitle": "Restrepo, Valle del Cauca",
+        "description": "Recovery of areas degraded by laterization processes through biomechanical activities and ecological restoration, aimed at controlling mass movements and reducing sediment contribution in the San Pablo district, Calimita village, Dagua river basin.",
+        "tag": "Ecological restoration"
+      }
+    }
+  },
+  "achievements": {
+    "hero": {
+      "title": "Transforming territories with engineering and sustainability",
+      "subtitle": "Since 2005, FUDAMBIENT works on sustainable community development through environmental projects, social engineering and participatory construction.",
+      "cta": {
+        "projects": "Explore our projects",
+        "services": "Learn about our services"
+      }
+    },
+    "stats": {
+      "projects": {
+        "value": "+40",
+        "label": "Projects executed"
+      },
+      "municipalities": {
+        "value": "42/42",
+        "label": "Municipalities intervened in Valle del Cauca"
+      },
+      "years": {
+        "value": "+20",
+        "label": "Years of experience"
+      },
+      "communities": {
+        "value": "Communities",
+        "label": "rural and urban accompanied"
+      }
+    },
+    "videos": {
+      "title": "Video testimonials",
+      "subtitle": "Real stories that show the impact of our projects on the territory.",
+      "gardens": {
+        "subtitle": "Learn about the impact of our intervention on the city's green infrastructure.",
+        "aria": "Testimonial about urban gardens and green infrastructure"
+      },
+      "sitares": {
+        "subtitle": "Explore the latest report on our work in water resource care and environmental education.",
+        "aria": "Testimonial about SITARES systems"
+      },
+      "cta": "View full story"
+    },
+    "testimonials": {
+      "title": "Voices from the territory",
+      "subtitle": "The words of those who live the impact of our work are our greatest recognition.",
+      "quote": {
+        "text": "\"True engineering is not just calculations and structures, it is the ability to listen, learn and build together with communities.\"",
+        "author": "— FUDAMBIENT Philosophy"
+      },
+      "items": {
+        "1": {
+          "quote": "With the sanitation system and training from the FUDAMBIENT team, we learned to operate and maintain it. Now there are fewer odors, fewer diseases and the community organizes to sustain it over time. Also, this process gave us peace of mind and confidence knowing we have an adequate solution for our village.",
+          "author": "Cristopher Serna",
+          "role": "SITAR User",
+          "community": "El Guayabo Village, Cartago"
+        },
+        "2": {
+          "quote": "Before, this space felt neglected and you would pass by quickly. With the gardens, it's now a pleasure to walk; the environment is fresher, safer and more pleasant. You can tell it was designed for people, inviting you to stay and enjoy. As pedestrians, we feel that public space has improved and that the surroundings contribute to the neighborhood's well-being.",
+          "author": "Natalia Rodríguez",
+          "role": "Neighborhood resident",
+          "community": "Santiago de Cali"
+        },
+        "3": {
+          "quote": "During the stream recovery, we understood that restoring is not just about doing works, but caring for the territory together. FUDAMBIENT accompanied us step by step, listening to the community and teaching us how to protect this space. Today we know how to prevent risks and value the stream as part of our lives.",
+          "author": "Marleny Collazos",
+          "role": "Community Action Board Leader",
+          "community": "El Cogollo Stream, Esneda Neighborhood, Dagua"
+        }
+      }
+    },
+    "methodology": {
+      "title": "Our methodology",
+      "subtitle": "A proven process that integrates quality engineering, community participation and sustainability focus at every stage.",
+      "steps": {
+        "1": {
+          "title": "Community dialogue",
+          "description": "We meet with the community to understand their needs, priorities and local knowledge. The territory speaks, we listen.",
+          "details": {
+            "1": "Participatory assemblies",
+            "2": "Social mapping",
+            "3": "Leader identification"
+          }
+        },
+        "2": {
+          "title": "Technical diagnosis",
+          "description": "We conduct soil, water, topography and environmental impact studies with professional rigor and territorial focus.",
+          "details": {
+            "1": "Environmental studies",
+            "2": "Feasibility analysis",
+            "3": "Risk assessment"
+          }
+        },
+        "3": {
+          "title": "Participatory design",
+          "description": "We co-create solutions that integrate engineering, local knowledge and environmental sustainability.",
+          "details": {
+            "1": "Design workshops",
+            "2": "Technical drawings",
+            "3": "Community budget"
+          }
+        },
+        "4": {
+          "title": "Construction and support",
+          "description": "We execute with local labor when possible, generating employment and project ownership.",
+          "details": {
+            "1": "Community construction",
+            "2": "Technical training",
+            "3": "Quality control"
+          }
+        },
+        "5": {
+          "title": "Monitoring and sustainability",
+          "description": "We support maintenance, strengthen local capacities and measure long-term impact.",
+          "details": {
+            "1": "Maintenance training",
+            "2": "Impact monitoring",
+            "3": "Organizational strengthening"
+          }
+        }
+      }
+    },
+    "allies": {
+      "title": "Allies and institutional partnerships",
+      "subtitle": "Our work is strengthened through solid partnerships with environmental authorities and territorial actors.",
+      "strategic": {
+        "title": "Strategic allies",
+        "partners": {
+          "1": {
+            "fullName": "Regional Autonomous Corporation of Valle del Cauca",
+            "description": "Regional environmental authority with whom we work on water resource management and conservation projects."
+          },
+          "2": {
+            "fullName": "Administrative Department of Environmental Management",
+            "description": "Municipal entity that coordinates our sustainability and environmental management initiatives in the territory."
+          }
+        }
+      },
+      "local": {
+        "title": "Partnership with local actors",
+        "actors": {
+          "1": "Community Action Boards",
+          "2": "Educational institutions",
+          "3": "Community leaders",
+          "4": "Local organizations"
+        }
+      }
+    },
+    "mascot": {
+      "text": "We believe in an accessible engineering that listens to the territory and works alongside communities."
+    }
+  },
+  "contact": {
+    "title": "Would you like to talk about your project?",
+    "subtitle": "We are here to help you make your sustainable development ideas a reality. Tell us about your project and we will respond soon.",
+    "features": {
+      "fast": "Fast response",
+      "focus": "Project focused",
+      "engineering": "Engineering + sustainability"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send",
+      "note": "This will open your email app with the message ready to send.",
+      "success": "Message sent successfully!",
+      "error": "There was an error. Please try again."
+    },
+    "info": {
+      "title": "Contact information",
+      "address": "Address",
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp"
+    }
+  }
+}

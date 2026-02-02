@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - FUDAMBIENT</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/nosotros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Bebas+Neue&family=Chewy&family=Raleway:wght@500;800&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+</head>
+<body class="nosotros-page">
+    <!-- Initial Header (non-sticky, shows at top) -->
+    <header class="header header-initial" id="headerInitial">
+        <div class="header-container">
+            <a class="brand-text-logo" href="index.html" aria-label="FUDAMBIENT home">
+                <span class="brand-fud">FUD</span><span class="brand-ambient">AMBIENT</span>
+            </a>
+            <nav class="nav-initial">
+                <a href="index.html" class="nav-item" data-page="index" data-i18n="header.nav.home">Inicio</a>
+                <a href="nosotros.html" class="nav-item" data-page="nosotros" data-i18n="header.nav.about">Nosotros</a>
+                <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+                <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+                <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+            </nav>
+            <div class="header-cta">
+                <a href="contacto.html" class="contact-btn" data-i18n="header.contact">Contacto</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma" data-i18n-aria="header.langToggle">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Glass Nav (appears after scroll) -->
+    <nav class="nav-pill-glass" id="navPillGlass">
+        <a href="index.html" class="nav-item" data-page="index" data-i18n="header.nav.home">Inicio</a>
+        <a href="nosotros.html" class="nav-item" data-page="nosotros" data-i18n="header.nav.about">Nosotros</a>
+        <a href="servicios.html" class="nav-item" data-page="servicios" data-i18n="header.nav.services">Servicios</a>
+        <a href="proyectos.html" class="nav-item" data-page="proyectos" data-i18n="header.nav.projects">Proyectos</a>
+        <a href="logros.html" class="nav-item" data-page="logros" data-i18n="header.nav.achievements">Logros</a>
+    </nav>
+
+    <!-- About Us Section - Hero -->
+    <section class="about-hero">
+        <div class="about-hero-bg">
+            <div class="about-hero-decorative"></div>
+            <div class="about-hero-pattern"></div>
+        </div>
+        <div class="about-hero-container">
+            <div class="about-hero-grid">
+                <!-- Content -->
+                <div class="about-hero-content">
+                    <div class="about-hero-decorative-dots">
+                        <div class="decorative-dot dot-1"></div>
+                        <div class="decorative-dot dot-2"></div>
+                        <div class="decorative-dot dot-3"></div>
+                        <div class="decorative-dot dot-4"></div>
+                    </div>
+                    <div class="about-hero-text">
+                        <span class="about-hero-label reveal" data-i18n="about.hero.label">Nosotros</span>
+                        <h1 class="about-hero-title reveal" data-i18n="about.hero.title">Ingeniería con propósito</h1>
+                        <p class="about-hero-description reveal" data-i18n="about.hero.description">
+                            Nuestro compromiso se fundamenta en la sostenibilidad ambiental, 
+                            el bienestar de las comunidades y el rigor técnico en cada proyecto. 
+                            Transformamos desafíos ambientales en soluciones innovadoras.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="about-hero-image-wrapper">
+                    <div class="about-hero-image-container">
+                        <img 
+                            src="Assets/Nosotros - Subpage/Section1.png" 
+                            alt="Environmental engineers working in the field"
+                            class="about-hero-image">
+                        <div class="about-hero-image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="about-section about-who">
+        <div class="about-container">
+            <div class="about-grid">
+                <!-- Large Image -->
+                <div class="about-image-left">
+                    <div class="about-image-wrapper reveal">
+                        <div class="about-image-shadow"></div>
+                        <div class="about-image-container">
+                            <img 
+                                src="Assets/Nosotros - Subpage/Section2.JPG" 
+                                alt="FUDAMBIENT team"
+                                class="about-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="about-content-right">
+                    <h2 class="about-section-title reveal" data-i18n="about.whoWeAre.title">¿Quiénes somos?</h2>
+                    <p class="about-section-text reveal" data-i18n="about.whoWeAre.description">
+                        FUDAMBIENT es una fundación dedicada a la ingeniería ambiental 
+                        con más de dos décadas de experiencia. Trabajamos junto a comunidades, 
+                        empresas y gobiernos para desarrollar proyectos que protegen el medio 
+                        ambiente y generan desarrollo sostenible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflective CTA Section -->
+    <section class="section-reflective-cta">
+        <div class="reflective-cta-background"></div>
+        <div class="reflective-cta-container">
+            <div class="reflective-cta-card">
+                <h2 class="reflective-cta-heading reveal" data-i18n="about.reasons.title">Razones para elegirnos</h2>
+                <ul class="reflective-cta-list reveal">
+                    <li class="reflective-cta-item">
+                        <span class="reflective-cta-bullet"></span>
+                        <span class="reflective-cta-text" data-i18n="about.reasons.items.context">Diseñamos desde el contexto ambiental y social</span>
+                    </li>
+                    <li class="reflective-cta-item">
+                        <span class="reflective-cta-bullet"></span>
+                        <span class="reflective-cta-text" data-i18n="about.reasons.items.analysis">No aplicamos recetas: analizamos cada territorio</span>
+                    </li>
+                    <li class="reflective-cta-item">
+                        <span class="reflective-cta-bullet"></span>
+                        <span class="reflective-cta-text" data-i18n="about.reasons.items.community">Trabajamos con comunidades, no solo para ellas</span>
+                    </li>
+                    <li class="reflective-cta-item">
+                        <span class="reflective-cta-bullet"></span>
+                        <span class="reflective-cta-text" data-i18n="about.reasons.items.technical">Ejecutamos con criterio técnico y responsabilidad</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section 4: Nuestra historia -->
+    <section class="about-section about-section-alt">
+        <div class="about-vision-bg">
+            <div class="about-vision-shape shape-1"></div>
+            <div class="about-vision-shape shape-2"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-grid about-grid-reverse">
+                <!-- Content -->
+                <div class="about-content-left">
+                    <h2 class="about-section-title reveal" data-i18n="about.history.title">Nuestra historia</h2>
+                    <p class="about-section-text reveal" data-i18n="about.history.description">
+                        Desde nuestros inicios, hemos trabajado incansablemente para transformar 
+                        territorios y comunidades. Con más de una década de experiencia, hemos 
+                        desarrollado proyectos que integran ingeniería, sostenibilidad y participación 
+                        comunitaria, generando un impacto positivo y duradero en el medio ambiente.
+                    </p>
+                </div>
+
+                <!-- Large Image -->
+                <div class="about-image-right">
+                    <div class="about-image-wrapper reveal">
+                        <div class="about-image-shadow"></div>
+                        <div class="about-image-container">
+                            <img 
+                                src="Assets/Nosotros - Subpage/Section4.png" 
+                                alt="Nuestra historia"
+                                class="about-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="about-section about-impact">
+        <div class="about-container">
+            <div class="about-grid">
+                <!-- Large Image -->
+                <div class="about-image-left">
+                    <div class="about-image-wrapper reveal">
+                        <div class="about-image-shadow"></div>
+                        <div class="about-image-container">
+                            <img 
+                                src="Assets/Nosotros - Subpage/Section5.png" 
+                                alt="Environmental impact"
+                                class="about-image">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="about-content-right">
+                    <h2 class="about-section-title reveal" data-i18n="about.whyUs.title">¿Por qué elegirnos?</h2>
+                    <p class="about-section-text reveal" data-i18n="about.whyUs.description">
+                        Cada proyecto que desarrollamos genera un impacto medible y duradero 
+                        en ecosistemas y comunidades. Nuestros resultados hablan por sí mismos.
+                    </p>
+
+                    <!-- Impact stats -->
+                    <div class="about-stats-grid reveal">
+                        <div class="about-stat-card">
+                            <div class="about-stat-number" data-i18n="about.whyUs.stats.trees.value">120K+</div>
+                            <div class="about-stat-label" data-i18n="about.whyUs.stats.trees.label">Árboles plantados</div>
+                        </div>
+                        <div class="about-stat-card">
+                            <div class="about-stat-number" data-i18n="about.whyUs.stats.communities.value">45+</div>
+                            <div class="about-stat-label" data-i18n="about.whyUs.stats.communities.label">Comunidades atendidas</div>
+                        </div>
+                        <div class="about-stat-card">
+                            <div class="about-stat-number" data-i18n="about.whyUs.stats.hectares.value">3.5K</div>
+                            <div class="about-stat-label" data-i18n="about.whyUs.stats.hectares.label">Hectáreas restauradas</div>
+                        </div>
+                        <div class="about-stat-card">
+                            <div class="about-stat-number" data-i18n="about.whyUs.stats.satisfaction.value">95%</div>
+                            <div class="about-stat-label" data-i18n="about.whyUs.stats.satisfaction.label">Satisfacción cliente</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="about-section about-section-alt">
+        <div class="about-vision-bg">
+            <div class="about-vision-shape shape-1"></div>
+            <div class="about-vision-shape shape-2"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-grid about-grid-reverse">
+                <!-- Content -->
+                <div class="about-content-left">
+                    <h2 class="about-section-title reveal" data-i18n="about.howWeWork.title">¿Cómo trabajamos?</h2>
+                    <p class="about-section-text reveal" data-i18n="about.howWeWork.description">
+                        Trabajamos desde el entendimiento profundo del territorio, 
+                        integrando conocimiento técnico, participación comunitaria 
+                        y compromiso ambiental en cada proyecto.
+                    </p>
+
+                    <!-- Process steps -->
+                    <div class="about-process-steps reveal">
+                        <div class="about-process-step">
+                            <div class="about-process-number">01</div>
+                            <div class="about-process-content">
+                                <h4 class="about-process-title" data-i18n="about.howWeWork.steps.step1.title">Escuchamos el territorio</h4>
+                                <p class="about-process-description" data-i18n="about.howWeWork.steps.step1.description">Cada proyecto inicia comprendiendo el contexto ambiental, social y cultural del territorio.</p>
+                            </div>
+                        </div>
+                        <div class="about-process-step">
+                            <div class="about-process-number">02</div>
+                            <div class="about-process-content">
+                                <h4 class="about-process-title" data-i18n="about.howWeWork.steps.step2.title">Construimos con las comunidades</h4>
+                                <p class="about-process-description" data-i18n="about.howWeWork.steps.step2.description">Trabajamos de forma participativa con comunidades y actores locales.</p>
+                            </div>
+                        </div>
+                        <div class="about-process-step">
+                            <div class="about-process-number">03</div>
+                            <div class="about-process-content">
+                                <h4 class="about-process-title" data-i18n="about.howWeWork.steps.step3.title">Aplicamos ingeniería responsable</h4>
+                                <p class="about-process-description" data-i18n="about.howWeWork.steps.step3.description">Diseñamos e implementamos soluciones técnicas viables con enfoque en sostenibilidad.</p>
+                            </div>
+                        </div>
+                        <div class="about-process-step">
+                            <div class="about-process-number">04</div>
+                            <div class="about-process-content">
+                                <h4 class="about-process-title" data-i18n="about.howWeWork.steps.step4.title">Acompañamos en el tiempo</h4>
+                                <p class="about-process-description" data-i18n="about.howWeWork.steps.step4.description">Realizamos seguimiento para asegurar impactos positivos y duraderos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Large Image -->
+                <div class="about-image-right">
+                    <div class="about-image-wrapper reveal">
+                        <div class="about-image-shadow"></div>
+                        <div class="about-image-container">
+                            <img 
+                                src="Assets/Nosotros - Subpage/Section6.png" 
+                                alt="Cómo trabajamos"
+                                class="about-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2 class="footer-cta-title" data-i18n="footer.cta.title">Construyamos territorios sostenibles juntos</h2>
+                <a href="contacto.html" class="footer-cta-btn" data-i18n="footer.cta.button">Contáctanos</a>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-brand">
+                <div class="footer-brand-lockup">
+                    <img src="Assets/Logo - FA (Blanco).svg" alt="FUDAMBIENT Logo" class="footer-brand-logo">
+                    <h3 class="footer-brand-title">FUDAMBIENT</h3>
+                </div>
+                <div class="footer-brand-content">
+                    <p class="footer-brand-description" data-i18n="footer.brand.description">Ingeniería para el desarrollo sostenible del territorio.</p>
+                    <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <img src="Assets/Social Media/Instagram.svg" alt="Instagram" class="social-icon-img">
+                    </a>
+                    <a href="https://www.facebook.com/fudambient/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                        <img src="Assets/Social Media/Facebook.svg" alt="Facebook" class="social-icon-img">
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <img src="Assets/Social Media/Linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-links-title" data-i18n="footer.explore.title">Explorar</h4>
+                <nav class="footer-nav">
+                    <a href="index.html#inicio" class="footer-link" data-i18n="footer.explore.home">Inicio</a>
+                    <a href="nosotros.html" class="footer-link" data-i18n="footer.explore.about">Nosotros</a>
+                    <a href="servicios.html" class="footer-link" data-i18n="footer.explore.services">Servicios</a>
+                    <a href="proyectos.html" class="footer-link" data-i18n="footer.explore.projects">Proyectos</a>
+                    <a href="logros.html" class="footer-link" data-i18n="footer.explore.achievements">Logros</a>
+                </nav>
+            </div>
+            <div class="footer-contact">
+                <h4 class="footer-contact-title" data-i18n="footer.contact.title">Contacto</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="Assets/Social Media/Home.svg" alt="Address" class="contact-icon">
+                        <span>Carrera 59 # 1-116</span>
+                    </div>
+                    <a href="mailto:fudambient@gmail.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <rect x="1.5" y="3" width="15" height="12" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                            <path d="M1.5 5.25L9 10.5L16.5 5.25" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+                        </svg>
+                        <span>fudambient@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/573188369777?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20proyecto%20con%20FUDAMBIENT." target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <img src="Assets/Social Media/Whatsapp.svg" alt="WhatsApp" class="contact-icon">
+                        <span>+57 318 836 9777</span>
+                    </a>
+                    <a href="tel:6025536217" class="contact-item">
+                        <img src="Assets/Social Media/Phone.svg" alt="Phone" class="contact-icon">
+                        <span>602-5536217</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright" data-i18n="footer.copyright">© 2026 FUDAMBIENT - Por un futuro verde y sustentable</p>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+    <script src="nosotros.js"></script>
+</body>
+</html>
+
