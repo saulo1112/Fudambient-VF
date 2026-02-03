@@ -99,7 +99,7 @@
       "subtitle": "Construyendo un futuro sostenible con ingeniería responsable",
       "items": {
         "engineering": {
-          "value": "40+",
+          "value": "+40",
           "label": "Proyectos de Ingeniería"
         },
         "environmental": {
@@ -107,11 +107,11 @@
           "label": "Reducción de Impacto Ambiental"
         },
         "people": {
-          "value": "1,200+",
+          "value": "+12,000",
           "label": "Personas Beneficiadas"
         },
         "municipalities": {
-          "value": "42+",
+          "value": "+42",
           "label": "Municipios Apoyados"
         }
       }
@@ -886,11 +886,11 @@
         "partners": {
           "1": {
             "fullName": "Corporación Autónoma Regional del Valle del Cauca",
-            "description": "Autoridad ambiental regional con la que trabajamos en proyectos de gestión y conservación del recurso hídrico."
+            "description": "Autoridad ambiental regional con la que articulamos proyectos de gestión ambiental, restauración ecológica y ordenamiento territorial."
           },
           "2": {
             "fullName": "Departamento Administrativo de Gestión del Medio Ambiente",
-            "description": "Entidad municipal que articula nuestras iniciativas de sostenibilidad y gestión ambiental en el territorio."
+            "description": "Entidad municipal que articula nuestras iniciativas de sostenibilidad y gestión ambiental en Santiago de Cali."
           }
         }
       },

@@ -1845,7 +1845,7 @@ h1, h2, h3, h4, h5, h6 {
 .reflective-cta-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 520px;
     display: flex;
@@ -1859,7 +1859,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 16px;
     width: 100%;
     max-width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .reflective-cta-bullet {
@@ -1879,7 +1879,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 1.625em;
     color: rgba(25, 46, 3, 0.85);
-    flex: 1;
+    flex: 0 1 auto;
+    text-align: left;
 }
 
 /* Section 4 - Achievements */

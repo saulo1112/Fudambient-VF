@@ -99,7 +99,7 @@
       "subtitle": "Building a sustainable future with responsible engineering",
       "items": {
         "engineering": {
-          "value": "40+",
+          "value": "+40",
           "label": "Engineering Projects"
         },
         "environmental": {
@@ -107,11 +107,11 @@
           "label": "Environmental Impact Reduction"
         },
         "people": {
-          "value": "1,200+",
+          "value": "+12,000",
           "label": "People Benefited"
         },
         "municipalities": {
-          "value": "42+",
+          "value": "+42",
           "label": "Municipalities Supported"
         }
       }
@@ -886,11 +886,11 @@
         "partners": {
           "1": {
             "fullName": "Regional Autonomous Corporation of Valle del Cauca",
-            "description": "Regional environmental authority with whom we work on water resource management and conservation projects."
+            "description": "Regional environmental authority with which we coordinate environmental management, ecological restoration, and territorial planning projects."
           },
           "2": {
             "fullName": "Administrative Department of Environmental Management",
-            "description": "Municipal entity that coordinates our sustainability and environmental management initiatives in the territory."
+            "description": "Municipal environmental authority that supports the implementation of sustainability and environmental management initiatives in Santiago de Cali."
           }
         }
       },
