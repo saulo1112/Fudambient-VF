@@ -547,17 +547,9 @@ function initHeroVideo() {
     
     if (!heroVideo || !heroBackground) return;
     
-    // Determine optimal video width based on viewport
-    const getOptimalVideoWidth = () => {
-        const viewportWidth = window.innerWidth;
-        // Use w_960 for viewports smaller than 1280px, w_1280 for larger
-        return viewportWidth < 1280 ? 960 : 1280;
-    };
-    
-    // Build optimized Cloudinary URL with transformations
+    // Build optimized Cloudinary URL with transformations for iOS compatibility
     const buildVideoUrl = () => {
-        const width = getOptimalVideoWidth();
-        return `https://res.cloudinary.com/dqpqgmn1k/video/upload/w_${width},q_auto,f_auto,fps_24/v1770049664/HeroSectionVid_xry4l9.mp4`;
+        return `https://res.cloudinary.com/dqpqgmn1k/video/upload/f_mp4,vc_h264,ac_aac,q_auto,w_1280,fps_24/v1770049664/HeroSectionVid_xry4l9.mp4`;
     };
     
     // Load video source after page is idle
@@ -596,6 +588,8 @@ function initHeroVideo() {
     
     // Check when video starts playing
     heroVideo.addEventListener('playing', () => {
+        // Remove ios-fallback if video is playing successfully
+        heroVideo.classList.remove('ios-fallback');
         heroBackground.classList.add('video-playing');
     });
     
@@ -633,6 +627,47 @@ function initHeroVideo() {
 
 // Initialize hero video
 initHeroVideo();
+
+// iOS Safari autoplay fix - only apply after video source is loaded and only on iOS
+function initIOSAutoplayFix() {
+    const video = document.querySelector(".hero-video");
+    if (!video) return;
+    
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    
+    // Only apply fix on iOS devices
+    if (!isIOS) {
+        return;
+    }
+    
+    // Wait for video to have source and be ready
+    const attemptIOSPlay = () => {
+        // Only attempt if video has source and is ready
+        if (video.querySelector('source') && video.readyState >= 2) {
+            const p = video.play();
+            
+            if (p !== undefined) {
+                p.catch(() => {
+                    // Only hide video on iOS if autoplay truly fails
+                    video.classList.add("ios-fallback");
+                });
+            }
+        } else {
+            // Wait for source to load, then try again
+            video.addEventListener('loadedmetadata', attemptIOSPlay, { once: true });
+        }
+    };
+    
+    // Start attempt after DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', attemptIOSPlay);
+    } else {
+        attemptIOSPlay();
+    }
+}
+
+// Initialize iOS autoplay fix
+initIOSAutoplayFix();
 
 // Contact Form - Mailto functionality
 (function() {
