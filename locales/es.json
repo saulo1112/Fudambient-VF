@@ -42,7 +42,7 @@
         "plus": "+",
         "you": "Tú!"
       },
-      "description": "Somos una organización de profesionales que trabajan con el propósito de asesorar y ejecutar obras de desarrollo y sostenibilidad; teniendo en cuenta los componentes socio-ambientales del territorio.",
+      "description": "Somos una organización de profesionales que trabajan con el propósito de asesorar, diseñar e implementar soluciones integrales orientadas al desarrollo sostenible; teniendo en cuenta los componentes socio-ambientales, técnicos y territoriales que inciden en cada proyecto.",
       "cta": "¡Ven y conócenos!"
     },
     "projects": {
@@ -68,7 +68,7 @@
     },
     "approach": {
       "title": "Ingeniería que comprende el territorio",
-      "description": "FUDAMBIENT es la Fundación para el Desarrollo Social, el Medio Ambiente, la Vivienda, la Recreación, el Deporte, el Comercio y el Empleo. Integramos la ingeniería civil, la gestión ambiental y la acción comunitaria para impulsar proyectos sostenibles que fortalecen el desarrollo, la calidad de vida y el equilibrio socioambiental."
+      "description": "FUDAMBIENT es la Fundación para el Desarrollo Social, el Medio Ambiente, la Vivienda, la Recreación, el Deporte, el Comercio y el Empleo. Articulamos la ingeniería, la gestión ambiental y la participación comunitaria para desarrollar proyectos sostenibles que transforman el territorio, mejoran la calidad de vida y promueven el equilibrio socioambiental."
     },
     "mission": {
       "label": "Nuestra Misión",
@@ -82,7 +82,7 @@
     },
     "specialties": {
       "title": "Nuestras Especialidades",
-      "subtitle": "Soluciones integrales en ingeniería civil y gestión ambiental para un desarrollo sostenible",
+      "subtitle": "Soluciones integrales en ingeniería y gestión ambiental para un desarrollo sostenible",
       "items": {
         "geomorphological": "Recuperación Geomorfológica",
         "erosion": "Control de Erosión y Orillas",
@@ -137,7 +137,7 @@
     },
     "whoWeAre": {
       "title": "¿Quiénes somos?",
-      "description": "FUDAMBIENT es una fundación dedicada a la ingeniería ambiental con más de dos décadas de experiencia. Trabajamos junto a comunidades, empresas y gobiernos para desarrollar proyectos que protegen el medio ambiente y generan desarrollo sostenible."
+      "description": "FUDAMBIENT es una fundación con más de dos décadas de experiencia en el desarrollo de proyectos de ingeniería orientados a la sostenibilidad y la gestión integral del territorio. Trabajamos de manera articulada con comunidades, empresas y entidades públicas para diseñar e implementar soluciones que fortalecen la planificación territorial, protegen el medio ambiente y promueven un desarrollo sostenible con enfoque local."
     },
     "reasons": {
       "title": "Razones para elegirnos",
