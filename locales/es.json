@@ -157,20 +157,20 @@
       "description": "Cada proyecto que desarrollamos genera un impacto medible y duradero en ecosistemas y comunidades. Nuestros resultados hablan por sí mismos.",
       "stats": {
         "trees": {
-          "value": "120K+",
+          "value": "+120.000",
           "label": "Árboles plantados"
         },
         "communities": {
-          "value": "45+",
+          "value": "+45",
           "label": "Comunidades atendidas"
         },
         "hectares": {
-          "value": "3.5K",
+          "value": "+3.500",
           "label": "Hectáreas restauradas"
         },
         "satisfaction": {
           "value": "95%",
-          "label": "Satisfacción cliente"
+          "label": "Satisfacción general"
         }
       }
     },

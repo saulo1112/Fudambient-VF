@@ -157,20 +157,20 @@
       "description": "Every project we develop generates measurable and lasting impact on ecosystems and communities. Our results speak for themselves.",
       "stats": {
         "trees": {
-          "value": "120K+",
+          "value": "+120.000",
           "label": "Trees planted"
         },
         "communities": {
-          "value": "45+",
+          "value": "+45",
           "label": "Communities served"
         },
         "hectares": {
-          "value": "3.5K",
+          "value": "+3.500",
           "label": "Hectares restored"
         },
         "satisfaction": {
           "value": "95%",
-          "label": "Client satisfaction"
+          "label": "Overall satisfaction"
         }
       }
     },
